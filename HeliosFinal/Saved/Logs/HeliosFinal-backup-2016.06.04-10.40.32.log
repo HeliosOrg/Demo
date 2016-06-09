@@ -1,0 +1,591 @@
+﻿Log file open, 06/03/16 01:46:41
+LogInit:Display: Running engine for game: HeliosFinal
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(-2127086856) SRandInit(-2127086855).
+LogTaskGraph: Started task graph with 4 named threads and 7 total threads.
+LogStats: Stats thread started at 0.079220
+LogInit: Version: 4.11.2-2946394+++UE4+Release-4.11
+LogInit: API Version: 2927265
+LogInit: Compiled (64-bit): Apr 18 2016 02:18:46
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.11
+LogInit: Command line: 
+LogInit: Base directory: C:/Program Files/Epic Games/4.11/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Using libcurl 7.41.0
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with WinSSL
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Presizing for max 16777216 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2016.06.03-08.46.41:168][  0]LogConsoleManager:Display: Setting the console variable 'r.ScreenPercentage' with 'SetByScalability' was ignored as it is lower priority than the previous 'SetBySystemSettingsIni'
+[2016.06.03-08.46.41:168][  0]LogConsoleManager:Display: Setting the console variable 'r.PostProcessAAQuality' with 'SetByScalability' was ignored as it is lower priority than the previous 'SetBySystemSettingsIni'
+[2016.06.03-08.46.41:169][  0]LogConsoleManager:Display: Setting the console variable 'sg.PostProcessQuality' with 'SetByScalability' was ignored as it is lower priority than the previous 'SetBySystemSettingsIni'
+[2016.06.03-08.46.41:169][  0]LogConsoleManager:Display: Setting the console variable 'r.MaxAnisotropy' with 'SetByScalability' was ignored as it is lower priority than the previous 'SetBySystemSettingsIni'
+[2016.06.03-08.46.41:169][  0]LogConsoleManager:Display: Setting the console variable 'sg.EffectsQuality' with 'SetByScalability' was ignored as it is lower priority than the previous 'SetBySystemSettingsIni'
+[2016.06.03-08.46.41:169][  0]LogInit: Selected Device Profile: [Windows]
+[2016.06.03-08.46.41:169][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2016.06.03-08.46.41:177][  0]LogInit: Computer: 210-EUROPA
+[2016.06.03-08.46.41:177][  0]LogInit: User: Helios
+[2016.06.03-08.46.41:177][  0]LogInit: CPU Page size=65536, Cores=4
+[2016.06.03-08.46.41:177][  0]LogInit: High frequency timer resolution =2.531249 MHz
+[2016.06.03-08.46.41:178][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2016.06.03-08.46.41:178][  0]LogMemory: Platform Memory Stats for Windows
+[2016.06.03-08.46.41:178][  0]LogMemory: Process Physical Memory: 314.83 MB used, 314.83 MB peak
+[2016.06.03-08.46.41:178][  0]LogMemory: Process Virtual Memory: 314.89 MB used, 314.89 MB peak
+[2016.06.03-08.46.41:178][  0]LogMemory: Physical Memory: 5851.16 MB used, 16283.44 MB total
+[2016.06.03-08.46.41:178][  0]LogMemory: Virtual Memory: 653.71 MB used, 134217728.00 MB total
+[2016.06.03-08.46.41:210][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2016.06.03-08.46.41:635][  0]LogD3D11RHI: D3D11 adapters:
+[2016.06.03-08.46.41:665][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 980 Ti' (Feature Level 11_0)
+[2016.06.03-08.46.41:665][  0]LogD3D11RHI:       6047MB of dedicated video memory, 0MB of dedicated system memory, and 8141MB of shared system memory, 1 output[s]
+[2016.06.03-08.46.41:672][  0]LogD3D11RHI:    1. 'Intel(R) HD Graphics 530' (Feature Level 11_0)
+[2016.06.03-08.46.41:672][  0]LogD3D11RHI:       128MB of dedicated video memory, 0MB of dedicated system memory, and 8141MB of shared system memory, 0 output[s]
+[2016.06.03-08.46.41:673][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2016.06.03-08.46.41:673][  0]LogD3D11RHI:       0MB of dedicated video memory, 0MB of dedicated system memory, and 8141MB of shared system memory, 0 output[s]
+[2016.06.03-08.46.41:673][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2016.06.03-08.46.41:678][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2016.06.03-08.46.41:678][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 980 Ti
+[2016.06.03-08.46.41:678][  0]LogD3D11RHI:   Driver Version: Unknown (internal Unknown)
+[2016.06.03-08.46.41:678][  0]LogD3D11RHI:      Driver Date: Unknown
+[2016.06.03-08.46.41:678][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2016.06.03-08.46.41:697][  0]LogD3D11RHI: Async texture creation enabled
+[2016.06.03-08.46.41:709][  0]LogShaderCompilers: Guid format shader working directory is 33 characters bigger than the processId version (D:/HeliosFinal/Intermediate/Shaders/WorkingDirectory/7100/).
+[2016.06.03-08.46.41:710][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Helios/AppData/Local/Temp/UnrealShaderWorkingDir/A875F0BC47E2E8A4350DD3952E689FB2/'.
+[2016.06.03-08.46.41:710][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2016.06.03-08.46.42:736][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2016.06.03-08.46.42:741][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2016.06.03-08.46.42:746][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2016.06.03-08.46.42:751][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2016.06.03-08.46.42:757][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2016.06.03-08.46.42:759][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2016.06.03-08.46.42:763][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2016.06.03-08.46.42:767][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2016.06.03-08.46.42:770][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2016.06.03-08.46.42:774][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2016.06.03-08.46.42:777][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2016.06.03-08.46.42:784][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2016.06.03-08.46.42:784][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2016.06.03-08.46.42:785][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2016.06.03-08.46.42:803][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2016.06.03-08.46.42:806][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2016.06.03-08.46.42:808][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2016.06.03-08.46.42:811][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2016.06.03-08.46.42:814][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2016.06.03-08.46.42:814][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2016.06.03-08.46.42:900][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2016.06.03-08.46.42:950][  0]LogDerivedDataCache: Loaded boot cache 0.05s 73MB C:/Users/Helios/AppData/Local/UnrealEngine/4.11/DerivedDataCache/Boot.ddc.
+[2016.06.03-08.46.42:950][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Helios/AppData/Local/UnrealEngine/4.11/DerivedDataCache/Boot.ddc
+[2016.06.03-08.46.42:950][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file D:/HeliosFinal/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2016.06.03-08.46.42:950][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2016.06.03-08.46.42:950][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file D:/HeliosFinal/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2016.06.03-08.46.42:950][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2016.06.03-08.46.42:964][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2016.06.03-08.46.42:975][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Helios/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2016.06.03-08.46.43:126][  0]LogInit: Selected Device Profile: [Windows]
+[2016.06.03-08.46.43:127][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2016.06.03-08.46.43:155][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2016.06.03-08.46.43:288][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2016.06.03-08.46.43:288][  0]LogMeshUtilities: No automatic mesh merging module available
+[2016.06.03-08.46.43:288][  0]LogMeshUtilities: No distributed automatic mesh merging module available
+[2016.06.03-08.46.43:530][  0]LogUObjectArray: 27679 objects as part of root set at end of initial load.
+[2016.06.03-08.46.43:530][  0]LogUObjectAllocator: 5591592 out of 0 bytes used by permanent object pool.
+[2016.06.03-08.46.43:530][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2016.06.03-08.46.43:539][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2016.06.03-08.46.43:635][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.06.03-08.46.43:635][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.06.03-08.46.43:740][  0]LogStreaming:Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Common/Selection_16x.png' error.
+[2016.06.03-08.46.43:740][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Common/Selection_16x.png
+[2016.06.03-08.46.43:740][  0]LogStreaming:Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Common/Selection_16x.png' error.
+[2016.06.03-08.46.43:740][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Common/Selection_16x.png
+[2016.06.03-08.46.43:740][  0]LogStreaming:Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Common/Selection_16x.png' error.
+[2016.06.03-08.46.43:740][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Common/Selection_16x.png
+[2016.06.03-08.46.44:265][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2016.06.03-08.46.44:375][  0]LogAssetRegistry: FAssetRegistry took 0.0221 seconds to start up
+[2016.06.03-08.46.44:518][  0]SourceControl: Info Source control is disabled
+[2016.06.03-08.46.44:555][  0]SourceControl: Info Source control is disabled
+[2016.06.03-08.46.44:568][  0]SourceControl: Info Source control is disabled
+[2016.06.03-08.46.44:577][  0]SourceControl: Info Source control is disabled
+[2016.06.03-08.46.45:030][  0]LogConsoleManager:Warning: Console object named 'vr.EnableMotionControllerLateUpdate' already exists but is being registered again, but we weren't expected it to be! (FConsoleManager::AddConsoleObject)
+[2016.06.03-08.46.45:085][  0]LogEngine: Initializing Engine...
+[2016.06.03-08.46.53:192][  0]LogHMD: SteamVR failed to initialize.  Err: 301
+[2016.06.03-08.46.53:377][  0]LogAIModule: Creating AISystem for world NewWorld
+[2016.06.03-08.46.53:384][  0]LogInit: XAudio2 using 'Speakers (4- USB Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.06.03-08.46.53:400][  0]LogInit: FAudioDevice initialized.
+[2016.06.03-08.46.53:435][  0]LogDerivedDataCache: Saved boot cache 0.04s 73MB C:/Users/Helios/AppData/Local/UnrealEngine/4.11/DerivedDataCache/Boot.ddc.
+[2016.06.03-08.46.53:443][  0]LogInit: Texture streaming: Enabled
+[2016.06.03-08.46.54:740][  0]LogInit: Transaction tracking system initialized
+[2016.06.03-08.46.54:779][  0]BlueprintLog: New page: Editor Load
+[2016.06.03-08.46.54:863][  0]LocalizationService: Info Localization service is disabled
+[2016.06.03-08.46.54:944][  0]LogConsoleResponse:Display: 
+[2016.06.03-08.46.55:047][  0]LogCook:Display: Max memory allowance for cook 8192mb
+[2016.06.03-08.46.55:047][  0]LogCook:Display: Mobile HDR setting 1
+[2016.06.03-08.46.55:047][  0]LogCook:Display: Done creating registry. It took  0.00s.
+[2016.06.03-08.46.55:104][  0]LogFileCache: Scanning file cache for directory 'D:/HeliosFinal/Content/' took 0.01s
+[2016.06.03-08.46.55:104][  0]SourceControl: Info Source control is disabled
+[2016.06.03-08.46.55:104][  0]Cmd: MAP LOAD FILE="D:/HeliosFinal/Content/Paintball.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.06.03-08.46.55:203][  0]LightingResults: New page: Lighting Build
+[2016.06.03-08.46.55:207][  0]MapCheck: New page: Map Check
+[2016.06.03-08.46.55:207][  0]LightingResults: New page: Lighting Build
+[2016.06.03-08.46.55:562][  0]LogLinker:Warning: Can't find file '/Game/KiteDemo/Environments/GroundTiles/RiverPebbles/M_Tile_RiverPebbles'
+[2016.06.03-08.46.55:562][  0]LogLinker:Warning: Can't find file for asset '/Game/KiteDemo/Environments/GroundTiles/RiverPebbles/M_Tile_RiverPebbles' while loading D:/HeliosFinal/Content/Targets/TargetSpawner.uasset.
+[2016.06.03-08.46.55:562][  0]LoadErrors:Error: Error /Game/Targets/TargetSpawner : Can't find file for asset. /Game/KiteDemo/Environments/GroundTiles/RiverPebbles/M_Tile_RiverPebbles
+[2016.06.03-08.46.55:563][  0]LogLinker:Warning: Can't find file '/Game/KiteDemo/Environments/GroundTiles/RiverPebbles/M_Tile_RiverPebbles'
+[2016.06.03-08.46.55:563][  0]LogLinker:Warning: Can't find file for asset '/Game/KiteDemo/Environments/GroundTiles/RiverPebbles/M_Tile_RiverPebbles' while loading D:/HeliosFinal/Content/Targets/TargetSpawner.uasset.
+[2016.06.03-08.46.55:563][  0]LoadErrors:Error: Error /Game/Targets/TargetSpawner : Can't find file for asset. /Game/KiteDemo/Environments/GroundTiles/RiverPebbles/M_Tile_RiverPebbles
+[2016.06.03-08.46.55:565][  0]LogLinker:Warning: Can't find file '/Game/KiteDemo/Environments/GroundTiles/RiverPebbles/M_Tile_RiverPebbles'
+[2016.06.03-08.46.55:565][  0]LogLinker:Warning: Can't find file for asset '/Game/KiteDemo/Environments/GroundTiles/RiverPebbles/M_Tile_RiverPebbles' while loading D:/HeliosFinal/Content/Paintball.umap.
+[2016.06.03-08.46.55:565][  0]LoadErrors:Error: Error /Game/Paintball : Can't find file for asset. /Game/KiteDemo/Environments/GroundTiles/RiverPebbles/M_Tile_RiverPebbles
+[2016.06.03-08.46.55:565][  0]LogLinker:Warning: Can't find file '/Game/KiteDemo/Environments/GroundTiles/RiverPebbles/M_Tile_RiverPebbles'
+[2016.06.03-08.46.55:565][  0]LogLinker:Warning: Can't find file for asset '/Game/KiteDemo/Environments/GroundTiles/RiverPebbles/M_Tile_RiverPebbles' while loading D:/HeliosFinal/Content/Paintball.umap.
+[2016.06.03-08.46.55:565][  0]LoadErrors:Error: Error /Game/Paintball : Can't find file for asset. /Game/KiteDemo/Environments/GroundTiles/RiverPebbles/M_Tile_RiverPebbles
+[2016.06.03-08.46.55:570][  0]LogLinker:Warning: Can't find file '/Game/KiteDemo/Environments/GroundTiles/RiverPebbles/M_Tile_RiverPebbles'
+[2016.06.03-08.46.55:570][  0]LoadErrors: Info Failed to load /Game/KiteDemo/Environments/GroundTiles/RiverPebbles/M_Tile_RiverPebbles.M_Tile_RiverPebbles Referenced by Cylinder_GEN_VARIABLE
+[2016.06.03-08.46.55:571][  0]LogLinker:Warning: Can't find file for asset '/Game/KiteDemo/Environments/GroundTiles/RiverPebbles/M_Tile_RiverPebbles' while loading D:/HeliosFinal/Content/Paintball.umap.
+[2016.06.03-08.46.55:571][  0]LoadErrors: Info Failed to load /Game/KiteDemo/Environments/GroundTiles/RiverPebbles/M_Tile_RiverPebbles.M_Tile_RiverPebbles Referenced by Cylinder_GEN_VARIABLE
+[2016.06.03-08.46.55:571][  0]LoadErrors:Error: Error /Game/Paintball : Can't find file for asset. /Game/KiteDemo/Environments/GroundTiles/RiverPebbles/M_Tile_RiverPebbles
+[2016.06.03-08.46.57:960][  0]LogAIModule: Creating AISystem for world Paintball
+[2016.06.03-08.46.58:301][  0]LogPrimitiveComponent: Zero scaling not supported (/Game/Paintball.Paintball:PersistentLevel.Lightsaber_BP_142.Lightblade)
+[2016.06.03-08.46.58:304][  0]LogPrimitiveComponent: Zero scaling not supported (/Game/Paintball.Paintball:PersistentLevel.Lightsaber_BP_142.Lightblade)
+[2016.06.03-08.46.58:304][  0]LogPrimitiveComponent: Zero scaling not supported (/Game/Paintball.Paintball:PersistentLevel.Lightsaber_BP_142.Lightblade)
+[2016.06.03-08.46.58:305][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.06.03-08.46.58:305][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.06.03-08.46.58:358][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 52.85ms to complete.
+[2016.06.03-08.46.58:358][  0]LogFileHelpers: Loading map 'Paintball' took 3.254
+[2016.06.03-08.46.58:472][  0]LogCollectionManager: Loaded 0 collections in 0.002645 seconds
+[2016.06.03-08.46.58:513][  0]LogFileCache: Scanning file cache for directory 'D:/HeliosFinal/Saved/Collections/' took 0.01s
+[2016.06.03-08.46.58:513][  0]LogFileCache: Scanning file cache for directory 'D:/HeliosFinal/Content/Developers/Helios/Collections/' took 0.01s
+[2016.06.03-08.46.58:513][  0]LogFileCache: Scanning file cache for directory 'D:/HeliosFinal/Content/Collections/' took 0.01s
+[2016.06.03-08.46.58:513][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000003 seconds
+[2016.06.03-08.46.58:521][  0]LogContentBrowser: Native class hierarchy populated in 0.0081 seconds. Added 1980 classes and 346 folders.
+[2016.06.03-08.46.58:526][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2016.06.03-08.46.58:526][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2016.06.03-08.46.58:527][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0003 seconds. Added 12 classes and 0 folders.
+[2016.06.03-08.46.58:533][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2016.06.03-08.46.58:540][  0]LogContentBrowser: Native class hierarchy updated for 'SuperSearch' in 0.0004 seconds. Added 1 classes and 2 folders.
+[2016.06.03-08.46.58:578][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2016.06.03-08.46.58:583][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0003 seconds. Added 1 classes and 2 folders.
+[2016.06.03-08.46.58:663][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2016.06.03-08.46.58:668][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2016.06.03-08.46.58:694][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0003 seconds. Added 1 classes and 2 folders.
+[2016.06.03-08.46.58:695][  0]LogLoad: Full Startup: 18.36 seconds (BP compile: 0.35 seconds)
+[2016.06.03-08.46.58:695][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2016.06.03-08.46.58:695][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2016.06.03-08.46.58:713][  0]LogOcInput: OculusInput pre-init called
+[2016.06.03-08.46.58:780][  0]LogContentStreaming: Texture pool size now 700 MB
+[2016.06.03-08.46.58:954][  0]LogRenderer: Reallocating scene render targets to support 2056x1256 (Frame:2).
+[2016.06.03-08.46.59:033][  1]Cmd: UpdateLandscapeEditorData -warnings
+[2016.06.03-08.46.59:341][  1]LogAssetRegistry: Asset discovery search completed in 14.9886 seconds
+[2016.06.03-08.46.59:341][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2016.06.03-08.46.59:341][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000015 seconds (updated 0 objects)
+[2016.06.03-08.47.10:209][561]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Paintball.Paintball:PersistentLevel' has LevelScriptBlueprint '/Game/Paintball.Paintball:PersistentLevel.Paintball' with GeneratedClass '/Game/Paintball.Paintball_C' with ClassGeneratedBy '/Game/Paintball.Paintball:PersistentLevel.Paintball'
+[2016.06.03-08.47.10:209][561]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.06.03-08.47.10:210][561]PIE: New page: PIE session: Paintball (Jun 2, 2016, 5:47:10 PM)
+[2016.06.03-08.47.10:210][561]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_Paintball
+[2016.06.03-08.47.10:931][561]LogPlayLevel: PIE: StaticDuplicateObject took: (0.720736s)
+[2016.06.03-08.47.10:931][561]LogAIModule: Creating AISystem for world Paintball
+[2016.06.03-08.47.10:931][561]LogPlayLevel: PIE: World Init took: (0.000497s)
+[2016.06.03-08.47.10:931][561]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Paintball.Paintball to /Game/UEDPIE_0_Paintball.Paintball (0.721500s)
+[2016.06.03-08.47.10:931][561]LogActorComponent: UnregisterComponent: (/Engine/Transient.SteamVRChaperone_GEN_VARIABLE) Not registered. Aborting.
+[2016.06.03-08.47.10:931][561]LogActorComponent: UnregisterComponent: (/Engine/Transient.FloatingPawnMovement_GEN_VARIABLE) Not registered. Aborting.
+[2016.06.03-08.47.10:977][561]LogInit: XAudio2 using 'Speakers (4- USB Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.06.03-08.47.10:982][561]LogInit: FAudioDevice initialized.
+[2016.06.03-08.47.11:027][561]LogWorld: Game class is 'SteamVR_GM_C'
+[2016.06.03-08.47.11:103][561]LogPrimitiveComponent: Zero scaling not supported (/Game/UEDPIE_0_Paintball.Paintball:PersistentLevel.Lightsaber_BP_142.Lightblade)
+[2016.06.03-08.47.11:104][561]LogWorld: Bringing World /Game/UEDPIE_0_Paintball.Paintball up for play (max tick rate 60) at 2016.06.03-01.47.11
+[2016.06.03-08.47.11:106][561]LogWorld: Bringing up level for play took: 0.074038
+[2016.06.03-08.47.11:111][561]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0003 seconds. Added 9 classes and 0 folders.
+[2016.06.03-08.47.11:113][561]Cmd: stereo on
+[2016.06.03-08.47.11:113][561]Command not recognized: stereo on
+[2016.06.03-08.47.11:113][561]PIE: Info Play in editor start time for /Game/UEDPIE_0_Paintball 1.192
+[2016.06.03-08.47.11:114][561]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Paintball.Paintball:PersistentLevel' has LevelScriptBlueprint '/Game/Paintball.Paintball:PersistentLevel.Paintball' with GeneratedClass '/Game/Paintball.Paintball_C' with ClassGeneratedBy '/Game/Paintball.Paintball:PersistentLevel.Paintball'
+[2016.06.03-08.47.11:143][562]LogRenderer: Reallocating scene render targets to support 2672x1632 (Frame:513).
+[2016.06.03-08.47.11:184][563]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 554/400 MB (ok in editor, bad on fixed memory platform)
+[2016.06.03-08.47.12:737][653]LogSpawn:Warning: SpawnActor failed because of collision at the spawn location [X=-990.000 Y=-432.893 Z=0.000] for [Target_C]
+[2016.06.03-08.47.15:841][839]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Paintball.Paintball:PersistentLevel' has LevelScriptBlueprint '/Game/Paintball.Paintball:PersistentLevel.Paintball' with GeneratedClass '/Game/Paintball.Paintball_C' with ClassGeneratedBy '/Game/Paintball.Paintball:PersistentLevel.Paintball'
+[2016.06.03-08.47.15:890][839]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Paintball.Paintball:PersistentLevel' has LevelScriptBlueprint '/Game/Paintball.Paintball:PersistentLevel.Paintball' with GeneratedClass '/Game/Paintball.Paintball_C' with ClassGeneratedBy '/Game/Paintball.Paintball:PersistentLevel.Paintball'
+[2016.06.03-08.47.15:945][840]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 538/400 MB (ok in editor, bad on fixed memory platform)
+[2016.06.03-08.47.22:839][170]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0007 seconds. Added 108 classes and 0 folders.
+[2016.06.03-08.47.24:048][173]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 495/400 MB (ok in editor, bad on fixed memory platform)
+[2016.06.03-08.48.36:644][885]LogActorComponent: UnregisterComponent: (/Engine/Transient.SteamVRChaperone_GEN_VARIABLE) Not registered. Aborting.
+[2016.06.03-08.48.36:644][885]LogActorComponent: UnregisterComponent: (/Engine/Transient.FloatingPawnMovement_GEN_VARIABLE) Not registered. Aborting.
+[2016.06.03-08.48.47:457][330]LogActorComponent: UnregisterComponent: (/Engine/Transient.SteamVRChaperoneComponent_0) Not registered. Aborting.
+[2016.06.03-08.48.47:457][330]LogActorComponent: UnregisterComponent: (/Engine/Transient.FloatingPawnMovement_0) Not registered. Aborting.
+[2016.06.03-08.48.50:762][451]LogActorComponent: UnregisterComponent: (/Engine/Transient.SteamVRChaperoneComponent_1) Not registered. Aborting.
+[2016.06.03-08.48.50:762][451]LogActorComponent: UnregisterComponent: (/Engine/Transient.FloatingPawnMovement_1) Not registered. Aborting.
+[2016.06.03-08.48.51:225][454]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 495/400 MB (ok in editor, bad on fixed memory platform)
+[2016.06.03-08.48.56:259][672]BlueprintLog: New page: Compile Vive_Pawn
+[2016.06.03-08.48.56:494][672]LogActorComponent: UnregisterComponent: (/Engine/Transient.SteamVRChaperoneComponent_2) Not registered. Aborting.
+[2016.06.03-08.48.56:494][672]LogActorComponent: UnregisterComponent: (/Engine/Transient.FloatingPawnMovement_2) Not registered. Aborting.
+[2016.06.03-08.48.56:730][672]BlueprintEditorCompileResults: Info [0136.39] Compile of Vive_Pawn successful! [in 470 ms]
+[2016.06.03-08.49.13:036][342]LogActorComponent: UnregisterComponent: (/Engine/Transient.SteamVRChaperone_GEN_VARIABLE) Not registered. Aborting.
+[2016.06.03-08.49.13:036][342]LogActorComponent: UnregisterComponent: (/Engine/Transient.FloatingPawnMovement_GEN_VARIABLE) Not registered. Aborting.
+[2016.06.03-08.49.17:887][517]LogActorComponent: UnregisterComponent: (/Engine/Transient.SteamVRChaperoneComponent_3) Not registered. Aborting.
+[2016.06.03-08.49.17:887][517]LogActorComponent: UnregisterComponent: (/Engine/Transient.FloatingPawnMovement_3) Not registered. Aborting.
+[2016.06.03-08.49.19:082][557]LogActorComponent: UnregisterComponent: (/Engine/Transient.SteamVRChaperoneComponent_4) Not registered. Aborting.
+[2016.06.03-08.49.19:082][557]LogActorComponent: UnregisterComponent: (/Engine/Transient.FloatingPawnMovement_4) Not registered. Aborting.
+[2016.06.03-08.49.22:191][671]LogActorComponent: UnregisterComponent: (/Engine/Transient.SteamVRChaperoneComponent_5) Not registered. Aborting.
+[2016.06.03-08.49.22:191][671]LogActorComponent: UnregisterComponent: (/Engine/Transient.FloatingPawnMovement_5) Not registered. Aborting.
+[2016.06.03-08.49.23:481][714]LogActorComponent: UnregisterComponent: (/Engine/Transient.SteamVRChaperoneComponent_6) Not registered. Aborting.
+[2016.06.03-08.49.23:481][714]LogActorComponent: UnregisterComponent: (/Engine/Transient.FloatingPawnMovement_6) Not registered. Aborting.
+[2016.06.03-08.49.24:666][755]LogActorComponent: UnregisterComponent: (/Engine/Transient.SteamVRChaperoneComponent_7) Not registered. Aborting.
+[2016.06.03-08.49.24:666][755]LogActorComponent: UnregisterComponent: (/Engine/Transient.FloatingPawnMovement_7) Not registered. Aborting.
+[2016.06.03-08.49.26:462][825]LogActorComponent: UnregisterComponent: (/Engine/Transient.SteamVRChaperoneComponent_8) Not registered. Aborting.
+[2016.06.03-08.49.26:462][825]LogActorComponent: UnregisterComponent: (/Engine/Transient.FloatingPawnMovement_8) Not registered. Aborting.
+[2016.06.03-08.49.27:240][855]LogActorComponent: UnregisterComponent: (/Engine/Transient.SteamVRChaperoneComponent_9) Not registered. Aborting.
+[2016.06.03-08.49.27:241][855]LogActorComponent: UnregisterComponent: (/Engine/Transient.FloatingPawnMovement_9) Not registered. Aborting.
+[2016.06.03-08.49.29:810][960]LogActorComponent: UnregisterComponent: (/Engine/Transient.SteamVRChaperoneComponent_10) Not registered. Aborting.
+[2016.06.03-08.49.29:810][960]LogActorComponent: UnregisterComponent: (/Engine/Transient.FloatingPawnMovement_10) Not registered. Aborting.
+[2016.06.03-08.49.31:713][ 37]LogActorComponent: UnregisterComponent: (/Engine/Transient.SteamVRChaperoneComponent_11) Not registered. Aborting.
+[2016.06.03-08.49.31:713][ 37]LogActorComponent: UnregisterComponent: (/Engine/Transient.FloatingPawnMovement_11) Not registered. Aborting.
+[2016.06.03-08.49.32:374][ 62]LogActorComponent: UnregisterComponent: (/Engine/Transient.SteamVRChaperoneComponent_12) Not registered. Aborting.
+[2016.06.03-08.49.32:374][ 62]LogActorComponent: UnregisterComponent: (/Engine/Transient.FloatingPawnMovement_12) Not registered. Aborting.
+[2016.06.03-08.51.43:028][ 69]LogEditorTransaction: Undo Create Pin Link
+[2016.06.03-08.51.43:088][ 69]LogActorComponent: UnregisterComponent: (/Engine/Transient.SteamVRChaperoneComponent_13) Not registered. Aborting.
+[2016.06.03-08.51.43:088][ 69]LogActorComponent: UnregisterComponent: (/Engine/Transient.FloatingPawnMovement_13) Not registered. Aborting.
+[2016.06.03-08.51.44:056][ 93]LogEditorTransaction: Undo Create Pin Link
+[2016.06.03-08.51.44:112][ 93]LogActorComponent: UnregisterComponent: (/Engine/Transient.SteamVRChaperoneComponent_14) Not registered. Aborting.
+[2016.06.03-08.51.44:112][ 93]LogActorComponent: UnregisterComponent: (/Engine/Transient.FloatingPawnMovement_14) Not registered. Aborting.
+[2016.06.03-08.51.46:187][158]LogEditorTransaction: Undo Move Node
+[2016.06.03-08.51.46:238][158]LogActorComponent: UnregisterComponent: (/Engine/Transient.SteamVRChaperoneComponent_15) Not registered. Aborting.
+[2016.06.03-08.51.46:238][158]LogActorComponent: UnregisterComponent: (/Engine/Transient.FloatingPawnMovement_15) Not registered. Aborting.
+[2016.06.03-08.51.46:551][159]LogEditorTransaction: Undo Create Pin Link
+[2016.06.03-08.51.46:603][159]LogActorComponent: UnregisterComponent: (/Engine/Transient.SteamVRChaperoneComponent_16) Not registered. Aborting.
+[2016.06.03-08.51.46:603][159]LogActorComponent: UnregisterComponent: (/Engine/Transient.FloatingPawnMovement_16) Not registered. Aborting.
+[2016.06.03-08.51.46:645][159]LogEditorTransaction: Undo Create Pin Link
+[2016.06.03-08.51.46:964][160]LogEditorTransaction: Undo Create Pin Link
+[2016.06.03-08.51.47:018][160]LogActorComponent: UnregisterComponent: (/Engine/Transient.SteamVRChaperoneComponent_17) Not registered. Aborting.
+[2016.06.03-08.51.47:018][160]LogActorComponent: UnregisterComponent: (/Engine/Transient.FloatingPawnMovement_17) Not registered. Aborting.
+[2016.06.03-08.51.47:372][163]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 495/400 MB (ok in editor, bad on fixed memory platform)
+[2016.06.03-08.51.48:151][191]LogEditorTransaction: Undo Move Node
+[2016.06.03-08.51.48:210][191]LogActorComponent: UnregisterComponent: (/Engine/Transient.SteamVRChaperoneComponent_18) Not registered. Aborting.
+[2016.06.03-08.51.48:210][191]LogActorComponent: UnregisterComponent: (/Engine/Transient.FloatingPawnMovement_18) Not registered. Aborting.
+[2016.06.03-08.52.33:528][857]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 495/400 MB (ok in editor, bad on fixed memory platform)
+[2016.06.03-08.52.37:243][951]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 495/400 MB (ok in editor, bad on fixed memory platform)
+[2016.06.03-08.52.38:034][980]LogActorComponent: UnregisterComponent: (/Engine/Transient.SteamVRChaperoneComponent_19) Not registered. Aborting.
+[2016.06.03-08.52.38:034][980]LogActorComponent: UnregisterComponent: (/Engine/Transient.FloatingPawnMovement_19) Not registered. Aborting.
+[2016.06.03-08.52.38:221][980]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Vive/Vive_Pawn" FILE="D:/HeliosFinal/Content/Vive/Vive_Pawn.uasset" SILENT=true
+[2016.06.03-08.52.39:324][980]LogSavePackage: Save=806.87ms
+[2016.06.03-08.52.39:324][980]LogSavePackage: Moving 'D:/HeliosFinal/Saved/Vive_Pawn8A8C4F7C4C246269DCB7D9BC52F3B206.tmp' to 'D:/HeliosFinal/Content/Vive/Vive_Pawn.uasset'
+[2016.06.03-08.52.39:326][980]LogSavePackage: Total save time: 1104.41ms
+[2016.06.03-08.52.39:327][980]LogSavePackage:Display: Finished SavePackage D:/HeliosFinal/Content/Vive/Vive_Pawn.uasset
+[2016.06.03-08.52.55:842][699]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 496/400 MB (ok in editor, bad on fixed memory platform)
+[2016.06.03-08.52.58:617][726]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 496/400 MB (ok in editor, bad on fixed memory platform)
+[2016.06.03-08.53.33:507][ 47]LogEditorTransaction: Undo Move Node
+[2016.06.03-08.53.33:564][ 47]LogActorComponent: UnregisterComponent: (/Engine/Transient.SteamVRChaperone_GEN_VARIABLE) Not registered. Aborting.
+[2016.06.03-08.53.33:564][ 47]LogActorComponent: UnregisterComponent: (/Engine/Transient.FloatingPawnMovement_GEN_VARIABLE) Not registered. Aborting.
+[2016.06.03-08.53.33:564][ 47]LogActorComponent: UnregisterComponent: (/Engine/Transient.ProjectileMovementComponent_40__A6522401) Not registered. Aborting.
+[2016.06.03-08.53.33:988][ 50]LogEditorTransaction: Undo Change Name List Pin Value
+[2016.06.03-08.53.48:393][615]LogEditorTransaction: Undo Add Node
+[2016.06.03-08.54.48:027][987]LogEditorTransaction: Undo Move Node
+[2016.06.03-08.54.49:291][ 20]LogEditorTransaction: Undo Create Pin Link
+[2016.06.03-08.54.51:447][ 77]LogEditorTransaction: Undo Move Node
+[2016.06.03-08.54.54:052][171]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CallMaterialParameterCollectionFunction_48.EdGraphPin_46966''
+[2016.06.03-08.55.43:289][126]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CallMaterialParameterCollectionFunction_48.EdGraphPin_46966''
+[2016.06.03-08.56.25:041][729]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CallMaterialParameterCollectionFunction_48.EdGraphPin_48802''
+[2016.06.03-08.57.24:293][838]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 496/400 MB (ok in editor, bad on fixed memory platform)
+[2016.06.03-08.57.46:298][744]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 496/400 MB (ok in editor, bad on fixed memory platform)
+[2016.06.03-08.57.50:803][954]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Paintball.Paintball:PersistentLevel' has LevelScriptBlueprint '/Game/Paintball.Paintball:PersistentLevel.Paintball' with GeneratedClass '/Game/Paintball.Paintball_C' with ClassGeneratedBy '/Game/Paintball.Paintball:PersistentLevel.Paintball'
+[2016.06.03-08.57.50:803][954]BlueprintLog: New page: Pre-Play auto-recompile
+[2016.06.03-08.57.50:865][954]LogPlayLevel: [PlayLevel] Compiling Vive_Pawn before play...
+[2016.06.03-08.57.51:272][954]LogPlayLevel: PlayLevel: Blueprint regeneration took 468 ms (1 blueprints)
+[2016.06.03-08.57.51:320][954]PIE: New page: PIE session: Paintball (Jun 2, 2016, 5:57:51 PM)
+[2016.06.03-08.57.51:320][954]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_Paintball
+[2016.06.03-08.57.51:479][954]LogPlayLevel: PIE: StaticDuplicateObject took: (0.159495s)
+[2016.06.03-08.57.51:480][954]LogAIModule: Creating AISystem for world Paintball
+[2016.06.03-08.57.51:480][954]LogPlayLevel: PIE: World Init took: (0.000716s)
+[2016.06.03-08.57.51:480][954]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Paintball.Paintball to /Game/UEDPIE_0_Paintball.Paintball (0.160507s)
+[2016.06.03-08.57.51:505][954]LogInit: XAudio2 using 'Speakers (4- USB Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.06.03-08.57.51:511][954]LogInit: FAudioDevice initialized.
+[2016.06.03-08.57.51:543][954]LogWorld: Game class is 'SteamVR_GM_C'
+[2016.06.03-08.57.51:617][954]LogPrimitiveComponent: Zero scaling not supported (/Game/UEDPIE_0_Paintball.Paintball:PersistentLevel.Lightsaber_BP_142.Lightblade)
+[2016.06.03-08.57.51:618][954]LogWorld: Bringing World /Game/UEDPIE_0_Paintball.Paintball up for play (max tick rate 60) at 2016.06.03-01.57.51
+[2016.06.03-08.57.51:620][954]LogWorld: Bringing up level for play took: 0.072988
+[2016.06.03-08.57.51:623][954]Cmd: stereo on
+[2016.06.03-08.57.51:623][954]Command not recognized: stereo on
+[2016.06.03-08.57.51:623][954]PIE: Info Play in editor start time for /Game/UEDPIE_0_Paintball 1.702
+[2016.06.03-08.57.51:624][954]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Paintball.Paintball:PersistentLevel' has LevelScriptBlueprint '/Game/Paintball.Paintball:PersistentLevel.Paintball' with GeneratedClass '/Game/Paintball.Paintball_C' with ClassGeneratedBy '/Game/Paintball.Paintball:PersistentLevel.Paintball'
+[2016.06.03-08.57.53:076][ 38]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Paintball.Paintball:PersistentLevel' has LevelScriptBlueprint '/Game/Paintball.Paintball:PersistentLevel.Paintball' with GeneratedClass '/Game/Paintball.Paintball_C' with ClassGeneratedBy '/Game/Paintball.Paintball:PersistentLevel.Paintball'
+[2016.06.03-08.57.53:128][ 38]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Paintball.Paintball:PersistentLevel' has LevelScriptBlueprint '/Game/Paintball.Paintball:PersistentLevel.Paintball' with GeneratedClass '/Game/Paintball.Paintball_C' with ClassGeneratedBy '/Game/Paintball.Paintball:PersistentLevel.Paintball'
+[2016.06.03-08.57.58:254][337]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Paintball.Paintball:PersistentLevel' has LevelScriptBlueprint '/Game/Paintball.Paintball:PersistentLevel.Paintball' with GeneratedClass '/Game/Paintball.Paintball_C' with ClassGeneratedBy '/Game/Paintball.Paintball:PersistentLevel.Paintball'
+[2016.06.03-08.57.58:254][337]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.06.03-08.57.58:254][337]PIE: New page: PIE session: Paintball (Jun 2, 2016, 5:57:58 PM)
+[2016.06.03-08.57.58:254][337]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_Paintball
+[2016.06.03-08.57.58:413][337]LogPlayLevel: PIE: StaticDuplicateObject took: (0.158834s)
+[2016.06.03-08.57.58:414][337]LogAIModule: Creating AISystem for world Paintball
+[2016.06.03-08.57.58:414][337]LogPlayLevel: PIE: World Init took: (0.000964s)
+[2016.06.03-08.57.58:414][337]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Paintball.Paintball to /Game/UEDPIE_0_Paintball.Paintball (0.160081s)
+[2016.06.03-08.57.58:438][337]LogInit: XAudio2 using 'Speakers (4- USB Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.06.03-08.57.58:443][337]LogInit: FAudioDevice initialized.
+[2016.06.03-08.57.58:470][337]LogWorld: Game class is 'SteamVR_GM_C'
+[2016.06.03-08.57.58:548][337]LogPrimitiveComponent: Zero scaling not supported (/Game/UEDPIE_0_Paintball.Paintball:PersistentLevel.Lightsaber_BP_142.Lightblade)
+[2016.06.03-08.57.58:548][337]LogWorld: Bringing World /Game/UEDPIE_0_Paintball.Paintball up for play (max tick rate 60) at 2016.06.03-01.57.58
+[2016.06.03-08.57.58:551][337]LogWorld: Bringing up level for play took: 0.075266
+[2016.06.03-08.57.58:553][337]Cmd: stereo on
+[2016.06.03-08.57.58:554][337]Command not recognized: stereo on
+[2016.06.03-08.57.58:554][337]PIE: Info Play in editor start time for /Game/UEDPIE_0_Paintball 0.632
+[2016.06.03-08.57.58:554][337]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Paintball.Paintball:PersistentLevel' has LevelScriptBlueprint '/Game/Paintball.Paintball:PersistentLevel.Paintball' with GeneratedClass '/Game/Paintball.Paintball_C' with ClassGeneratedBy '/Game/Paintball.Paintball:PersistentLevel.Paintball'
+[2016.06.03-08.58.00:224][435]LogSpawn:Warning: SpawnActor failed because of collision at the spawn location [X=-382.893 Y=-1040.000 Z=0.000] for [Target_C]
+[2016.06.03-08.58.00:858][473]LogBlueprintUserMessages: [Vive_Pawn_C_25] Color Changed
+[2016.06.03-08.58.01:772][526]LogBlueprintUserMessages: [Vive_Pawn_C_25] Color Changed
+[2016.06.03-08.58.02:382][562]LogBlueprintUserMessages: [Vive_Pawn_C_25] Color Changed
+[2016.06.03-08.58.02:767][585]LogBlueprintUserMessages: [Vive_Pawn_C_25] Color Changed
+[2016.06.03-08.58.03:322][618]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Paintball.Paintball:PersistentLevel' has LevelScriptBlueprint '/Game/Paintball.Paintball:PersistentLevel.Paintball' with GeneratedClass '/Game/Paintball.Paintball_C' with ClassGeneratedBy '/Game/Paintball.Paintball:PersistentLevel.Paintball'
+[2016.06.03-08.58.03:366][618]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Paintball.Paintball:PersistentLevel' has LevelScriptBlueprint '/Game/Paintball.Paintball:PersistentLevel.Paintball' with GeneratedClass '/Game/Paintball.Paintball_C' with ClassGeneratedBy '/Game/Paintball.Paintball:PersistentLevel.Paintball'
+[2016.06.03-08.58.05:881][760]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Paintball.Paintball:PersistentLevel' has LevelScriptBlueprint '/Game/Paintball.Paintball:PersistentLevel.Paintball' with GeneratedClass '/Game/Paintball.Paintball_C' with ClassGeneratedBy '/Game/Paintball.Paintball:PersistentLevel.Paintball'
+[2016.06.03-08.58.05:881][760]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.06.03-08.58.05:882][760]PIE: New page: PIE session: Paintball (Jun 2, 2016, 5:58:05 PM)
+[2016.06.03-08.58.05:882][760]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_Paintball
+[2016.06.03-08.58.06:040][760]LogPlayLevel: PIE: StaticDuplicateObject took: (0.157966s)
+[2016.06.03-08.58.06:040][760]LogAIModule: Creating AISystem for world Paintball
+[2016.06.03-08.58.06:040][760]LogPlayLevel: PIE: World Init took: (0.000672s)
+[2016.06.03-08.58.06:040][760]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Paintball.Paintball to /Game/UEDPIE_0_Paintball.Paintball (0.158826s)
+[2016.06.03-08.58.06:064][760]LogInit: XAudio2 using 'Speakers (4- USB Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.06.03-08.58.06:069][760]LogInit: FAudioDevice initialized.
+[2016.06.03-08.58.06:100][760]LogWorld: Game class is 'SteamVR_GM_C'
+[2016.06.03-08.58.06:174][760]LogPrimitiveComponent: Zero scaling not supported (/Game/UEDPIE_0_Paintball.Paintball:PersistentLevel.Lightsaber_BP_142.Lightblade)
+[2016.06.03-08.58.06:176][760]LogWorld: Bringing World /Game/UEDPIE_0_Paintball.Paintball up for play (max tick rate 60) at 2016.06.03-01.58.06
+[2016.06.03-08.58.06:178][760]LogWorld: Bringing up level for play took: 0.073465
+[2016.06.03-08.58.06:181][760]Cmd: stereo on
+[2016.06.03-08.58.06:181][760]Command not recognized: stereo on
+[2016.06.03-08.58.06:181][760]PIE: Info Play in editor start time for /Game/UEDPIE_0_Paintball 0.259
+[2016.06.03-08.58.06:181][760]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Paintball.Paintball:PersistentLevel' has LevelScriptBlueprint '/Game/Paintball.Paintball:PersistentLevel.Paintball' with GeneratedClass '/Game/Paintball.Paintball_C' with ClassGeneratedBy '/Game/Paintball.Paintball:PersistentLevel.Paintball'
+[2016.06.03-08.58.11:864][ 96]LogSpawn:Warning: SpawnActor failed because of collision at the spawn location [X=-382.893 Y=-1040.000 Z=300.000] for [Target_C]
+[2016.06.03-08.58.13:202][176]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Paintball.Paintball:PersistentLevel' has LevelScriptBlueprint '/Game/Paintball.Paintball:PersistentLevel.Paintball' with GeneratedClass '/Game/Paintball.Paintball_C' with ClassGeneratedBy '/Game/Paintball.Paintball:PersistentLevel.Paintball'
+[2016.06.03-08.58.13:252][176]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Paintball.Paintball:PersistentLevel' has LevelScriptBlueprint '/Game/Paintball.Paintball:PersistentLevel.Paintball' with GeneratedClass '/Game/Paintball.Paintball_C' with ClassGeneratedBy '/Game/Paintball.Paintball:PersistentLevel.Paintball'
+[2016.06.03-08.58.18:429][344]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Vive/Vive_Pawn" FILE="D:/HeliosFinal/Content/Vive/Vive_Pawn.uasset" SILENT=true
+[2016.06.03-08.58.19:190][344]LogSavePackage: Save=754.92ms
+[2016.06.03-08.58.19:190][344]LogSavePackage: Moving 'D:/HeliosFinal/Saved/Vive_PawnB7DDE09F40375EB42C944683D8203DDF.tmp' to 'D:/HeliosFinal/Content/Vive/Vive_Pawn.uasset'
+[2016.06.03-08.58.19:192][344]LogSavePackage: Total save time: 762.55ms
+[2016.06.03-08.58.19:192][344]LogSavePackage:Display: Finished SavePackage D:/HeliosFinal/Content/Vive/Vive_Pawn.uasset
+[2016.06.03-08.58.19:361][344]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2016.06.03-08.58.19:411][344]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2016.06.03-08.58.19:664][345]Cmd: QUIT_EDITOR
+[2016.06.03-08.58.20:450][345]LogExit: Preparing to exit.
+[2016.06.03-08.58.20:682][345]LogExit: Editor shut down
+[2016.06.03-08.58.20:684][345]LogExit: Transaction tracking system shut down
+[2016.06.03-08.58.20:839][345]LogObj: Freed 0b from 0 cluster array pools.
+[2016.06.03-08.58.20:839][345]LogExit: Object subsystem successfully closed.
+[2016.06.03-08.58.20:861][345]LogD3D11RHI: Shutdown
+[2016.06.03-08.58.20:861][345]LogD3D11RHI: CleanupD3DDevice
+[2016.06.03-08.58.20:953][345]LogD3D11RHI: ~FD3D11DynamicRHI
+[2016.06.03-08.58.21:018][345]LogDerivedDataCache: Shutdown
+[2016.06.03-08.58.21:018][345]LogModuleManager: Shutting down and abandoning module BlueprintGraph (207)
+[2016.06.03-08.58.21:018][345]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (206)
+[2016.06.03-08.58.21:018][345]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (205)
+[2016.06.03-08.58.21:018][345]LogModuleManager: Shutting down and abandoning module CrashTracker (204)
+[2016.06.03-08.58.21:018][345]LogModuleManager: Shutting down and abandoning module SceneOutliner (203)
+[2016.06.03-08.58.21:018][345]LogModuleManager: Shutting down and abandoning module SuperSearch (202)
+[2016.06.03-08.58.21:018][345]LogModuleManager: Shutting down and abandoning module WidgetCarousel (201)
+[2016.06.03-08.58.21:018][345]LogModuleManager: Shutting down and abandoning module AddContentDialog (200)
+[2016.06.03-08.58.21:019][345]LogModuleManager: Shutting down and abandoning module GameplayTags (199)
+[2016.06.03-08.58.21:019][345]LogModuleManager: Shutting down and abandoning module EditorWidgets (198)
+[2016.06.03-08.58.21:019][345]LogModuleManager: Shutting down and abandoning module CollectionManager (197)
+[2016.06.03-08.58.21:019][345]LogModuleManager: Shutting down and abandoning module StatsViewer (196)
+[2016.06.03-08.58.21:019][345]LogModuleManager: Shutting down and abandoning module FoliageEdit (195)
+[2016.06.03-08.58.21:019][345]LogModuleManager: Shutting down and abandoning module LandscapeEditor (194)
+[2016.06.03-08.58.21:020][345]LogModuleManager: Shutting down and abandoning module ActorPickerMode (193)
+[2016.06.03-08.58.21:020][345]LogModuleManager: Shutting down and abandoning module GeometryMode (192)
+[2016.06.03-08.58.21:020][345]LogModuleManager: Shutting down and abandoning module TextureAlignMode (191)
+[2016.06.03-08.58.21:020][345]LogModuleManager: Shutting down and abandoning module BspMode (190)
+[2016.06.03-08.58.21:020][345]LogModuleManager: Shutting down and abandoning module PlacementMode (189)
+[2016.06.03-08.58.21:020][345]LogModuleManager: Shutting down and abandoning module AutomationWorker (188)
+[2016.06.03-08.58.21:020][345]LogModuleManager: Shutting down and abandoning module CharacterAI (187)
+[2016.06.03-08.58.21:020][345]LogModuleManager: Shutting down and abandoning module SmartSnapping (186)
+[2016.06.03-08.58.21:020][345]LogModuleManager: Shutting down and abandoning module ViewportSnapping (185)
+[2016.06.03-08.58.21:020][345]LogModuleManager: Shutting down and abandoning module LogVisualizer (184)
+[2016.06.03-08.58.21:020][345]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (183)
+[2016.06.03-08.58.21:020][345]LogModuleManager: Shutting down and abandoning module IntroTutorials (182)
+[2016.06.03-08.58.21:020][345]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (181)
+[2016.06.03-08.58.21:020][345]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (180)
+[2016.06.03-08.58.21:020][345]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (179)
+[2016.06.03-08.58.21:020][345]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (178)
+[2016.06.03-08.58.21:101][345]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (177)
+[2016.06.03-08.58.21:101][345]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (176)
+[2016.06.03-08.58.21:101][345]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (175)
+[2016.06.03-08.58.21:101][345]LogModuleManager: Shutting down and abandoning module MergeActors (174)
+[2016.06.03-08.58.21:101][345]LogModuleManager: Shutting down and abandoning module SizeMap (173)
+[2016.06.03-08.58.21:101][345]LogModuleManager: Shutting down and abandoning module TreeMap (172)
+[2016.06.03-08.58.21:101][345]LogModuleManager: Shutting down and abandoning module ReferenceViewer (171)
+[2016.06.03-08.58.21:101][345]LogModuleManager: Shutting down and abandoning module LocalizationService (170)
+[2016.06.03-08.58.21:101][345]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (169)
+[2016.06.03-08.58.21:101][345]LogModuleManager: Shutting down and abandoning module HardwareTargeting (168)
+[2016.06.03-08.58.21:101][345]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (167)
+[2016.06.03-08.58.21:101][345]LogModuleManager: Shutting down and abandoning module UndoHistory (166)
+[2016.06.03-08.58.21:101][345]LogModuleManager: Shutting down and abandoning module UserFeedback (165)
+[2016.06.03-08.58.21:101][345]LogModuleManager: Shutting down and abandoning module XmlParser (164)
+[2016.06.03-08.58.21:101][345]LogModuleManager: Shutting down and abandoning module Blutility (163)
+[2016.06.03-08.58.21:101][345]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (162)
+[2016.06.03-08.58.21:101][345]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (161)
+[2016.06.03-08.58.21:101][345]LogModuleManager: Shutting down and abandoning module InputBindingEditor (160)
+[2016.06.03-08.58.21:101][345]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (159)
+[2016.06.03-08.58.21:101][345]LogModuleManager: Shutting down and abandoning module SettingsEditor (158)
+[2016.06.03-08.58.21:101][345]LogModuleManager: Shutting down and abandoning module ProjectLauncher (157)
+[2016.06.03-08.58.21:101][345]LogModuleManager: Shutting down and abandoning module SessionFrontend (156)
+[2016.06.03-08.58.21:101][345]LogModuleManager: Shutting down and abandoning module ProfilerClient (155)
+[2016.06.03-08.58.21:101][345]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (154)
+[2016.06.03-08.58.21:102][345]LogModuleManager: Shutting down and abandoning module DeviceManager (153)
+[2016.06.03-08.58.21:133][345]LogModuleManager: Shutting down and abandoning module AutomationController (152)
+[2016.06.03-08.58.21:133][345]LogModuleManager: Shutting down and abandoning module AutomationWindow (151)
+[2016.06.03-08.58.21:133][345]LogModuleManager: Shutting down and abandoning module Layers (150)
+[2016.06.03-08.58.21:133][345]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (149)
+[2016.06.03-08.58.21:133][345]LogModuleManager: Shutting down and abandoning module DetailCustomizations (148)
+[2016.06.03-08.58.21:133][345]LogModuleManager: Shutting down and abandoning module PackagesDialog (147)
+[2016.06.03-08.58.21:133][345]LogModuleManager: Shutting down and abandoning module Persona (146)
+[2016.06.03-08.58.21:133][345]LogModuleManager: Shutting down and abandoning module Kismet (145)
+[2016.06.03-08.58.21:133][345]LogModuleManager: Shutting down and abandoning module GraphEditor (144)
+[2016.06.03-08.58.21:133][345]LogModuleManager: Shutting down and abandoning module ClassViewer (143)
+[2016.06.03-08.58.21:133][345]LogModuleManager: Shutting down and abandoning module Toolbox (142)
+[2016.06.03-08.58.21:133][345]LogModuleManager: Shutting down and abandoning module ModuleUI (141)
+[2016.06.03-08.58.21:133][345]LogModuleManager: Shutting down and abandoning module MovieSceneTools (140)
+[2016.06.03-08.58.21:133][345]LogModuleManager: Shutting down and abandoning module OutputLog (139)
+[2016.06.03-08.58.21:133][345]LogModuleManager: Shutting down and abandoning module GammaUI (138)
+[2016.06.03-08.58.21:133][345]LogModuleManager: Shutting down and abandoning module Documentation (137)
+[2016.06.03-08.58.21:133][345]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (136)
+[2016.06.03-08.58.21:133][345]LogModuleManager: Shutting down and abandoning module AnalyticsET (135)
+[2016.06.03-08.58.21:133][345]LogModuleManager: Shutting down and abandoning module Analytics (134)
+[2016.06.03-08.58.21:133][345]LogModuleManager: Shutting down and abandoning module PortalServices (133)
+[2016.06.03-08.58.21:133][345]LogModuleManager: Shutting down and abandoning module PortalRpc (132)
+[2016.06.03-08.58.21:133][345]LogModuleManager: Shutting down and abandoning module MessagingRpc (131)
+[2016.06.03-08.58.21:133][345]LogModuleManager: Shutting down and abandoning module AITestSuite (130)
+[2016.06.03-08.58.21:133][345]LogModuleManager: Shutting down and abandoning module GameplayDebugger (129)
+[2016.06.03-08.58.21:133][345]LogModuleManager: Shutting down and abandoning module AIModule (128)
+[2016.06.03-08.58.21:133][345]LogModuleManager: Shutting down and abandoning module ProfilerService (127)
+[2016.06.03-08.58.21:281][345]LogModuleManager: Shutting down and abandoning module TaskGraph (126)
+[2016.06.03-08.58.21:281][345]LogModuleManager: Shutting down and abandoning module VRGripMotionControllerPlugin (125)
+[2016.06.03-08.58.21:281][345]LogModuleManager: Shutting down and abandoning module SlateRemote (124)
+[2016.06.03-08.58.21:281][345]LogModuleManager: Shutting down and abandoning module SteamVRController (123)
+[2016.06.03-08.58.21:281][345]LogModuleManager: Shutting down and abandoning module SteamVR (122)
+[2016.06.03-08.58.21:281][345]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (121)
+[2016.06.03-08.58.21:281][345]LogModuleManager: Shutting down and abandoning module OculusLibrary (120)
+[2016.06.03-08.58.21:281][345]LogModuleManager: Shutting down and abandoning module OculusInput (119)
+[2016.06.03-08.58.21:281][345]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (118)
+[2016.06.03-08.58.21:281][345]LogModuleManager: Shutting down and abandoning module CableComponent (117)
+[2016.06.03-08.58.21:281][345]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (116)
+[2016.06.03-08.58.21:281][345]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (115)
+[2016.06.03-08.58.21:281][345]LogModuleManager: Shutting down and abandoning module HTML5Networking (114)
+[2016.06.03-08.58.21:281][345]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (113)
+[2016.06.03-08.58.21:281][345]LogModuleManager: Shutting down and abandoning module PluginBrowser (112)
+[2016.06.03-08.58.21:281][345]LogModuleManager: Shutting down and abandoning module EpicSurvey (111)
+[2016.06.03-08.58.21:281][345]LogModuleManager: Shutting down and abandoning module DesktopPlatform (110)
+[2016.06.03-08.58.21:281][345]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (109)
+[2016.06.03-08.58.21:281][345]LogModuleManager: Shutting down and abandoning module UObjectPlugin (108)
+[2016.06.03-08.58.21:281][345]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (107)
+[2016.06.03-08.58.21:281][345]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (106)
+[2016.06.03-08.58.21:281][345]LogModuleManager: Shutting down and abandoning module SourceControl (105)
+[2016.06.03-08.58.21:281][345]LogModuleManager: Shutting down and abandoning module GitSourceControl (104)
+[2016.06.03-08.58.21:281][345]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (103)
+[2016.06.03-08.58.21:281][345]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (102)
+[2016.06.03-08.58.21:281][345]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (101)
+[2016.06.03-08.58.21:281][345]LogModuleManager: Shutting down and abandoning module MeshPaint (100)
+[2016.06.03-08.58.21:281][345]LogModuleManager: Shutting down and abandoning module HotReload (99)
+[2016.06.03-08.58.21:281][345]LogModuleManager: Shutting down and abandoning module MainFrame (98)
+[2016.06.03-08.58.21:281][345]LogModuleManager: Shutting down and abandoning module LevelEditor (97)
+[2016.06.03-08.58.21:282][345]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (96)
+[2016.06.03-08.58.21:282][345]LogModuleManager: Shutting down and abandoning module AssetRegistry (95)
+[2016.06.03-08.58.21:445][345]LogModuleManager: Shutting down and abandoning module ContentBrowser (94)
+[2016.06.03-08.58.21:446][345]LogModuleManager: Shutting down and abandoning module Paper2DEditor (93)
+[2016.06.03-08.58.21:446][345]LogModuleManager: Shutting down and abandoning module UdpMessaging (92)
+[2016.06.03-08.58.21:547][345]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (91)
+[2016.06.03-08.58.21:547][345]LogModuleManager: Shutting down and abandoning module Paper2D (90)
+[2016.06.03-08.58.21:547][345]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (89)
+[2016.06.03-08.58.21:547][345]LogModuleManager: Shutting down and abandoning module Media (88)
+[2016.06.03-08.58.21:547][345]LogModuleManager: Shutting down and abandoning module WmfMedia (87)
+[2016.06.03-08.58.21:547][345]LogModuleManager: Shutting down and abandoning module MediaAssets (86)
+[2016.06.03-08.58.21:547][345]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (85)
+[2016.06.03-08.58.21:547][345]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (84)
+[2016.06.03-08.58.21:547][345]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (83)
+[2016.06.03-08.58.21:547][345]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (82)
+[2016.06.03-08.58.21:547][345]LogModuleManager: Shutting down and abandoning module PropertyEditor (81)
+[2016.06.03-08.58.21:547][345]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (80)
+[2016.06.03-08.58.21:547][345]LogModuleManager: Shutting down and abandoning module FunctionalTesting (79)
+[2016.06.03-08.58.21:547][345]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (78)
+[2016.06.03-08.58.21:547][345]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (77)
+[2016.06.03-08.58.21:547][345]LogModuleManager: Shutting down and abandoning module MessageLog (76)
+[2016.06.03-08.58.21:547][345]LogModuleManager: Shutting down and abandoning module Sequencer (75)
+[2016.06.03-08.58.21:547][345]LogModuleManager: Shutting down and abandoning module AssetTools (74)
+[2016.06.03-08.58.21:547][345]LogModuleManager: Shutting down and abandoning module UMGEditor (73)
+[2016.06.03-08.58.21:547][345]LogModuleManager: Shutting down and abandoning module UMG (72)
+[2016.06.03-08.58.21:547][345]LogModuleManager: Shutting down and abandoning module SlateReflector (71)
+[2016.06.03-08.58.21:547][345]LogModuleManager: Shutting down and abandoning module Slate (70)
+[2016.06.03-08.58.21:547][345]LogModuleManager: Shutting down and abandoning module EditorStyle (69)
+[2016.06.03-08.58.21:549][345]LogModuleManager: Shutting down and abandoning module SessionServices (68)
+[2016.06.03-08.58.21:549][345]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (67)
+[2016.06.03-08.58.21:549][345]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (66)
+[2016.06.03-08.58.21:549][345]LogModuleManager: Shutting down and abandoning module XAudio2 (65)
+[2016.06.03-08.58.21:549][345]LogModuleManager: Shutting down and abandoning module Networking (63)
+[2016.06.03-08.58.21:549][345]LogModuleManager: Shutting down and abandoning module Core (62)
+[2016.06.03-08.58.21:549][345]LogModuleManager: Shutting down and abandoning module KismetCompiler (61)
+[2016.06.03-08.58.21:549][345]LogModuleManager: Shutting down and abandoning module PhysXFormats (60)
+[2016.06.03-08.58.21:549][345]LogModuleManager: Shutting down and abandoning module MeshUtilities (59)
+[2016.06.03-08.58.21:549][345]LogModuleManager: Shutting down and abandoning module CookingStats (58)
+[2016.06.03-08.58.21:549][345]LogModuleManager: Shutting down and abandoning module DerivedDataCache (57)
+[2016.06.03-08.58.21:549][345]LogDerivedDataCache: Shutdown
+[2016.06.03-08.58.21:549][345]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (56)
+[2016.06.03-08.58.21:549][345]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (55)
+[2016.06.03-08.58.21:549][345]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (54)
+[2016.06.03-08.58.21:549][345]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (53)
+[2016.06.03-08.58.21:549][345]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (52)
+[2016.06.03-08.58.21:549][345]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (51)
+[2016.06.03-08.58.21:549][345]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (50)
+[2016.06.03-08.58.21:549][345]LogModuleManager: Shutting down and abandoning module ImageWrapper (49)
+[2016.06.03-08.58.21:549][345]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (48)
+[2016.06.03-08.58.21:549][345]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (47)
+[2016.06.03-08.58.21:549][345]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (46)
+[2016.06.03-08.58.21:549][345]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (45)
+[2016.06.03-08.58.21:549][345]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (44)
+[2016.06.03-08.58.21:549][345]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (43)
+[2016.06.03-08.58.21:549][345]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (42)
+[2016.06.03-08.58.21:549][345]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (41)
+[2016.06.03-08.58.21:549][345]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (40)
+[2016.06.03-08.58.21:549][345]LogModuleManager: Shutting down and abandoning module Messaging (39)
+[2016.06.03-08.58.21:549][345]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (38)
+[2016.06.03-08.58.21:549][345]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (37)
+[2016.06.03-08.58.21:549][345]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (36)
+[2016.06.03-08.58.21:549][345]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (35)
+[2016.06.03-08.58.21:549][345]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (34)
+[2016.06.03-08.58.21:549][345]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (33)
+[2016.06.03-08.58.21:549][345]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (32)
+[2016.06.03-08.58.21:549][345]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (31)
+[2016.06.03-08.58.21:549][345]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (30)
+[2016.06.03-08.58.21:549][345]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (29)
+[2016.06.03-08.58.21:549][345]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (28)
+[2016.06.03-08.58.21:549][345]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (27)
+[2016.06.03-08.58.21:549][345]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (26)
+[2016.06.03-08.58.21:549][345]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (25)
+[2016.06.03-08.58.21:549][345]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (24)
+[2016.06.03-08.58.21:549][345]LogModuleManager: Shutting down and abandoning module TargetPlatform (23)
+[2016.06.03-08.58.21:549][345]LogModuleManager: Shutting down and abandoning module InputCore (22)
+[2016.06.03-08.58.21:549][345]LogModuleManager: Shutting down and abandoning module Settings (21)
+[2016.06.03-08.58.21:549][345]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (19)
+[2016.06.03-08.58.21:549][345]LogModuleManager: Shutting down and abandoning module HTTP (18)
+[2016.06.03-08.58.23:052][345]LogModuleManager: Shutting down and abandoning module XMPP (17)
+[2016.06.03-08.58.23:052][345]LogModuleManager: Shutting down and abandoning module OculusRift (16)
+[2016.06.03-08.58.23:052][345]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (15)
+[2016.06.03-08.58.23:052][345]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
+[2016.06.03-08.58.23:052][345]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
+[2016.06.03-08.58.23:052][345]LogModuleManager: Shutting down and abandoning module Landscape (12)
+[2016.06.03-08.58.23:052][345]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
+[2016.06.03-08.58.23:055][345]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
+[2016.06.03-08.58.23:055][345]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
+[2016.06.03-08.58.23:055][345]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
+[2016.06.03-08.58.23:055][345]LogModuleManager: Shutting down and abandoning module Renderer (7)
+[2016.06.03-08.58.23:055][345]LogModuleManager: Shutting down and abandoning module Engine (6)
+[2016.06.03-08.58.23:055][345]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
+[2016.06.03-08.58.23:055][345]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
+[2016.06.03-08.58.23:055][345]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
+[2016.06.03-08.58.23:055][345]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
+[2016.06.03-08.58.23:055][345]LogModuleManager: Shutting down and abandoning module PakFile (1)
+[2016.06.03-08.58.23:056][345]LogExit: Exiting.
+[2016.06.03-08.58.23:058][345]Log file closed, 06/03/16 01:58:23

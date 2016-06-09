@@ -1,0 +1,218 @@
+﻿Log file open, 06/08/16 13:17:54
+LogInit:Display: Running engine for game: HeliosFinal
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(-718218743) SRandInit(-718218742).
+LogTaskGraph: Started task graph with 4 named threads and 7 total threads.
+LogStats: Stats thread started at 0.077935
+LogInit: Version: 4.11.2-2946394+++UE4+Release-4.11
+LogInit: API Version: 2927265
+LogInit: Compiled (64-bit): Apr 18 2016 02:18:46
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.11
+LogInit: Command line:  
+LogInit: Base directory: C:/Program Files/Epic Games/4.11/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Using libcurl 7.41.0
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with WinSSL
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Presizing for max 16777216 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2016.06.08-20.17.54:765][  0]LogConsoleManager:Display: Setting the console variable 'r.ScreenPercentage' with 'SetByScalability' was ignored as it is lower priority than the previous 'SetBySystemSettingsIni'
+[2016.06.08-20.17.54:765][  0]LogConsoleManager:Display: Setting the console variable 'r.PostProcessAAQuality' with 'SetByScalability' was ignored as it is lower priority than the previous 'SetBySystemSettingsIni'
+[2016.06.08-20.17.54:765][  0]LogConsoleManager:Display: Setting the console variable 'sg.PostProcessQuality' with 'SetByScalability' was ignored as it is lower priority than the previous 'SetBySystemSettingsIni'
+[2016.06.08-20.17.54:765][  0]LogConsoleManager:Display: Setting the console variable 'r.MaxAnisotropy' with 'SetByScalability' was ignored as it is lower priority than the previous 'SetBySystemSettingsIni'
+[2016.06.08-20.17.54:765][  0]LogConsoleManager:Display: Setting the console variable 'sg.EffectsQuality' with 'SetByScalability' was ignored as it is lower priority than the previous 'SetBySystemSettingsIni'
+[2016.06.08-20.17.54:766][  0]LogInit: Selected Device Profile: [Windows]
+[2016.06.08-20.17.54:766][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2016.06.08-20.17.54:776][  0]LogInit: Computer: 210-EUROPA
+[2016.06.08-20.17.54:776][  0]LogInit: User: Helios
+[2016.06.08-20.17.54:776][  0]LogInit: CPU Page size=65536, Cores=4
+[2016.06.08-20.17.54:776][  0]LogInit: High frequency timer resolution =2.531252 MHz
+[2016.06.08-20.17.54:777][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2016.06.08-20.17.54:777][  0]LogMemory: Platform Memory Stats for Windows
+[2016.06.08-20.17.54:777][  0]LogMemory: Process Physical Memory: 315.26 MB used, 315.26 MB peak
+[2016.06.08-20.17.54:777][  0]LogMemory: Process Virtual Memory: 315.02 MB used, 315.02 MB peak
+[2016.06.08-20.17.54:777][  0]LogMemory: Physical Memory: 4567.77 MB used, 16283.44 MB total
+[2016.06.08-20.17.54:777][  0]LogMemory: Virtual Memory: 653.71 MB used, 134217728.00 MB total
+[2016.06.08-20.17.54:805][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2016.06.08-20.17.55:163][  0]LogD3D11RHI: D3D11 adapters:
+[2016.06.08-20.17.55:192][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 980 Ti' (Feature Level 11_0)
+[2016.06.08-20.17.55:192][  0]LogD3D11RHI:       6047MB of dedicated video memory, 0MB of dedicated system memory, and 8141MB of shared system memory, 1 output[s]
+[2016.06.08-20.17.55:199][  0]LogD3D11RHI:    1. 'Intel(R) HD Graphics 530' (Feature Level 11_0)
+[2016.06.08-20.17.55:199][  0]LogD3D11RHI:       128MB of dedicated video memory, 0MB of dedicated system memory, and 8141MB of shared system memory, 0 output[s]
+[2016.06.08-20.17.55:200][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2016.06.08-20.17.55:200][  0]LogD3D11RHI:       0MB of dedicated video memory, 0MB of dedicated system memory, and 8141MB of shared system memory, 0 output[s]
+[2016.06.08-20.17.55:200][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2016.06.08-20.17.55:205][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2016.06.08-20.17.55:206][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 980 Ti
+[2016.06.08-20.17.55:206][  0]LogD3D11RHI:   Driver Version: Unknown (internal Unknown)
+[2016.06.08-20.17.55:206][  0]LogD3D11RHI:      Driver Date: Unknown
+[2016.06.08-20.17.55:206][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2016.06.08-20.17.55:224][  0]LogD3D11RHI: Async texture creation enabled
+[2016.06.08-20.17.55:240][  0]LogShaderCompilers: Guid format shader working directory is -3 characters bigger than the processId version (../../../../../../Users/Helios/Desktop/HeliosFinal/Intermediate/Shaders/WorkingDirectory/4288/).
+[2016.06.08-20.17.55:240][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Helios/AppData/Local/Temp/UnrealShaderWorkingDir/7E8BD77848BE070509EC8C9C39BBA61E/'.
+[2016.06.08-20.17.55:240][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2016.06.08-20.17.56:136][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2016.06.08-20.17.56:141][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2016.06.08-20.17.56:146][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2016.06.08-20.17.56:152][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2016.06.08-20.17.56:156][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2016.06.08-20.17.56:160][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2016.06.08-20.17.56:164][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2016.06.08-20.17.56:167][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2016.06.08-20.17.56:170][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2016.06.08-20.17.56:173][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2016.06.08-20.17.56:176][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2016.06.08-20.17.56:183][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2016.06.08-20.17.56:183][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2016.06.08-20.17.56:183][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2016.06.08-20.17.56:200][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2016.06.08-20.17.56:203][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2016.06.08-20.17.56:205][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2016.06.08-20.17.56:208][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2016.06.08-20.17.56:211][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2016.06.08-20.17.56:211][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2016.06.08-20.17.56:292][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2016.06.08-20.17.56:340][  0]LogDerivedDataCache: Loaded boot cache 0.05s 73MB C:/Users/Helios/AppData/Local/UnrealEngine/4.11/DerivedDataCache/Boot.ddc.
+[2016.06.08-20.17.56:340][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Helios/AppData/Local/UnrealEngine/4.11/DerivedDataCache/Boot.ddc
+[2016.06.08-20.17.56:340][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Helios/Desktop/HeliosFinal/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2016.06.08-20.17.56:340][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2016.06.08-20.17.56:340][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Helios/Desktop/HeliosFinal/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2016.06.08-20.17.56:340][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2016.06.08-20.17.56:354][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2016.06.08-20.17.56:367][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Helios/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2016.06.08-20.17.56:685][  0]LogInit: Selected Device Profile: [Windows]
+[2016.06.08-20.17.56:686][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2016.06.08-20.17.56:716][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2016.06.08-20.17.56:915][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2016.06.08-20.17.56:915][  0]LogMeshUtilities: No automatic mesh merging module available
+[2016.06.08-20.17.56:915][  0]LogMeshUtilities: No distributed automatic mesh merging module available
+[2016.06.08-20.17.57:161][  0]LogUObjectArray: 27679 objects as part of root set at end of initial load.
+[2016.06.08-20.17.57:161][  0]LogUObjectAllocator: 5591600 out of 0 bytes used by permanent object pool.
+[2016.06.08-20.17.57:161][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2016.06.08-20.17.57:170][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2016.06.08-20.17.57:266][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.06.08-20.17.57:266][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.06.08-20.17.57:349][  0]LogStreaming:Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Common/Selection_16x.png' error.
+[2016.06.08-20.17.57:349][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Common/Selection_16x.png
+[2016.06.08-20.17.57:349][  0]LogStreaming:Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Common/Selection_16x.png' error.
+[2016.06.08-20.17.57:349][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Common/Selection_16x.png
+[2016.06.08-20.17.57:349][  0]LogStreaming:Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Common/Selection_16x.png' error.
+[2016.06.08-20.17.57:349][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Common/Selection_16x.png
+[2016.06.08-20.17.57:868][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2016.06.08-20.17.57:984][  0]LogAssetRegistry: FAssetRegistry took 0.0224 seconds to start up
+[2016.06.08-20.17.58:276][  0]SourceControl: Info Source control is disabled
+[2016.06.08-20.17.58:309][  0]SourceControl: Info Source control is disabled
+[2016.06.08-20.17.58:318][  0]SourceControl: Info Source control is disabled
+[2016.06.08-20.17.58:328][  0]SourceControl: Info Source control is disabled
+[2016.06.08-20.17.58:493][  0]LogConsoleManager:Warning: Console object named 'vr.EnableMotionControllerLateUpdate' already exists but is being registered again, but we weren't expected it to be! (FConsoleManager::AddConsoleObject)
+[2016.06.08-20.17.58:596][  0]LogEngine: Initializing Engine...
+[2016.06.08-20.17.58:599][  0]LogHMD: SteamVR initialized.  Driver: lighthouse  Display: LHR-2D0E5179
+[2016.06.08-20.17.58:933][  0]LogAIModule: Creating AISystem for world NewWorld
+[2016.06.08-20.17.58:940][  0]LogInit: XAudio2 using 'Speakers (5- USB Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.06.08-20.17.58:955][  0]LogInit: FAudioDevice initialized.
+[2016.06.08-20.17.58:989][  0]LogDerivedDataCache: Saved boot cache 0.03s 73MB C:/Users/Helios/AppData/Local/UnrealEngine/4.11/DerivedDataCache/Boot.ddc.
+[2016.06.08-20.17.58:996][  0]LogInit: Texture streaming: Enabled
+[2016.06.08-20.18.03:726][  0]LogInit: Transaction tracking system initialized
+[2016.06.08-20.18.03:763][  0]BlueprintLog: New page: Editor Load
+[2016.06.08-20.18.03:852][  0]LocalizationService: Info Localization service is disabled
+[2016.06.08-20.18.03:935][  0]LogConsoleResponse:Display: 
+[2016.06.08-20.18.04:033][  0]LogCook:Display: Max memory allowance for cook 8192mb
+[2016.06.08-20.18.04:033][  0]LogCook:Display: Mobile HDR setting 1
+[2016.06.08-20.18.04:033][  0]LogCook:Display: Done creating registry. It took  0.00s.
+[2016.06.08-20.18.04:089][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Helios/Desktop/HeliosFinal/Content/' took 0.01s
+[2016.06.08-20.18.04:089][  0]SourceControl: Info Source control is disabled
+[2016.06.08-20.18.04:090][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Helios/Desktop/HeliosFinal/Content/Plains.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.06.08-20.18.04:090][  0]LightingResults: New page: Lighting Build
+[2016.06.08-20.18.04:093][  0]MapCheck: New page: Map Check
+[2016.06.08-20.18.04:093][  0]LightingResults: New page: Lighting Build
+[2016.06.08-20.18.04:798][  0]LogAIModule: Creating AISystem for world Plains
+[2016.06.08-20.18.04:815][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.06.08-20.18.04:816][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.06.08-20.18.04:856][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 39.754ms to complete.
+[2016.06.08-20.18.04:856][  0]LogFileHelpers: Loading map 'Plains' took 0.766
+[2016.06.08-20.18.04:978][  0]LogCollectionManager: Loaded 0 collections in 0.003772 seconds
+[2016.06.08-20.18.05:018][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Helios/Desktop/HeliosFinal/Saved/Collections/' took 0.01s
+[2016.06.08-20.18.05:019][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Helios/Desktop/HeliosFinal/Content/Developers/Helios/Collections/' took 0.01s
+[2016.06.08-20.18.05:019][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Helios/Desktop/HeliosFinal/Content/Collections/' took 0.01s
+[2016.06.08-20.18.05:019][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000004 seconds
+[2016.06.08-20.18.05:027][  0]LogContentBrowser: Native class hierarchy populated in 0.0084 seconds. Added 1990 classes and 349 folders.
+[2016.06.08-20.18.05:032][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2016.06.08-20.18.05:032][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2016.06.08-20.18.05:033][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0010 seconds. Added 12 classes and 0 folders.
+[2016.06.08-20.18.05:041][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0014 seconds. Added 0 classes and 0 folders.
+[2016.06.08-20.18.05:049][  0]LogContentBrowser: Native class hierarchy updated for 'SuperSearch' in 0.0013 seconds. Added 1 classes and 2 folders.
+[2016.06.08-20.18.05:085][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0010 seconds. Added 0 classes and 0 folders.
+[2016.06.08-20.18.05:090][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0009 seconds. Added 1 classes and 2 folders.
+[2016.06.08-20.18.05:116][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2016.06.08-20.18.05:121][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2016.06.08-20.18.05:148][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0009 seconds. Added 1 classes and 2 folders.
+[2016.06.08-20.18.05:148][  0]LogLoad: Full Startup: 11.22 seconds (BP compile: 0.11 seconds)
+[2016.06.08-20.18.05:148][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2016.06.08-20.18.05:148][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2016.06.08-20.18.05:165][  0]LogOcInput: OculusInput pre-init called
+[2016.06.08-20.18.05:243][  0]LogContentStreaming: Texture pool size now 700 MB
+[2016.06.08-20.18.05:400][  0]LogRenderer: Reallocating scene render targets to support 2428x1240 (Frame:2).
+[2016.06.08-20.18.05:511][  1]Cmd: UpdateLandscapeEditorData -warnings
+[2016.06.08-20.18.05:527][  1]LogAssetRegistry: Asset discovery search completed in 7.5659 seconds
+[2016.06.08-20.18.05:527][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2016.06.08-20.18.05:527][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000015 seconds (updated 0 objects)
+[2016.06.08-20.24.40:215][ 88]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.06.08-20.24.40:216][ 88]PIE: New page: PIE session: Plains (Jun 8, 2016, 5:24:40 AM)
+[2016.06.08-20.24.40:216][ 88]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_Plains
+[2016.06.08-20.24.40:236][ 88]LogPlayLevel: PIE: StaticDuplicateObject took: (0.019485s)
+[2016.06.08-20.24.40:237][ 88]LogAIModule: Creating AISystem for world Plains
+[2016.06.08-20.24.40:237][ 88]LogPlayLevel: PIE: World Init took: (0.001328s)
+[2016.06.08-20.24.40:237][ 88]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Plains.Plains to /Game/UEDPIE_0_Plains.Plains (0.021117s)
+[2016.06.08-20.24.40:263][ 88]LogInit: XAudio2 using 'Speakers (5- USB Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.06.08-20.24.40:269][ 88]LogInit: FAudioDevice initialized.
+[2016.06.08-20.24.41:045][ 88]LogTemp:Warning: Helios > getter node title
+[2016.06.08-20.24.41:046][ 88]LogTemp:Warning: Helios > setter node title
+[2016.06.08-20.24.41:046][ 88]LogTemp:Warning: Helios > setter node title
+[2016.06.08-20.24.41:046][ 88]LogTemp:Warning: Helios > setter node title
+[2016.06.08-20.24.41:046][ 88]LogTemp:Warning: Helios > setter node title
+[2016.06.08-20.24.41:102][ 88]LogTemp:Warning: Helios > setter node title
+[2016.06.08-20.24.41:148][ 88]LogWorld: Game class is 'SteamVR_GM_C'
+[2016.06.08-20.24.41:160][ 88]LogWorld: Bringing World /Game/UEDPIE_0_Plains.Plains up for play (max tick rate 0) at 2016.06.08-13.24.41
+[2016.06.08-20.24.41:160][ 88]LogWorld: Bringing up level for play took: 0.007813
+[2016.06.08-20.24.41:165][ 88]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0011 seconds. Added 9 classes and 0 folders.
+[2016.06.08-20.24.41:173][ 88]PIE: Info Play in editor start time for /Game/UEDPIE_0_Plains 0.251
+[2016.06.08-20.24.41:219][ 89]LogWindows:Error: Windows GetLastError: The operation completed successfully. (0)
+[2016.06.08-20.24.41:560][ 90]LogCrashTracker: 
+
+
+[2016.06.08-20.24.41:568][ 90]LogWindows:Error: Windows GetLastError: The operation completed successfully. (0)
+[2016.06.08-20.24.41:569][ 90]LogCrashTracker: 
+
+
+[2016.06.08-20.24.41:569][ 90]LogWindows:Error: === Critical error: ===
+Fatal error: [File:D:\BuildFarm\buildmachine_++UE4+Release-4.11\Engine\Source\Runtime\RenderCore\Private\RenderingThread.cpp] [Line: 682] 
+Rendering thread exception:
+Assertion failed: (Index >= 0) & (Index < ArrayNum) [File:D:\BuildFarm\buildmachine_++UE4+Release-4.11\Engine\Source\Runtime\Core\Public\Containers\Array.h] [Line: 785] 
+Array index out of bounds: 0 from an array of size 0
+
+
+
+
+
+
+
+[2016.06.08-20.24.41:609][ 90]LogExit: Executing StaticShutdownAfterError
+[2016.06.08-20.24.41:613][ 90]LogPhysics:Warning: PHYSX: ..\..\PhysX\src\NpScene.cpp (2946) 8 : PxScene::unlockWrite() called without matching call to PxScene::lockWrite(), behaviour will be undefined.
+[2016.06.08-20.24.41:614][ 90]LogPhysics:Warning: PHYSX: ..\..\PhysX\src\NpScene.cpp (2946) 8 : PxScene::unlockWrite() called without matching call to PxScene::lockWrite(), behaviour will be undefined.
+[2016.06.08-20.24.41:614][ 90]LogPhysics:Warning: PHYSX: ..\..\PhysX\src\NpScene.cpp (2946) 8 : PxScene::unlockWrite() called without matching call to PxScene::lockWrite(), behaviour will be undefined.
+[2016.06.08-20.24.41:614][ 90]LogPhysics:Warning: PHYSX: ..\..\PhysX\src\NpScene.cpp (2946) 8 : PxScene::unlockWrite() called without matching call to PxScene::lockWrite(), behaviour will be undefined.
+[2016.06.08-20.24.41:614][ 90]LogWindows: FPlatformMisc::RequestExit(1)
+[2016.06.08-20.24.41:614][ 90]Log file closed, 06/08/16 13:24:41

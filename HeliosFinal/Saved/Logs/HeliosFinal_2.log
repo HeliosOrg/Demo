@@ -1,0 +1,1801 @@
+﻿Log file open, 06/08/16 02:02:34
+LogInit:Display: Running engine for game: HeliosFinal
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(-1539636736) SRandInit(-1539636735).
+LogTaskGraph: Started task graph with 4 named threads and 7 total threads.
+LogStats: Stats thread started at 0.097429
+LogInit: Version: 4.11.2-2946394+++UE4+Release-4.11
+LogInit: API Version: 2927265
+LogInit: Compiled (64-bit): Apr 18 2016 02:18:46
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.11
+LogInit: Command line: 
+LogInit: Base directory: C:/Program Files/Epic Games/4.11/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Using libcurl 7.41.0
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with WinSSL
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Presizing for max 16777216 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2016.06.08-09.02.34:580][  0]LogConsoleManager:Display: Setting the console variable 'r.ScreenPercentage' with 'SetByScalability' was ignored as it is lower priority than the previous 'SetBySystemSettingsIni'
+[2016.06.08-09.02.34:580][  0]LogConsoleManager:Display: Setting the console variable 'r.PostProcessAAQuality' with 'SetByScalability' was ignored as it is lower priority than the previous 'SetBySystemSettingsIni'
+[2016.06.08-09.02.34:580][  0]LogConsoleManager:Display: Setting the console variable 'sg.PostProcessQuality' with 'SetByScalability' was ignored as it is lower priority than the previous 'SetBySystemSettingsIni'
+[2016.06.08-09.02.34:580][  0]LogConsoleManager:Display: Setting the console variable 'r.MaxAnisotropy' with 'SetByScalability' was ignored as it is lower priority than the previous 'SetBySystemSettingsIni'
+[2016.06.08-09.02.34:580][  0]LogConsoleManager:Display: Setting the console variable 'sg.EffectsQuality' with 'SetByScalability' was ignored as it is lower priority than the previous 'SetBySystemSettingsIni'
+[2016.06.08-09.02.34:580][  0]LogInit: Selected Device Profile: [Windows]
+[2016.06.08-09.02.34:580][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2016.06.08-09.02.34:587][  0]LogInit: Computer: 210-EUROPA
+[2016.06.08-09.02.34:587][  0]LogInit: User: Helios
+[2016.06.08-09.02.34:587][  0]LogInit: CPU Page size=65536, Cores=4
+[2016.06.08-09.02.34:587][  0]LogInit: High frequency timer resolution =2.531255 MHz
+[2016.06.08-09.02.34:587][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2016.06.08-09.02.34:587][  0]LogMemory: Platform Memory Stats for Windows
+[2016.06.08-09.02.34:587][  0]LogMemory: Process Physical Memory: 314.69 MB used, 314.69 MB peak
+[2016.06.08-09.02.34:587][  0]LogMemory: Process Virtual Memory: 314.95 MB used, 314.95 MB peak
+[2016.06.08-09.02.34:587][  0]LogMemory: Physical Memory: 5470.97 MB used, 16283.44 MB total
+[2016.06.08-09.02.34:587][  0]LogMemory: Virtual Memory: 653.71 MB used, 134217728.00 MB total
+[2016.06.08-09.02.34:618][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2016.06.08-09.02.35:035][  0]LogD3D11RHI: D3D11 adapters:
+[2016.06.08-09.02.35:069][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 980 Ti' (Feature Level 11_0)
+[2016.06.08-09.02.35:069][  0]LogD3D11RHI:       6047MB of dedicated video memory, 0MB of dedicated system memory, and 8141MB of shared system memory, 1 output[s]
+[2016.06.08-09.02.35:076][  0]LogD3D11RHI:    1. 'Intel(R) HD Graphics 530' (Feature Level 11_0)
+[2016.06.08-09.02.35:076][  0]LogD3D11RHI:       128MB of dedicated video memory, 0MB of dedicated system memory, and 8141MB of shared system memory, 0 output[s]
+[2016.06.08-09.02.35:077][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2016.06.08-09.02.35:077][  0]LogD3D11RHI:       0MB of dedicated video memory, 0MB of dedicated system memory, and 8141MB of shared system memory, 0 output[s]
+[2016.06.08-09.02.35:077][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2016.06.08-09.02.35:083][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2016.06.08-09.02.35:083][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 980 Ti
+[2016.06.08-09.02.35:083][  0]LogD3D11RHI:   Driver Version: Unknown (internal Unknown)
+[2016.06.08-09.02.35:083][  0]LogD3D11RHI:      Driver Date: Unknown
+[2016.06.08-09.02.35:083][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2016.06.08-09.02.35:101][  0]LogD3D11RHI: Async texture creation enabled
+[2016.06.08-09.02.35:117][  0]LogShaderCompilers: Guid format shader working directory is 33 characters bigger than the processId version (D:/HeliosFinal/Intermediate/Shaders/WorkingDirectory/6020/).
+[2016.06.08-09.02.35:117][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Helios/AppData/Local/Temp/UnrealShaderWorkingDir/87BD62A445D9C3CFEE62A3A028E8E31B/'.
+[2016.06.08-09.02.35:117][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2016.06.08-09.02.36:019][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2016.06.08-09.02.36:026][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2016.06.08-09.02.36:032][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2016.06.08-09.02.36:037][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2016.06.08-09.02.36:043][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2016.06.08-09.02.36:048][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2016.06.08-09.02.36:053][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2016.06.08-09.02.36:056][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2016.06.08-09.02.36:059][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2016.06.08-09.02.36:062][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2016.06.08-09.02.36:066][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2016.06.08-09.02.36:076][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2016.06.08-09.02.36:076][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2016.06.08-09.02.36:077][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2016.06.08-09.02.36:094][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2016.06.08-09.02.36:096][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2016.06.08-09.02.36:099][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2016.06.08-09.02.36:103][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2016.06.08-09.02.36:106][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2016.06.08-09.02.36:106][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2016.06.08-09.02.36:192][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2016.06.08-09.02.36:238][  0]LogDerivedDataCache: Loaded boot cache 0.05s 48MB C:/Users/Helios/AppData/Local/UnrealEngine/4.11/DerivedDataCache/Boot.ddc.
+[2016.06.08-09.02.36:238][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Helios/AppData/Local/UnrealEngine/4.11/DerivedDataCache/Boot.ddc
+[2016.06.08-09.02.36:238][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file D:/HeliosFinal/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2016.06.08-09.02.36:238][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2016.06.08-09.02.36:238][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file D:/HeliosFinal/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2016.06.08-09.02.36:238][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2016.06.08-09.02.36:252][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2016.06.08-09.02.36:264][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Helios/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2016.06.08-09.02.36:424][  0]LogInit: Selected Device Profile: [Windows]
+[2016.06.08-09.02.36:425][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2016.06.08-09.02.36:464][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2016.06.08-09.02.36:600][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2016.06.08-09.02.36:600][  0]LogMeshUtilities: No automatic mesh merging module available
+[2016.06.08-09.02.36:600][  0]LogMeshUtilities: No distributed automatic mesh merging module available
+[2016.06.08-09.02.36:838][  0]LogUObjectArray: 27679 objects as part of root set at end of initial load.
+[2016.06.08-09.02.36:838][  0]LogUObjectAllocator: 5591592 out of 0 bytes used by permanent object pool.
+[2016.06.08-09.02.36:838][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2016.06.08-09.02.36:846][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2016.06.08-09.02.36:940][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.06.08-09.02.36:940][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.06.08-09.02.37:027][  0]LogStreaming:Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Common/Selection_16x.png' error.
+[2016.06.08-09.02.37:027][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Common/Selection_16x.png
+[2016.06.08-09.02.37:027][  0]LogStreaming:Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Common/Selection_16x.png' error.
+[2016.06.08-09.02.37:027][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Common/Selection_16x.png
+[2016.06.08-09.02.37:028][  0]LogStreaming:Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Common/Selection_16x.png' error.
+[2016.06.08-09.02.37:028][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Common/Selection_16x.png
+[2016.06.08-09.02.37:573][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2016.06.08-09.02.37:691][  0]LogAssetRegistry: FAssetRegistry took 0.0224 seconds to start up
+[2016.06.08-09.02.37:849][  0]SourceControl: Info Source control is disabled
+[2016.06.08-09.02.37:886][  0]SourceControl: Info Source control is disabled
+[2016.06.08-09.02.37:896][  0]SourceControl: Info Source control is disabled
+[2016.06.08-09.02.37:906][  0]SourceControl: Info Source control is disabled
+[2016.06.08-09.02.38:100][  0]LogConsoleManager:Warning: Console object named 'vr.EnableMotionControllerLateUpdate' already exists but is being registered again, but we weren't expected it to be! (FConsoleManager::AddConsoleObject)
+[2016.06.08-09.02.38:160][  0]LogEngine: Initializing Engine...
+[2016.06.08-09.02.38:164][  0]LogHMD: SteamVR initialized.  Driver: lighthouse  Display: LHR-2D0E5179
+[2016.06.08-09.02.38:320][  0]LogAIModule: Creating AISystem for world NewWorld
+[2016.06.08-09.02.38:326][  0]LogInit: XAudio2 using 'Speakers (4- USB Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.06.08-09.02.38:342][  0]LogInit: FAudioDevice initialized.
+[2016.06.08-09.02.38:363][  0]LogDerivedDataCache: Saved boot cache 0.02s 48MB C:/Users/Helios/AppData/Local/UnrealEngine/4.11/DerivedDataCache/Boot.ddc.
+[2016.06.08-09.02.38:368][  0]LogInit: Texture streaming: Enabled
+[2016.06.08-09.02.39:703][  0]LogInit: Transaction tracking system initialized
+[2016.06.08-09.02.39:748][  0]BlueprintLog: New page: Editor Load
+[2016.06.08-09.02.39:832][  0]LocalizationService: Info Localization service is disabled
+[2016.06.08-09.02.39:911][  0]LogConsoleResponse:Display: 
+[2016.06.08-09.02.40:006][  0]LogCook:Display: Max memory allowance for cook 8192mb
+[2016.06.08-09.02.40:006][  0]LogCook:Display: Mobile HDR setting 1
+[2016.06.08-09.02.40:006][  0]LogCook:Display: Done creating registry. It took  0.00s.
+[2016.06.08-09.02.40:059][  0]LogFileCache: Scanning file cache for directory 'D:/HeliosFinal/Content/' took 0.01s
+[2016.06.08-09.02.40:059][  0]SourceControl: Info Source control is disabled
+[2016.06.08-09.02.40:059][  0]Cmd: MAP LOAD FILE="D:/HeliosFinal/Content/Plains.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.06.08-09.02.40:060][  0]LightingResults: New page: Lighting Build
+[2016.06.08-09.02.40:063][  0]MapCheck: New page: Map Check
+[2016.06.08-09.02.40:063][  0]LightingResults: New page: Lighting Build
+[2016.06.08-09.02.40:580][  0]LogAIModule: Creating AISystem for world Plains
+[2016.06.08-09.02.40:598][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.06.08-09.02.40:599][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.06.08-09.02.40:639][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 39.773ms to complete.
+[2016.06.08-09.02.40:639][  0]LogFileHelpers: Loading map 'Plains' took 0.579
+[2016.06.08-09.02.40:766][  0]LogCollectionManager: Loaded 0 collections in 0.002579 seconds
+[2016.06.08-09.02.40:809][  0]LogFileCache: Scanning file cache for directory 'D:/HeliosFinal/Saved/Collections/' took 0.01s
+[2016.06.08-09.02.40:809][  0]LogFileCache: Scanning file cache for directory 'D:/HeliosFinal/Content/Developers/Helios/Collections/' took 0.01s
+[2016.06.08-09.02.40:809][  0]LogFileCache: Scanning file cache for directory 'D:/HeliosFinal/Content/Collections/' took 0.01s
+[2016.06.08-09.02.40:809][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
+[2016.06.08-09.02.40:816][  0]LogContentBrowser: Native class hierarchy populated in 0.0075 seconds. Added 1990 classes and 349 folders.
+[2016.06.08-09.02.40:823][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2016.06.08-09.02.40:823][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2016.06.08-09.02.40:824][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0009 seconds. Added 12 classes and 0 folders.
+[2016.06.08-09.02.40:830][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0007 seconds. Added 0 classes and 0 folders.
+[2016.06.08-09.02.40:837][  0]LogContentBrowser: Native class hierarchy updated for 'SuperSearch' in 0.0009 seconds. Added 1 classes and 2 folders.
+[2016.06.08-09.02.40:866][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0008 seconds. Added 0 classes and 0 folders.
+[2016.06.08-09.02.40:873][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0008 seconds. Added 1 classes and 2 folders.
+[2016.06.08-09.02.40:893][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2016.06.08-09.02.40:896][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2016.06.08-09.02.40:925][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0008 seconds. Added 1 classes and 2 folders.
+[2016.06.08-09.02.40:926][  0]LogLoad: Full Startup: 7.21 seconds (BP compile: 0.09 seconds)
+[2016.06.08-09.02.40:926][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2016.06.08-09.02.40:926][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2016.06.08-09.02.40:944][  0]LogOcInput: OculusInput pre-init called
+[2016.06.08-09.02.41:001][  0]LogContentStreaming: Texture pool size now 700 MB
+[2016.06.08-09.02.41:128][  0]LogRenderer: Reallocating scene render targets to support 952x548 (Frame:2).
+[2016.06.08-09.02.41:191][  1]Cmd: UpdateLandscapeEditorData -warnings
+[2016.06.08-09.02.41:212][  1]LogAssetRegistry: Asset discovery search completed in 3.5432 seconds
+[2016.06.08-09.02.41:212][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2016.06.08-09.02.41:212][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000015 seconds (updated 0 objects)
+[2016.06.08-09.02.55:033][270]LogRenderer: Reallocating scene render targets to support 1204x1228 (Frame:8).
+[2016.06.08-09.02.58:759][449]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.02.58:759][449]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.02.58:759][449]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.02.58:759][449]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.02.58:759][449]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.02.59:309][449]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0012 seconds. Added 108 classes and 0 folders.
+[2016.06.08-09.02.59:755][449]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.02.59:755][449]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.02.59:755][449]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.02.59:755][449]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.02.59:755][449]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.02.59:755][449]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.02.59:755][449]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.02.59:755][449]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.02.59:755][449]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.02.59:755][449]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.02.59:755][449]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.02.59:756][449]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.02.59:756][449]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.02.59:756][449]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.02.59:756][449]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.02.59:756][449]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.00:709][449]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.00:712][449]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.00:712][449]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.00:715][449]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.00:716][449]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.00:719][449]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.00:719][449]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.00:721][449]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.00:728][449]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.00:731][449]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.09:728][614]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.09:728][614]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.09:728][614]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.09:738][614]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.09:738][614]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.09:738][614]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.09:751][614]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.09:751][614]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.09:763][615]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.09:763][615]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.09:763][615]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.09:777][615]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.09:777][615]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:036][626]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:036][626]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:036][626]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:045][626]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:045][626]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:045][626]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:059][626]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:059][626]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:072][627]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:072][627]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:072][627]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:085][627]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:085][627]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:101][628]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:101][628]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:101][628]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:115][628]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:115][628]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:127][629]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:127][629]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:127][629]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:139][629]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:139][629]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:152][630]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:153][630]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:153][630]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:165][630]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:165][630]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:179][631]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:179][631]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:179][631]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:192][631]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:192][631]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:204][632]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:204][632]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:204][632]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:218][632]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:218][632]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:231][633]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:231][633]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:231][633]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:248][633]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:248][633]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:260][634]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:260][634]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:260][634]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:274][634]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:274][634]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:287][635]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:287][635]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:287][635]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:299][635]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:299][635]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:318][636]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:318][636]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:318][636]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:330][636]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:331][636]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:345][637]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:345][637]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:345][637]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:354][637]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:354][637]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:366][638]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:366][638]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:366][638]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:376][638]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:376][638]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:390][639]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:390][639]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:390][639]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:399][639]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:399][639]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:413][640]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:413][640]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:413][640]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:423][640]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.10:423][640]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.14:160][818]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.14:160][818]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.14:699][849]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.14:699][849]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.14:699][849]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.14:733][851]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.14:733][851]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.14:733][851]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.14:872][859]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.14:872][859]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.14:872][859]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.14:889][860]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.14:889][860]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.14:889][860]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.14:922][862]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.14:922][862]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.14:922][862]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.14:942][863]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.14:942][863]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.14:942][863]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.14:967][864]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.14:968][864]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.14:968][864]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.14:975][864]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.14:975][864]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.14:975][864]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.14:984][864]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.14:984][864]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.14:994][865]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.14:994][865]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.14:994][865]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.15:005][865]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.15:005][865]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.15:012][866]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.15:012][866]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.15:012][866]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.15:023][866]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.15:023][866]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.15:032][867]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.15:032][867]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.15:032][867]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.15:042][867]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.15:042][867]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.15:051][868]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.15:051][868]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.15:051][868]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.15:061][868]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.15:061][868]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.15:169][875]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.15:169][875]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.15:169][875]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.15:176][875]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.15:176][875]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:005][971]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:006][971]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:006][971]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:016][971]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:016][971]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:016][971]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:026][971]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:026][971]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:037][972]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:037][972]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:037][972]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:047][972]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:047][972]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:057][973]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:057][973]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:057][973]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:068][973]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:068][973]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:078][974]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:078][974]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:078][974]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:088][974]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:088][974]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:096][975]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:096][975]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:098][975]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:109][975]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:109][975]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:119][976]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:119][976]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:119][976]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:129][976]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:129][976]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:140][977]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:140][977]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:140][977]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:149][977]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:150][977]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:161][978]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:161][978]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:161][978]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:172][978]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:172][978]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:181][979]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:181][979]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:181][979]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:193][979]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:193][979]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:200][980]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:200][980]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:201][980]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:210][980]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:210][980]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:221][981]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:221][981]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:221][981]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:230][981]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:230][981]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:241][982]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:241][982]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:241][982]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:251][982]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:251][982]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:261][983]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:261][983]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:261][983]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:272][983]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:272][983]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:860][ 14]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:860][ 14]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:860][ 14]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:866][ 14]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:866][ 14]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:866][ 14]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:878][ 14]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:878][ 14]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:887][ 15]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:887][ 15]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:887][ 15]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:896][ 15]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:896][ 15]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:906][ 16]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:906][ 16]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:906][ 16]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:917][ 16]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.17:917][ 16]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.18:610][ 57]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.18:610][ 57]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.18:610][ 57]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.18:616][ 57]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.18:616][ 57]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.18:616][ 57]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.18:624][ 57]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.18:624][ 57]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.18:631][ 58]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.18:631][ 58]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.18:631][ 58]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.18:638][ 58]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.18:638][ 58]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.18:650][ 59]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.18:650][ 59]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.18:650][ 59]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.18:659][ 59]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.18:659][ 59]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.18:683][ 61]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.18:683][ 61]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.18:683][ 61]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.18:689][ 61]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.18:689][ 61]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.18:689][ 61]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.18:700][ 61]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.18:701][ 61]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.18:822][ 68]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.18:822][ 68]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.18:822][ 68]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.18:830][ 68]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.18:830][ 68]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.18:830][ 68]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.18:839][ 68]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.18:839][ 68]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.18:850][ 69]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.18:850][ 69]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.18:850][ 69]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.18:861][ 69]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.18:861][ 69]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.18:953][ 75]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.18:953][ 75]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.18:953][ 75]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.18:974][ 76]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.18:974][ 76]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.18:974][ 76]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.18:991][ 77]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.18:991][ 77]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.18:991][ 77]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:009][ 78]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:009][ 78]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:010][ 78]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:012][ 78]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:013][ 78]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:013][ 78]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:033][ 79]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:033][ 79]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:033][ 79]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:052][ 80]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:052][ 80]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:052][ 80]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:169][ 86]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:169][ 86]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:169][ 86]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:177][ 86]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:177][ 86]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:177][ 86]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:187][ 86]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:187][ 86]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:196][ 87]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:196][ 87]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:196][ 87]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:206][ 87]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:206][ 87]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:325][ 94]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:326][ 94]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:326][ 94]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:346][ 95]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:346][ 95]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:346][ 95]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:348][ 95]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:348][ 95]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:348][ 95]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:367][ 96]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:367][ 96]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:367][ 96]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:387][ 97]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:387][ 97]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:388][ 97]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:408][ 98]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:408][ 98]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:409][ 98]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:428][ 99]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:428][ 99]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:428][ 99]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:521][104]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:521][104]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:522][104]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:530][104]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:530][104]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:530][104]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:541][104]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:542][104]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:551][105]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:551][105]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:551][105]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:561][105]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:561][105]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:571][106]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:571][106]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:571][106]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:581][106]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:581][106]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:605][108]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:605][108]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:605][108]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:611][108]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:611][108]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:611][108]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:624][108]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:624][108]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:688][112]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:688][112]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:688][112]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:695][112]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:695][112]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:695][112]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:705][112]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.19:705][112]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.20:036][131]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.20:036][131]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.20:036][131]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.20:042][131]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.20:042][131]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.20:042][131]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.20:054][131]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.20:054][131]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.20:062][132]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.20:062][132]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.20:062][132]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.20:070][132]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.20:070][132]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.20:079][133]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.20:079][133]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.20:079][133]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.20:088][133]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.20:088][133]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.20:098][134]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.20:098][134]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.20:098][134]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.20:109][134]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.20:109][134]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.20:118][135]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.20:118][135]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.20:118][135]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.20:131][135]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.20:131][135]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.20:140][136]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.20:140][136]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.20:140][136]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.20:150][136]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.20:150][136]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.22:671][262]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.22:671][262]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.22:671][262]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.22:679][262]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.22:679][262]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.22:679][262]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.22:690][262]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.22:690][262]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.22:699][263]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.22:699][263]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.22:699][263]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.22:711][263]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.22:711][263]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.22:721][264]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.22:721][264]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.22:721][264]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.22:734][264]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.22:734][264]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.22:742][265]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.22:742][265]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.22:742][265]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.22:752][265]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.22:752][265]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.22:761][266]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.22:761][266]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.22:761][266]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.22:773][266]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.22:773][266]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.22:782][267]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.22:782][267]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.22:782][267]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.22:794][267]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.22:794][267]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.22:805][268]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.22:805][268]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.22:805][268]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.22:818][268]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.22:818][268]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.22:828][269]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.22:828][269]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.22:828][269]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.22:839][269]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.22:839][269]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.22:847][270]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.22:847][270]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.22:847][270]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.22:860][270]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.22:860][270]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.23:018][280]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.23:018][280]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.23:018][280]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.23:026][280]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.23:026][280]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.23:033][281]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.23:033][281]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.23:033][281]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.23:042][281]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.23:042][281]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.25:107][387]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.25:107][387]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.25:107][387]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.25:118][387]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.25:118][387]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.25:118][387]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.25:129][387]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.25:129][387]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.25:136][388]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.25:136][388]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.25:136][388]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.25:149][388]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.25:149][388]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.25:156][389]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.25:156][389]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.25:156][389]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.25:169][389]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.25:169][389]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.25:459][407]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.25:459][407]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.25:459][407]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.25:467][407]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.25:467][407]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.25:475][408]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.25:475][408]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.25:475][408]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.25:482][408]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.25:482][408]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.25:643][418]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.25:643][418]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.25:643][418]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.25:652][418]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.25:652][418]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.25:660][419]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.25:660][419]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.25:660][419]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.25:668][419]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.25:668][419]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.25:690][421]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.25:690][421]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.25:690][421]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.25:700][421]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.25:700][421]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.25:700][421]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.25:710][421]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.25:710][421]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.25:735][423]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.25:735][423]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.25:735][423]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.25:743][423]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.25:743][423]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.25:743][423]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.25:752][423]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.25:752][423]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.25:978][437]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.25:978][437]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.25:978][437]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.25:983][437]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.25:983][437]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.25:983][437]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.25:992][437]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.25:992][437]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:000][438]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:000][438]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:000][438]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:010][438]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:010][438]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:018][439]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:018][439]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:018][439]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:029][439]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:029][439]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:038][440]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:038][440]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:038][440]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:049][440]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:049][440]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:112][444]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:113][444]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:113][444]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:119][444]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:119][444]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:119][444]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:130][444]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:130][444]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:138][445]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:138][445]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:138][445]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:150][445]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:150][445]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:157][446]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:157][446]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:157][446]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:169][446]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:169][446]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:259][452]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:259][452]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:259][452]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:266][452]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:266][452]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:275][453]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:275][453]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:275][453]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:282][453]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:282][453]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:293][454]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:293][454]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:293][454]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:304][454]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:304][454]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:314][455]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:314][455]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:314][455]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:324][455]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:324][455]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:332][456]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:332][456]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:332][456]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:343][456]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:343][456]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:351][457]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:351][457]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:351][457]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:361][457]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:361][457]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:418][461]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:418][461]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:418][461]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:426][461]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:426][461]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:434][462]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:434][462]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:434][462]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:443][462]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:443][462]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:452][463]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:452][463]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:452][463]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:463][463]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:464][463]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:472][464]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:472][464]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:472][464]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:482][464]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:482][464]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:492][465]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:492][465]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:492][465]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:502][465]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:503][465]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:512][466]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:512][466]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:512][466]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:522][466]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:522][466]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:580][470]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:580][470]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:580][470]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:587][470]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:587][470]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:595][471]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:595][471]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:595][471]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:604][471]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:604][471]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:646][474]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:647][474]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:647][474]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:657][474]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:657][474]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:667][475]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:667][475]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:667][475]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:676][475]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:676][475]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:684][476]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:684][476]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:684][476]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:695][476]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:695][476]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:704][477]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:704][477]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:704][477]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:715][477]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:715][477]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:722][478]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:722][478]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:722][478]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:734][478]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:734][478]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:841][485]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:841][485]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:841][485]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:849][485]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.26:849][485]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.29:653][638]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.29:653][638]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.29:653][638]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.29:660][638]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.29:660][638]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.29:660][638]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.29:671][638]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.29:671][638]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.29:680][639]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.29:680][639]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.29:680][639]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.29:689][639]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.29:689][639]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.29:699][640]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.29:699][640]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.29:699][640]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.29:710][640]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.29:710][640]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.29:767][644]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.29:767][644]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.29:767][644]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.29:775][644]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.29:775][644]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.31:951][753]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.31:951][753]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.31:951][753]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.31:962][753]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.31:962][753]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.31:962][753]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.31:973][753]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.31:973][753]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.31:980][754]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.31:980][754]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.31:980][754]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.31:992][754]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.31:992][754]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.32:001][755]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.32:001][755]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.32:001][755]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.32:011][755]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.32:011][755]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.32:021][756]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.32:021][756]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.32:021][756]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.32:033][756]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.32:033][756]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.32:090][760]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.32:090][760]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.32:090][760]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.32:098][760]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.32:098][760]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.03.55:880][ 97]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.55:880][ 97]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.55:880][ 97]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.55:889][ 97]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.55:889][ 97]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.55:889][ 97]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.55:901][ 97]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.55:901][ 97]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.55:910][ 98]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.55:910][ 98]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.55:910][ 98]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.55:922][ 98]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.55:922][ 98]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.56:788][141]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.56:788][141]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.56:788][141]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.56:797][141]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.56:797][141]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.56:797][141]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.56:808][141]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.56:808][141]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.56:816][142]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.56:816][142]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.56:816][142]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.56:828][142]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.56:828][142]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.56:839][143]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.56:839][143]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.56:839][143]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.56:850][143]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.56:850][143]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.56:860][144]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.56:860][144]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.56:860][144]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.56:871][144]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.56:871][144]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.56:881][145]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.56:881][145]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.56:881][145]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.56:894][145]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.56:894][145]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.56:903][146]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.56:903][146]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.56:903][146]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.56:915][146]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.56:915][146]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.56:926][147]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.56:926][147]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.56:926][147]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.56:936][147]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.56:936][147]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.56:948][148]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.56:948][148]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.56:948][148]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.56:960][148]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.56:960][148]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.57:030][152]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.57:030][152]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.57:030][152]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.57:041][152]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.57:041][152]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.57:041][152]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.57:052][152]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.57:052][152]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.57:205][160]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.57:205][160]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.57:205][160]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.57:211][160]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.57:212][160]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.57:212][160]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.57:225][160]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.57:225][160]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.57:235][161]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.57:235][161]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.57:235][161]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.57:245][161]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.57:245][161]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.57:256][162]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.57:256][162]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.57:256][162]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.57:268][162]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.57:268][162]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.57:275][163]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.57:275][163]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.57:276][163]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.57:288][163]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.57:288][163]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.57:299][164]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.57:299][164]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.57:299][164]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.57:308][164]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.57:308][164]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.57:319][165]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.57:319][165]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.57:319][165]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.57:331][165]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.57:331][165]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.57:340][166]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.57:340][166]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.57:340][166]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.57:350][166]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.57:350][166]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.57:361][167]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.57:361][167]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.57:361][167]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.57:372][167]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.57:372][167]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:153][206]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:153][206]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:153][206]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:164][206]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:164][206]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:164][206]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:176][206]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:176][206]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:203][208]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:204][208]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:204][208]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:212][208]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:212][208]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:212][208]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:224][208]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:224][208]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:233][209]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:233][209]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:233][209]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:244][209]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:244][209]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:247][210]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:247][210]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:247][210]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:256][210]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:256][210]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:256][210]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:268][210]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:268][210]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:275][211]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:275][211]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:275][211]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:288][211]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:288][211]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:298][212]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:298][212]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:298][212]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:308][212]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:308][212]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:418][218]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:418][218]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:418][218]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:425][218]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:425][218]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:425][218]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:438][218]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:438][218]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:448][219]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:448][219]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:448][219]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:458][219]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:458][219]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:470][220]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:470][220]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:470][220]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:481][220]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:481][220]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:488][221]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:488][221]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:488][221]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:501][221]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:501][221]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:512][222]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:512][222]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:512][222]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:521][222]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:521][222]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:531][223]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:531][223]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:531][223]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:542][223]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:542][223]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:550][224]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:550][224]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:550][224]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:562][224]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:562][224]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:572][225]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:572][225]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:572][225]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:582][225]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:582][225]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:587][226]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:587][226]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:587][226]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:595][226]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:595][226]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:595][226]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:607][226]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:607][226]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:617][227]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:617][227]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:617][227]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:628][227]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.03.58:628][227]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.01:626][392]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.01:626][392]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.01:626][392]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.01:632][392]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.01:632][392]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.01:632][392]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.01:640][392]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.01:640][392]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:270][420]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:270][420]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:270][420]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:278][420]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:279][420]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:279][420]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:290][420]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:290][420]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:302][421]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:302][421]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:302][421]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:313][421]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:314][421]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:324][422]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:324][422]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:324][422]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:336][422]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:336][422]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:349][423]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:349][423]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:349][423]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:364][423]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:364][423]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:373][424]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:373][424]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:373][424]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:385][424]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:385][424]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:395][425]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:395][425]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:395][425]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:407][425]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:407][425]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:417][426]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:417][426]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:417][426]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:430][426]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:430][426]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:441][427]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:441][427]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:441][427]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:453][427]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:453][427]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:496][430]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:496][430]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:496][430]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:507][430]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:507][430]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:515][431]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:515][431]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:515][431]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:524][431]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:524][431]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:534][432]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:534][432]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:534][432]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:545][432]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:545][432]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:554][433]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:554][433]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:554][433]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:566][433]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:566][433]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:594][435]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:594][435]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:594][435]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:601][435]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:601][435]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:601][435]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:613][435]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:613][435]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:624][436]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:624][436]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:624][436]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:634][436]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:634][436]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:645][437]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:645][437]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:645][437]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:656][437]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:656][437]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:668][438]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:668][438]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:668][438]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:681][438]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:681][438]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:690][439]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:691][439]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:691][439]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:705][439]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:705][439]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:716][440]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:716][440]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:716][440]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:728][440]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:728][440]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:739][441]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:739][441]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:739][441]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:750][441]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:750][441]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:760][442]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:761][442]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:761][442]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:772][442]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:772][442]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:781][443]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:781][443]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:781][443]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:794][443]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:794][443]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:803][444]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:803][444]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:803][444]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:814][444]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.02:814][444]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.05:448][558]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.05:448][558]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.05:448][558]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.05:448][558]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.05:449][558]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.05:450][558]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.05:450][558]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.05:450][558]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.05:454][558]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.04.05:454][558]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.04.05:482][560]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.05:482][560]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.05:482][560]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.05:488][560]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.05:488][560]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.05:488][560]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.05:500][560]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.05:500][560]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.05:872][578]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.05:872][578]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.05:872][578]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.05:879][578]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.05:879][578]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.05:879][578]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.05:892][578]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.05:892][578]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.05:895][579]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.05:895][579]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.05:895][579]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.05:904][579]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.05:904][579]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.05:904][579]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.05:915][579]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.05:915][579]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.05:919][580]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.05:919][580]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.05:919][580]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.05:927][580]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.05:927][580]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.05:927][580]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.05:939][580]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.05:939][580]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.06:429][605]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.06:429][605]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.06:429][605]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.06:587][613]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.06:587][613]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.06:587][613]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.06:593][613]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.06:593][613]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.06:593][613]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.06:603][613]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.06:603][613]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.06:613][614]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.06:613][614]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.06:613][614]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.06:622][614]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.06:623][614]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.06:633][615]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.06:633][615]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.06:633][615]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.06:645][615]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.06:645][615]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.06:654][616]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.06:655][616]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.06:655][616]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.06:666][616]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.06:666][616]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.06:677][617]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.06:677][617]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.06:677][617]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.06:689][617]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.06:689][617]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.06:700][618]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.06:700][618]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.06:700][618]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.06:712][618]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.06:712][618]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.06:724][619]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.06:724][619]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.06:724][619]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.06:736][619]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.06:736][619]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.08:912][713]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.08:912][713]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.08:913][713]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.08:913][713]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.08:914][713]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.08:914][713]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.08:914][713]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.08:914][713]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.08:918][713]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.04.08:918][713]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.04.16:796][800]BlueprintLog: New page: Pre-Play auto-recompile
+[2016.06.08-09.04.16:807][800]LogActorComponent: UnregisterComponent: (/Engine/Transient.SteamVRChaperone_GEN_VARIABLE) Not registered. Aborting.
+[2016.06.08-09.04.16:807][800]LogActorComponent: UnregisterComponent: (/Engine/Transient.FloatingPawnMovement_GEN_VARIABLE) Not registered. Aborting.
+[2016.06.08-09.04.16:862][800]LogPlayLevel: [PlayLevel] Compiling Vive_Pawn before play...
+[2016.06.08-09.04.16:943][800]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.16:943][800]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.16:944][800]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.16:944][800]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.16:945][800]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.04.17:298][800]LogPlayLevel: PlayLevel: Blueprint regeneration took 502 ms (1 blueprints)
+[2016.06.08-09.04.17:364][800]PIE: New page: PIE session: Plains (Jun 7, 2016, 6:04:17 PM)
+[2016.06.08-09.04.17:365][800]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_Plains
+[2016.06.08-09.04.17:381][800]LogPlayLevel: PIE: StaticDuplicateObject took: (0.016556s)
+[2016.06.08-09.04.17:382][800]LogAIModule: Creating AISystem for world Plains
+[2016.06.08-09.04.17:382][800]LogPlayLevel: PIE: World Init took: (0.000775s)
+[2016.06.08-09.04.17:382][800]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Plains.Plains to /Game/UEDPIE_0_Plains.Plains (0.017590s)
+[2016.06.08-09.04.17:402][800]LogInit: XAudio2 using 'Speakers (4- USB Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.06.08-09.04.17:409][800]LogInit: FAudioDevice initialized.
+[2016.06.08-09.04.17:491][800]LogWorld: Game class is 'SteamVR_GM_C'
+[2016.06.08-09.04.17:502][800]LogWorld: Bringing World /Game/UEDPIE_0_Plains.Plains up for play (max tick rate 60) at 2016.06.08-02.04.17
+[2016.06.08-09.04.17:503][800]LogWorld: Bringing up level for play took: 0.006305
+[2016.06.08-09.04.17:508][800]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0008 seconds. Added 9 classes and 0 folders.
+[2016.06.08-09.04.17:510][800]PIE: Info Play in editor start time for /Game/UEDPIE_0_Plains 0.588
+[2016.06.08-09.04.17:856][800]LogRenderer: Reallocating scene render targets to support 1684x1720 (Frame:41).
+[2016.06.08-09.04.17:856][800]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.17:856][800]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.17:857][800]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.17:857][800]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.17:858][800]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.17:858][800]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.17:859][800]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.17:859][800]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.17:863][800]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.04.17:863][800]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.04.17:989][805]LogBlueprintUserMessages: [Vive_Pawn_C_24] invaliid DecalColor
+[2016.06.08-09.04.18:134][811]LogBlueprintUserMessages: [Vive_Pawn_C_24] invaliid DecalColor
+[2016.06.08-09.04.18:353][820]LogBlueprintUserMessages: [Vive_Pawn_C_24] invaliid DecalColor
+[2016.06.08-09.04.18:548][828]LogBlueprintUserMessages: [Vive_Pawn_C_24] invaliid DecalColor
+[2016.06.08-09.04.18:801][839]LogBlueprintUserMessages: [Vive_Pawn_C_24] invaliid DecalColor
+[2016.06.08-09.04.18:967][846]LogBlueprintUserMessages: [Vive_Pawn_C_24] invaliid DecalColor
+[2016.06.08-09.04.19:176][855]LogBlueprintUserMessages: [Vive_Pawn_C_24] invaliid DecalColor
+[2016.06.08-09.04.19:390][864]LogBlueprintUserMessages: [Vive_Pawn_C_24] invaliid DecalColor
+[2016.06.08-09.04.19:608][873]LogBlueprintUserMessages: [Vive_Pawn_C_24] invaliid DecalColor
+[2016.06.08-09.04.19:822][882]LogBlueprintUserMessages: [Vive_Pawn_C_24] invaliid DecalColor
+[2016.06.08-09.04.20:033][891]LogBlueprintUserMessages: [Vive_Pawn_C_24] invaliid DecalColor
+[2016.06.08-09.04.20:244][900]LogBlueprintUserMessages: [Vive_Pawn_C_24] invaliid DecalColor
+[2016.06.08-09.04.20:454][909]LogBlueprintUserMessages: [Vive_Pawn_C_24] invaliid DecalColor
+[2016.06.08-09.04.20:670][918]LogBlueprintUserMessages: [Vive_Pawn_C_24] invaliid DecalColor
+[2016.06.08-09.04.20:879][927]LogBlueprintUserMessages: [Vive_Pawn_C_24] invaliid DecalColor
+[2016.06.08-09.04.20:947][928]LogActorComponent: UnregisterComponent: (/Engine/Transient.SteamVRChaperone_GEN_VARIABLE) Not registered. Aborting.
+[2016.06.08-09.04.20:947][928]LogActorComponent: UnregisterComponent: (/Engine/Transient.FloatingPawnMovement_GEN_VARIABLE) Not registered. Aborting.
+[2016.06.08-09.04.21:682][956]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Vive/Vive_Pawn" FILE="D:/HeliosFinal/Content/Vive/Vive_Pawn.uasset" SILENT=true
+[2016.06.08-09.04.21:762][956]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.21:763][956]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.21:763][956]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.21:763][956]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.21:764][956]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.04.21:881][956]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.21:881][956]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.21:881][956]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.21:881][956]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.21:882][956]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.04.22:003][956]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.22:003][956]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.22:003][956]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.22:004][956]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.22:005][956]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.04.22:269][956]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.22:269][956]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.22:269][956]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.22:269][956]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.22:270][956]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.04.22:428][956]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.22:428][956]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.22:429][956]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.22:429][956]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.22:430][956]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.04.22:516][956]LogSavePackage: Save=826.22ms
+[2016.06.08-09.04.22:516][956]LogSavePackage: Moving 'D:/HeliosFinal/Saved/Vive_Pawn4C207DE64946B05D736578816D18696A.tmp' to 'D:/HeliosFinal/Content/Vive/Vive_Pawn.uasset'
+[2016.06.08-09.04.22:518][956]LogSavePackage: Total save time: 834.75ms
+[2016.06.08-09.04.22:518][956]LogSavePackage:Display: Finished SavePackage D:/HeliosFinal/Content/Vive/Vive_Pawn.uasset
+[2016.06.08-09.04.24:255][ 50]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.06.08-09.04.24:255][ 50]PIE: New page: PIE session: Plains (Jun 7, 2016, 6:04:24 PM)
+[2016.06.08-09.04.24:256][ 50]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_Plains
+[2016.06.08-09.04.24:275][ 50]LogPlayLevel: PIE: StaticDuplicateObject took: (0.019508s)
+[2016.06.08-09.04.24:276][ 50]LogAIModule: Creating AISystem for world Plains
+[2016.06.08-09.04.24:277][ 50]LogPlayLevel: PIE: World Init took: (0.001421s)
+[2016.06.08-09.04.24:277][ 50]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Plains.Plains to /Game/UEDPIE_0_Plains.Plains (0.021203s)
+[2016.06.08-09.04.24:277][ 50]LogActorComponent: UnregisterComponent: (/Engine/Transient.SteamVRChaperone_GEN_VARIABLE) Not registered. Aborting.
+[2016.06.08-09.04.24:277][ 50]LogActorComponent: UnregisterComponent: (/Engine/Transient.FloatingPawnMovement_GEN_VARIABLE) Not registered. Aborting.
+[2016.06.08-09.04.24:298][ 50]LogInit: XAudio2 using 'Speakers (4- USB Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.06.08-09.04.24:303][ 50]LogInit: FAudioDevice initialized.
+[2016.06.08-09.04.24:336][ 50]LogWorld: Game class is 'SteamVR_GM_C'
+[2016.06.08-09.04.24:346][ 50]LogWorld: Bringing World /Game/UEDPIE_0_Plains.Plains up for play (max tick rate 60) at 2016.06.08-02.04.24
+[2016.06.08-09.04.24:346][ 50]LogWorld: Bringing up level for play took: 0.006278
+[2016.06.08-09.04.24:349][ 50]PIE: Info Play in editor start time for /Game/UEDPIE_0_Plains -0.573
+[2016.06.08-09.04.24:452][ 56]LogBlueprintUserMessages: [Vive_Pawn_C_25] invaliid DecalColor
+[2016.06.08-09.04.24:652][ 68]LogBlueprintUserMessages: [Vive_Pawn_C_25] invaliid DecalColor
+[2016.06.08-09.04.24:854][ 80]LogBlueprintUserMessages: [Vive_Pawn_C_25] invaliid DecalColor
+[2016.06.08-09.04.25:054][ 92]LogBlueprintUserMessages: [Vive_Pawn_C_25] invaliid DecalColor
+[2016.06.08-09.04.25:255][104]LogBlueprintUserMessages: [Vive_Pawn_C_25] invaliid DecalColor
+[2016.06.08-09.04.25:455][116]LogBlueprintUserMessages: [Vive_Pawn_C_25] invaliid DecalColor
+[2016.06.08-09.04.25:655][128]LogBlueprintUserMessages: [Vive_Pawn_C_25] invaliid DecalColor
+[2016.06.08-09.04.25:854][140]LogBlueprintUserMessages: [Vive_Pawn_C_25] invaliid DecalColor
+[2016.06.08-09.04.26:055][152]LogBlueprintUserMessages: [Vive_Pawn_C_25] invaliid DecalColor
+[2016.06.08-09.04.26:255][164]LogBlueprintUserMessages: [Vive_Pawn_C_25] invaliid DecalColor
+[2016.06.08-09.04.26:455][176]LogBlueprintUserMessages: [Vive_Pawn_C_25] invaliid DecalColor
+[2016.06.08-09.04.26:654][188]LogBlueprintUserMessages: [Vive_Pawn_C_25] invaliid DecalColor
+[2016.06.08-09.04.26:855][200]LogBlueprintUserMessages: [Vive_Pawn_C_25] invaliid DecalColor
+[2016.06.08-09.04.27:013][209]LogBlueprintUserMessages: [Vive_Pawn_C_25] Sent
+[2016.06.08-09.04.27:055][212]LogBlueprintUserMessages: [Vive_Pawn_C_25] Set DecalColor
+[2016.06.08-09.04.27:072][213]LogBlueprintUserMessages: [Vive_Pawn_C_25] invaliid DecalColor
+[2016.06.08-09.04.27:256][224]LogBlueprintUserMessages: [Vive_Pawn_C_25] invaliid DecalColor
+[2016.06.08-09.04.27:455][236]LogBlueprintUserMessages: [Vive_Pawn_C_25] invaliid DecalColor
+[2016.06.08-09.04.27:655][248]LogBlueprintUserMessages: [Vive_Pawn_C_25] invaliid DecalColor
+[2016.06.08-09.04.27:856][260]LogBlueprintUserMessages: [Vive_Pawn_C_25] invaliid DecalColor
+[2016.06.08-09.04.28:055][272]LogBlueprintUserMessages: [Vive_Pawn_C_25] invaliid DecalColor
+[2016.06.08-09.04.28:256][284]LogBlueprintUserMessages: [Vive_Pawn_C_25] invaliid DecalColor
+[2016.06.08-09.04.28:455][296]LogBlueprintUserMessages: [Vive_Pawn_C_25] invaliid DecalColor
+[2016.06.08-09.04.28:655][308]LogBlueprintUserMessages: [Vive_Pawn_C_25] invaliid DecalColor
+[2016.06.08-09.04.28:855][320]LogBlueprintUserMessages: [Vive_Pawn_C_25] invaliid DecalColor
+[2016.06.08-09.04.29:056][332]LogBlueprintUserMessages: [Vive_Pawn_C_25] invaliid DecalColor
+[2016.06.08-09.04.29:255][344]LogBlueprintUserMessages: [Vive_Pawn_C_25] invaliid DecalColor
+[2016.06.08-09.04.29:457][356]LogBlueprintUserMessages: [Vive_Pawn_C_25] invaliid DecalColor
+[2016.06.08-09.04.29:657][368]LogBlueprintUserMessages: [Vive_Pawn_C_25] invaliid DecalColor
+[2016.06.08-09.04.29:857][380]LogBlueprintUserMessages: [Vive_Pawn_C_25] invaliid DecalColor
+[2016.06.08-09.04.30:058][392]LogBlueprintUserMessages: [Vive_Pawn_C_25] invaliid DecalColor
+[2016.06.08-09.04.30:257][404]LogBlueprintUserMessages: [Vive_Pawn_C_25] invaliid DecalColor
+[2016.06.08-09.04.30:458][416]LogBlueprintUserMessages: [Vive_Pawn_C_25] invaliid DecalColor
+[2016.06.08-09.04.30:464][416]LogBlueprintUserMessages: [Vive_Pawn_C_25] Sent
+[2016.06.08-09.04.30:490][418]LogBlueprintUserMessages: [Vive_Pawn_C_25] Set DecalColor
+[2016.06.08-09.04.30:656][428]LogBlueprintUserMessages: [Vive_Pawn_C_25] invaliid DecalColor
+[2016.06.08-09.04.30:856][440]LogBlueprintUserMessages: [Vive_Pawn_C_25] invaliid DecalColor
+[2016.06.08-09.04.31:056][452]LogBlueprintUserMessages: [Vive_Pawn_C_25] invaliid DecalColor
+[2016.06.08-09.04.31:258][464]LogBlueprintUserMessages: [Vive_Pawn_C_25] invaliid DecalColor
+[2016.06.08-09.04.31:458][476]LogBlueprintUserMessages: [Vive_Pawn_C_25] invaliid DecalColor
+[2016.06.08-09.04.31:656][488]LogBlueprintUserMessages: [Vive_Pawn_C_25] invaliid DecalColor
+[2016.06.08-09.04.31:857][500]LogBlueprintUserMessages: [Vive_Pawn_C_25] invaliid DecalColor
+[2016.06.08-09.04.32:057][512]LogBlueprintUserMessages: [Vive_Pawn_C_25] invaliid DecalColor
+[2016.06.08-09.04.32:258][524]LogBlueprintUserMessages: [Vive_Pawn_C_25] invaliid DecalColor
+[2016.06.08-09.04.32:457][536]LogBlueprintUserMessages: [Vive_Pawn_C_25] invaliid DecalColor
+[2016.06.08-09.04.32:657][548]LogBlueprintUserMessages: [Vive_Pawn_C_25] invaliid DecalColor
+[2016.06.08-09.04.40:689][932]LogActorComponent: UnregisterComponent: (/Engine/Transient.SteamVRChaperone_GEN_VARIABLE) Not registered. Aborting.
+[2016.06.08-09.04.40:689][932]LogActorComponent: UnregisterComponent: (/Engine/Transient.FloatingPawnMovement_GEN_VARIABLE) Not registered. Aborting.
+[2016.06.08-09.04.40:758][932]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Vive/Vive_Pawn" FILE="D:/HeliosFinal/Content/Vive/Vive_Pawn.uasset" SILENT=true
+[2016.06.08-09.04.40:833][932]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.40:834][932]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.40:834][932]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.40:834][932]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.40:835][932]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.04.40:962][932]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.40:962][932]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.40:962][932]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.40:962][932]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.40:963][932]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.04.41:089][932]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.41:089][932]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.41:090][932]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.41:090][932]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.41:091][932]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.04.41:366][932]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.41:366][932]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.41:366][932]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.41:366][932]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.41:367][932]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.04.41:541][932]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.41:541][932]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.41:541][932]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.41:541][932]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.41:542][932]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.04.41:629][932]LogSavePackage: Save=868.85ms
+[2016.06.08-09.04.41:629][932]LogSavePackage: Moving 'D:/HeliosFinal/Saved/Vive_Pawn4CD807674C0B22E4E244609DC758A5D3.tmp' to 'D:/HeliosFinal/Content/Vive/Vive_Pawn.uasset'
+[2016.06.08-09.04.41:631][932]LogSavePackage: Total save time: 871.84ms
+[2016.06.08-09.04.41:631][932]LogSavePackage:Display: Finished SavePackage D:/HeliosFinal/Content/Vive/Vive_Pawn.uasset
+[2016.06.08-09.04.51:487][479]BlueprintLog: New page: Pre-Play auto-recompile
+[2016.06.08-09.04.51:495][479]LogActorComponent: UnregisterComponent: (/Engine/Transient.SteamVRChaperone_GEN_VARIABLE) Not registered. Aborting.
+[2016.06.08-09.04.51:495][479]LogActorComponent: UnregisterComponent: (/Engine/Transient.FloatingPawnMovement_GEN_VARIABLE) Not registered. Aborting.
+[2016.06.08-09.04.51:543][479]LogPlayLevel: [PlayLevel] Compiling Vive_Pawn before play...
+[2016.06.08-09.04.51:616][479]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.51:616][479]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.51:616][479]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.51:616][479]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.04.51:616][479]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.04.51:925][479]LogPlayLevel: PlayLevel: Blueprint regeneration took 438 ms (1 blueprints)
+[2016.06.08-09.04.51:953][479]PIE: New page: PIE session: Plains (Jun 7, 2016, 6:04:51 PM)
+[2016.06.08-09.04.51:953][479]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_Plains
+[2016.06.08-09.04.51:968][479]LogPlayLevel: PIE: StaticDuplicateObject took: (0.015498s)
+[2016.06.08-09.04.51:969][479]LogAIModule: Creating AISystem for world Plains
+[2016.06.08-09.04.51:969][479]LogPlayLevel: PIE: World Init took: (0.001021s)
+[2016.06.08-09.04.51:969][479]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Plains.Plains to /Game/UEDPIE_0_Plains.Plains (0.016814s)
+[2016.06.08-09.04.51:993][479]LogInit: XAudio2 using 'Speakers (4- USB Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.06.08-09.04.51:998][479]LogInit: FAudioDevice initialized.
+[2016.06.08-09.04.52:116][479]LogWorld: Game class is 'SteamVR_GM_C'
+[2016.06.08-09.04.52:128][479]LogWorld: Bringing World /Game/UEDPIE_0_Plains.Plains up for play (max tick rate 0) at 2016.06.08-02.04.52
+[2016.06.08-09.04.52:129][479]LogWorld: Bringing up level for play took: 0.006811
+[2016.06.08-09.04.52:162][479]PIE: Info Play in editor start time for /Game/UEDPIE_0_Plains 1.239
+[2016.06.08-09.04.52:182][481]LogRenderer: Reallocating scene render targets to support 3024x1720 (Frame:700).
+[2016.06.08-09.04.52:201][481]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 408/400 MB (ok in editor, bad on fixed memory platform)
+[2016.06.08-09.05.01:256][284]LogBlueprintUserMessages: [Vive_Pawn_C_24] Sent
+[2016.06.08-09.05.01:288][287]LogBlueprintUserMessages: [Vive_Pawn_C_24] Set DecalColor
+[2016.06.08-09.05.05:377][653]LogBlueprintUserMessages: [Vive_Pawn_C_24] Sent
+[2016.06.08-09.05.05:399][655]LogBlueprintUserMessages: [Vive_Pawn_C_24] Set DecalColor
+[2016.06.08-09.05.05:545][668]LogBlueprintUserMessages: [Vive_Pawn_C_24] Sent
+[2016.06.08-09.05.05:566][670]LogBlueprintUserMessages: [Vive_Pawn_C_24] Set DecalColor
+[2016.06.08-09.05.05:725][684]LogBlueprintUserMessages: [Vive_Pawn_C_24] Sent
+[2016.06.08-09.05.05:746][686]LogBlueprintUserMessages: [Vive_Pawn_C_24] Set DecalColor
+[2016.06.08-09.05.05:891][699]LogBlueprintUserMessages: [Vive_Pawn_C_24] Sent
+[2016.06.08-09.05.05:913][701]LogBlueprintUserMessages: [Vive_Pawn_C_24] Set DecalColor
+[2016.06.08-09.05.06:115][719]LogBlueprintUserMessages: [Vive_Pawn_C_24] Sent
+[2016.06.08-09.05.06:136][721]LogBlueprintUserMessages: [Vive_Pawn_C_24] Set DecalColor
+[2016.06.08-09.05.06:260][732]LogBlueprintUserMessages: [Vive_Pawn_C_24] Sent
+[2016.06.08-09.05.06:293][735]LogBlueprintUserMessages: [Vive_Pawn_C_24] Set DecalColor
+[2016.06.08-09.05.17:743][760]LogTemp:Warning: VRGripMotionController drop function was passed an invalid actor
+[2016.06.08-09.05.17:743][760]LogTemp:Warning: VRGripMotionController drop function was passed an invalid actor
+[2016.06.08-09.05.22:351][160]LogActorComponent: UnregisterComponent: (/Engine/Transient.SteamVRChaperone_GEN_VARIABLE) Not registered. Aborting.
+[2016.06.08-09.05.22:351][160]LogActorComponent: UnregisterComponent: (/Engine/Transient.FloatingPawnMovement_GEN_VARIABLE) Not registered. Aborting.
+[2016.06.08-09.05.25:060][314]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.06.08-09.05.25:060][314]PIE: New page: PIE session: Plains (Jun 7, 2016, 6:05:25 PM)
+[2016.06.08-09.05.25:060][314]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_Plains
+[2016.06.08-09.05.25:079][314]LogPlayLevel: PIE: StaticDuplicateObject took: (0.019350s)
+[2016.06.08-09.05.25:080][314]LogAIModule: Creating AISystem for world Plains
+[2016.06.08-09.05.25:080][314]LogPlayLevel: PIE: World Init took: (0.000952s)
+[2016.06.08-09.05.25:080][314]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Plains.Plains to /Game/UEDPIE_0_Plains.Plains (0.020590s)
+[2016.06.08-09.05.25:103][314]LogInit: XAudio2 using 'Speakers (4- USB Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.06.08-09.05.25:109][314]LogInit: FAudioDevice initialized.
+[2016.06.08-09.05.25:140][314]LogWorld: Game class is 'SteamVR_GM_C'
+[2016.06.08-09.05.25:150][314]LogWorld: Bringing World /Game/UEDPIE_0_Plains.Plains up for play (max tick rate 60) at 2016.06.08-02.05.25
+[2016.06.08-09.05.25:151][314]LogWorld: Bringing up level for play took: 0.006208
+[2016.06.08-09.05.25:154][314]PIE: Info Play in editor start time for /Game/UEDPIE_0_Plains 0.231
+[2016.06.08-09.05.25:188][315]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 602/400 MB (ok in editor, bad on fixed memory platform)
+[2016.06.08-09.05.26:672][404]LogBlueprintUserMessages: [Vive_Pawn_C_25] Sent
+[2016.06.08-09.05.26:698][406]LogBlueprintUserMessages: [Vive_Pawn_C_25] Set DecalColor
+[2016.06.08-09.05.29:806][592]LogBlueprintUserMessages: [Vive_Pawn_C_25] Sent
+[2016.06.08-09.05.29:850][595]LogBlueprintUserMessages: [Vive_Pawn_C_25] Set DecalColor
+[2016.06.08-09.05.34:057][847]LogBlueprintUserMessages: [Vive_Pawn_C_25] Sent
+[2016.06.08-09.05.34:083][849]LogBlueprintUserMessages: [Vive_Pawn_C_25] Set DecalColor
+[2016.06.08-09.05.40:129][165]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.05.40:129][165]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.05.40:130][165]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.05.40:130][165]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.05.40:131][165]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.05.40:131][165]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.05.40:131][165]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.05.40:131][165]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.05.40:135][165]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.05.40:136][165]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.05.42:829][313]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.05.42:829][313]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.05.42:829][313]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.05.42:838][313]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.05.42:838][313]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.05.42:838][313]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.05.42:853][313]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.05.42:853][313]LogTemp:Warning: Helios > setter node title
+[2016.06.08-09.08.33:806][895]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.08.33:806][895]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.08.33:806][895]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.08.33:816][895]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.08.33:816][895]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.08.33:816][895]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.08.33:827][895]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.08.33:827][895]LogTemp:Warning: Helios > getter node title
+[2016.06.08-09.09.14:752][882]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2016.06.08-09.09.15:015][883]Cmd: QUIT_EDITOR
+[2016.06.08-09.09.15:437][883]LogExit: Preparing to exit.
+[2016.06.08-09.09.15:868][883]LogExit: Editor shut down
+[2016.06.08-09.09.15:869][883]LogExit: Transaction tracking system shut down
+[2016.06.08-09.09.16:030][883]LogObj: Freed 0b from 0 cluster array pools.
+[2016.06.08-09.09.16:030][883]LogExit: Object subsystem successfully closed.
+[2016.06.08-09.09.16:055][883]LogD3D11RHI: Shutdown
+[2016.06.08-09.09.16:055][883]LogD3D11RHI: CleanupD3DDevice
+[2016.06.08-09.09.16:060][883]LogD3D11RHI: ~FD3D11DynamicRHI
+[2016.06.08-09.09.16:137][883]LogDerivedDataCache: Shutdown
+[2016.06.08-09.09.16:138][883]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (209)
+[2016.06.08-09.09.16:138][883]LogModuleManager: Shutting down and abandoning module BlueprintGraph (208)
+[2016.06.08-09.09.16:138][883]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (207)
+[2016.06.08-09.09.16:138][883]LogModuleManager: Shutting down and abandoning module CrashTracker (206)
+[2016.06.08-09.09.16:138][883]LogModuleManager: Shutting down and abandoning module SceneOutliner (205)
+[2016.06.08-09.09.16:138][883]LogModuleManager: Shutting down and abandoning module SuperSearch (204)
+[2016.06.08-09.09.16:138][883]LogModuleManager: Shutting down and abandoning module WidgetCarousel (203)
+[2016.06.08-09.09.16:138][883]LogModuleManager: Shutting down and abandoning module AddContentDialog (202)
+[2016.06.08-09.09.16:140][883]LogModuleManager: Shutting down and abandoning module GameplayTags (201)
+[2016.06.08-09.09.16:140][883]LogModuleManager: Shutting down and abandoning module EditorWidgets (200)
+[2016.06.08-09.09.16:140][883]LogModuleManager: Shutting down and abandoning module CollectionManager (199)
+[2016.06.08-09.09.16:140][883]LogModuleManager: Shutting down and abandoning module StatsViewer (198)
+[2016.06.08-09.09.16:140][883]LogModuleManager: Shutting down and abandoning module FoliageEdit (197)
+[2016.06.08-09.09.16:140][883]LogModuleManager: Shutting down and abandoning module LandscapeEditor (196)
+[2016.06.08-09.09.16:141][883]LogModuleManager: Shutting down and abandoning module ActorPickerMode (195)
+[2016.06.08-09.09.16:141][883]LogModuleManager: Shutting down and abandoning module GeometryMode (194)
+[2016.06.08-09.09.16:141][883]LogModuleManager: Shutting down and abandoning module TextureAlignMode (193)
+[2016.06.08-09.09.16:141][883]LogModuleManager: Shutting down and abandoning module BspMode (192)
+[2016.06.08-09.09.16:141][883]LogModuleManager: Shutting down and abandoning module PlacementMode (191)
+[2016.06.08-09.09.16:141][883]LogModuleManager: Shutting down and abandoning module AutomationWorker (190)
+[2016.06.08-09.09.16:141][883]LogModuleManager: Shutting down and abandoning module CharacterAI (189)
+[2016.06.08-09.09.16:141][883]LogModuleManager: Shutting down and abandoning module SmartSnapping (188)
+[2016.06.08-09.09.16:141][883]LogModuleManager: Shutting down and abandoning module ViewportSnapping (187)
+[2016.06.08-09.09.16:141][883]LogModuleManager: Shutting down and abandoning module LogVisualizer (186)
+[2016.06.08-09.09.16:141][883]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (185)
+[2016.06.08-09.09.16:141][883]LogModuleManager: Shutting down and abandoning module IntroTutorials (184)
+[2016.06.08-09.09.16:141][883]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (183)
+[2016.06.08-09.09.16:141][883]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (182)
+[2016.06.08-09.09.16:141][883]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (181)
+[2016.06.08-09.09.16:141][883]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (180)
+[2016.06.08-09.09.16:996][883]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (179)
+[2016.06.08-09.09.16:996][883]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (178)
+[2016.06.08-09.09.16:996][883]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (177)
+[2016.06.08-09.09.16:996][883]LogModuleManager: Shutting down and abandoning module MergeActors (176)
+[2016.06.08-09.09.16:996][883]LogModuleManager: Shutting down and abandoning module SizeMap (175)
+[2016.06.08-09.09.16:996][883]LogModuleManager: Shutting down and abandoning module TreeMap (174)
+[2016.06.08-09.09.16:996][883]LogModuleManager: Shutting down and abandoning module ReferenceViewer (173)
+[2016.06.08-09.09.16:996][883]LogModuleManager: Shutting down and abandoning module LocalizationService (172)
+[2016.06.08-09.09.16:996][883]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (171)
+[2016.06.08-09.09.16:996][883]LogModuleManager: Shutting down and abandoning module HardwareTargeting (170)
+[2016.06.08-09.09.16:996][883]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (169)
+[2016.06.08-09.09.16:996][883]LogModuleManager: Shutting down and abandoning module UndoHistory (168)
+[2016.06.08-09.09.16:996][883]LogModuleManager: Shutting down and abandoning module UserFeedback (167)
+[2016.06.08-09.09.16:996][883]LogModuleManager: Shutting down and abandoning module XmlParser (166)
+[2016.06.08-09.09.16:996][883]LogModuleManager: Shutting down and abandoning module Blutility (165)
+[2016.06.08-09.09.16:996][883]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (164)
+[2016.06.08-09.09.16:996][883]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (163)
+[2016.06.08-09.09.16:996][883]LogModuleManager: Shutting down and abandoning module InputBindingEditor (162)
+[2016.06.08-09.09.16:996][883]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (161)
+[2016.06.08-09.09.16:997][883]LogModuleManager: Shutting down and abandoning module SettingsEditor (160)
+[2016.06.08-09.09.16:997][883]LogModuleManager: Shutting down and abandoning module ProjectLauncher (159)
+[2016.06.08-09.09.16:997][883]LogModuleManager: Shutting down and abandoning module SessionFrontend (158)
+[2016.06.08-09.09.16:997][883]LogModuleManager: Shutting down and abandoning module ProfilerClient (157)
+[2016.06.08-09.09.16:997][883]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (156)
+[2016.06.08-09.09.16:997][883]LogModuleManager: Shutting down and abandoning module DeviceManager (155)
+[2016.06.08-09.09.17:028][883]LogModuleManager: Shutting down and abandoning module AutomationController (154)
+[2016.06.08-09.09.17:028][883]LogModuleManager: Shutting down and abandoning module AutomationWindow (153)
+[2016.06.08-09.09.17:028][883]LogModuleManager: Shutting down and abandoning module Layers (152)
+[2016.06.08-09.09.17:028][883]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (151)
+[2016.06.08-09.09.17:028][883]LogModuleManager: Shutting down and abandoning module DetailCustomizations (150)
+[2016.06.08-09.09.17:028][883]LogModuleManager: Shutting down and abandoning module PackagesDialog (149)
+[2016.06.08-09.09.17:028][883]LogModuleManager: Shutting down and abandoning module Persona (148)
+[2016.06.08-09.09.17:028][883]LogModuleManager: Shutting down and abandoning module Kismet (147)
+[2016.06.08-09.09.17:028][883]LogModuleManager: Shutting down and abandoning module GraphEditor (146)
+[2016.06.08-09.09.17:028][883]LogModuleManager: Shutting down and abandoning module ClassViewer (145)
+[2016.06.08-09.09.17:028][883]LogModuleManager: Shutting down and abandoning module Toolbox (144)
+[2016.06.08-09.09.17:028][883]LogModuleManager: Shutting down and abandoning module ModuleUI (143)
+[2016.06.08-09.09.17:028][883]LogModuleManager: Shutting down and abandoning module MovieSceneTools (142)
+[2016.06.08-09.09.17:028][883]LogModuleManager: Shutting down and abandoning module OutputLog (141)
+[2016.06.08-09.09.17:028][883]LogModuleManager: Shutting down and abandoning module GammaUI (140)
+[2016.06.08-09.09.17:028][883]LogModuleManager: Shutting down and abandoning module Documentation (139)
+[2016.06.08-09.09.17:028][883]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (138)
+[2016.06.08-09.09.17:028][883]LogModuleManager: Shutting down and abandoning module AnalyticsET (137)
+[2016.06.08-09.09.17:028][883]LogModuleManager: Shutting down and abandoning module Analytics (136)
+[2016.06.08-09.09.17:028][883]LogModuleManager: Shutting down and abandoning module PortalServices (135)
+[2016.06.08-09.09.17:028][883]LogModuleManager: Shutting down and abandoning module PortalRpc (134)
+[2016.06.08-09.09.17:028][883]LogModuleManager: Shutting down and abandoning module MessagingRpc (133)
+[2016.06.08-09.09.17:028][883]LogModuleManager: Shutting down and abandoning module AITestSuite (132)
+[2016.06.08-09.09.17:028][883]LogModuleManager: Shutting down and abandoning module GameplayDebugger (131)
+[2016.06.08-09.09.17:028][883]LogModuleManager: Shutting down and abandoning module AIModule (130)
+[2016.06.08-09.09.17:028][883]LogModuleManager: Shutting down and abandoning module ProfilerService (129)
+[2016.06.08-09.09.17:045][883]LogModuleManager: Shutting down and abandoning module TaskGraph (128)
+[2016.06.08-09.09.17:045][883]LogModuleManager: Shutting down and abandoning module VRGripMotionControllerPlugin (127)
+[2016.06.08-09.09.17:045][883]LogModuleManager: Shutting down and abandoning module SimpleDataIntegration (126)
+[2016.06.08-09.09.17:045][883]LogModuleManager: Shutting down and abandoning module SlateRemote (125)
+[2016.06.08-09.09.17:045][883]LogModuleManager: Shutting down and abandoning module SteamVRController (124)
+[2016.06.08-09.09.17:045][883]LogModuleManager: Shutting down and abandoning module SteamVR (123)
+[2016.06.08-09.09.17:045][883]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (122)
+[2016.06.08-09.09.17:045][883]LogModuleManager: Shutting down and abandoning module OculusLibrary (121)
+[2016.06.08-09.09.17:045][883]LogModuleManager: Shutting down and abandoning module OculusInput (120)
+[2016.06.08-09.09.17:045][883]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (119)
+[2016.06.08-09.09.17:045][883]LogModuleManager: Shutting down and abandoning module CableComponent (118)
+[2016.06.08-09.09.17:045][883]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (117)
+[2016.06.08-09.09.17:045][883]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (116)
+[2016.06.08-09.09.17:045][883]LogModuleManager: Shutting down and abandoning module HTML5Networking (115)
+[2016.06.08-09.09.17:045][883]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (114)
+[2016.06.08-09.09.17:045][883]LogModuleManager: Shutting down and abandoning module PluginBrowser (113)
+[2016.06.08-09.09.17:045][883]LogModuleManager: Shutting down and abandoning module EpicSurvey (112)
+[2016.06.08-09.09.17:045][883]LogModuleManager: Shutting down and abandoning module DesktopPlatform (111)
+[2016.06.08-09.09.17:046][883]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (110)
+[2016.06.08-09.09.17:046][883]LogModuleManager: Shutting down and abandoning module UObjectPlugin (109)
+[2016.06.08-09.09.17:046][883]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (108)
+[2016.06.08-09.09.17:046][883]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (107)
+[2016.06.08-09.09.17:046][883]LogModuleManager: Shutting down and abandoning module SourceControl (106)
+[2016.06.08-09.09.17:046][883]LogModuleManager: Shutting down and abandoning module GitSourceControl (105)
+[2016.06.08-09.09.17:046][883]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (104)
+[2016.06.08-09.09.17:046][883]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (103)
+[2016.06.08-09.09.17:046][883]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (102)
+[2016.06.08-09.09.17:046][883]LogModuleManager: Shutting down and abandoning module MeshPaint (101)
+[2016.06.08-09.09.17:046][883]LogModuleManager: Shutting down and abandoning module HotReload (100)
+[2016.06.08-09.09.17:046][883]LogModuleManager: Shutting down and abandoning module MainFrame (99)
+[2016.06.08-09.09.17:046][883]LogModuleManager: Shutting down and abandoning module LevelEditor (98)
+[2016.06.08-09.09.17:047][883]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (97)
+[2016.06.08-09.09.17:047][883]LogModuleManager: Shutting down and abandoning module AssetRegistry (96)
+[2016.06.08-09.09.17:185][883]LogModuleManager: Shutting down and abandoning module ContentBrowser (95)
+[2016.06.08-09.09.17:186][883]LogModuleManager: Shutting down and abandoning module Paper2DEditor (94)
+[2016.06.08-09.09.17:186][883]LogModuleManager: Shutting down and abandoning module HeliosFinal (93)
+[2016.06.08-09.09.17:186][883]LogModuleManager: Shutting down and abandoning module UdpMessaging (92)
+[2016.06.08-09.09.17:287][883]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (91)
+[2016.06.08-09.09.17:287][883]LogModuleManager: Shutting down and abandoning module Paper2D (90)
+[2016.06.08-09.09.17:287][883]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (89)
+[2016.06.08-09.09.17:287][883]LogModuleManager: Shutting down and abandoning module Media (88)
+[2016.06.08-09.09.17:287][883]LogModuleManager: Shutting down and abandoning module WmfMedia (87)
+[2016.06.08-09.09.17:287][883]LogModuleManager: Shutting down and abandoning module MediaAssets (86)
+[2016.06.08-09.09.17:287][883]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (85)
+[2016.06.08-09.09.17:287][883]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (84)
+[2016.06.08-09.09.17:287][883]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (83)
+[2016.06.08-09.09.17:287][883]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (82)
+[2016.06.08-09.09.17:287][883]LogModuleManager: Shutting down and abandoning module PropertyEditor (81)
+[2016.06.08-09.09.17:287][883]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (80)
+[2016.06.08-09.09.17:287][883]LogModuleManager: Shutting down and abandoning module FunctionalTesting (79)
+[2016.06.08-09.09.17:287][883]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (78)
+[2016.06.08-09.09.17:287][883]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (77)
+[2016.06.08-09.09.17:287][883]LogModuleManager: Shutting down and abandoning module MessageLog (76)
+[2016.06.08-09.09.17:287][883]LogModuleManager: Shutting down and abandoning module Sequencer (75)
+[2016.06.08-09.09.17:287][883]LogModuleManager: Shutting down and abandoning module AssetTools (74)
+[2016.06.08-09.09.17:287][883]LogModuleManager: Shutting down and abandoning module UMGEditor (73)
+[2016.06.08-09.09.17:287][883]LogModuleManager: Shutting down and abandoning module UMG (72)
+[2016.06.08-09.09.17:287][883]LogModuleManager: Shutting down and abandoning module SlateReflector (71)
+[2016.06.08-09.09.17:287][883]LogModuleManager: Shutting down and abandoning module Slate (70)
+[2016.06.08-09.09.17:287][883]LogModuleManager: Shutting down and abandoning module EditorStyle (69)
+[2016.06.08-09.09.17:289][883]LogModuleManager: Shutting down and abandoning module SessionServices (68)
+[2016.06.08-09.09.17:289][883]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (67)
+[2016.06.08-09.09.17:289][883]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (66)
+[2016.06.08-09.09.17:289][883]LogModuleManager: Shutting down and abandoning module XAudio2 (65)
+[2016.06.08-09.09.17:289][883]LogModuleManager: Shutting down and abandoning module Networking (63)
+[2016.06.08-09.09.17:289][883]LogModuleManager: Shutting down and abandoning module Core (62)
+[2016.06.08-09.09.17:289][883]LogModuleManager: Shutting down and abandoning module KismetCompiler (61)
+[2016.06.08-09.09.17:289][883]LogModuleManager: Shutting down and abandoning module PhysXFormats (60)
+[2016.06.08-09.09.17:289][883]LogModuleManager: Shutting down and abandoning module MeshUtilities (59)
+[2016.06.08-09.09.17:289][883]LogModuleManager: Shutting down and abandoning module CookingStats (58)
+[2016.06.08-09.09.17:289][883]LogModuleManager: Shutting down and abandoning module DerivedDataCache (57)
+[2016.06.08-09.09.17:289][883]LogDerivedDataCache: Shutdown
+[2016.06.08-09.09.17:289][883]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (56)
+[2016.06.08-09.09.17:289][883]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (55)
+[2016.06.08-09.09.17:289][883]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (54)
+[2016.06.08-09.09.17:289][883]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (53)
+[2016.06.08-09.09.17:289][883]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (52)
+[2016.06.08-09.09.17:289][883]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (51)
+[2016.06.08-09.09.17:289][883]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (50)
+[2016.06.08-09.09.17:289][883]LogModuleManager: Shutting down and abandoning module ImageWrapper (49)
+[2016.06.08-09.09.17:289][883]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (48)
+[2016.06.08-09.09.17:289][883]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (47)
+[2016.06.08-09.09.17:289][883]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (46)
+[2016.06.08-09.09.17:289][883]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (45)
+[2016.06.08-09.09.17:289][883]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (44)
+[2016.06.08-09.09.17:289][883]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (43)
+[2016.06.08-09.09.17:289][883]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (42)
+[2016.06.08-09.09.17:289][883]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (41)
+[2016.06.08-09.09.17:289][883]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (40)
+[2016.06.08-09.09.17:289][883]LogModuleManager: Shutting down and abandoning module Messaging (39)
+[2016.06.08-09.09.17:289][883]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (38)
+[2016.06.08-09.09.17:289][883]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (37)
+[2016.06.08-09.09.17:289][883]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (36)
+[2016.06.08-09.09.17:289][883]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (35)
+[2016.06.08-09.09.17:289][883]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (34)
+[2016.06.08-09.09.17:289][883]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (33)
+[2016.06.08-09.09.17:289][883]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (32)
+[2016.06.08-09.09.17:290][883]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (31)
+[2016.06.08-09.09.17:290][883]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (30)
+[2016.06.08-09.09.17:290][883]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (29)
+[2016.06.08-09.09.17:290][883]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (28)
+[2016.06.08-09.09.17:290][883]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (27)
+[2016.06.08-09.09.17:290][883]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (26)
+[2016.06.08-09.09.17:290][883]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (25)
+[2016.06.08-09.09.17:290][883]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (24)
+[2016.06.08-09.09.17:290][883]LogModuleManager: Shutting down and abandoning module TargetPlatform (23)
+[2016.06.08-09.09.17:290][883]LogModuleManager: Shutting down and abandoning module InputCore (22)
+[2016.06.08-09.09.17:290][883]LogModuleManager: Shutting down and abandoning module Settings (21)
+[2016.06.08-09.09.17:290][883]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (19)
+[2016.06.08-09.09.17:290][883]LogModuleManager: Shutting down and abandoning module HTTP (18)
+[2016.06.08-09.09.18:292][883]LogModuleManager: Shutting down and abandoning module XMPP (17)
+[2016.06.08-09.09.18:292][883]LogModuleManager: Shutting down and abandoning module OculusRift (16)
+[2016.06.08-09.09.18:292][883]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (15)
+[2016.06.08-09.09.18:292][883]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
+[2016.06.08-09.09.18:292][883]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
+[2016.06.08-09.09.18:292][883]LogModuleManager: Shutting down and abandoning module Landscape (12)
+[2016.06.08-09.09.18:292][883]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
+[2016.06.08-09.09.18:293][883]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
+[2016.06.08-09.09.18:293][883]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
+[2016.06.08-09.09.18:293][883]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
+[2016.06.08-09.09.18:293][883]LogModuleManager: Shutting down and abandoning module Renderer (7)
+[2016.06.08-09.09.18:293][883]LogModuleManager: Shutting down and abandoning module Engine (6)
+[2016.06.08-09.09.18:293][883]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
+[2016.06.08-09.09.18:293][883]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
+[2016.06.08-09.09.18:293][883]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
+[2016.06.08-09.09.18:293][883]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
+[2016.06.08-09.09.18:293][883]LogModuleManager: Shutting down and abandoning module PakFile (1)
+[2016.06.08-09.09.18:295][883]LogExit: Exiting.
+[2016.06.08-09.09.18:297][883]Log file closed, 06/08/16 02:09:18

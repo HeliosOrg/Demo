@@ -1,0 +1,1786 @@
+﻿Log file open, 06/08/16 13:25:01
+LogInit:Display: Running engine for game: HeliosFinal
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(361152163) SRandInit(361152164).
+LogTaskGraph: Started task graph with 4 named threads and 7 total threads.
+LogStats: Stats thread started at 0.100724
+LogInit: Version: 4.11.2-2946394+++UE4+Release-4.11
+LogInit: API Version: 2927265
+LogInit: Compiled (64-bit): Apr 18 2016 02:18:46
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.11
+LogInit: Command line:  
+LogInit: Base directory: C:/Program Files/Epic Games/4.11/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Using libcurl 7.41.0
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with WinSSL
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Presizing for max 16777216 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2016.06.08-20.25.01:149][  0]LogConsoleManager:Display: Setting the console variable 'r.ScreenPercentage' with 'SetByScalability' was ignored as it is lower priority than the previous 'SetBySystemSettingsIni'
+[2016.06.08-20.25.01:149][  0]LogConsoleManager:Display: Setting the console variable 'r.PostProcessAAQuality' with 'SetByScalability' was ignored as it is lower priority than the previous 'SetBySystemSettingsIni'
+[2016.06.08-20.25.01:149][  0]LogConsoleManager:Display: Setting the console variable 'sg.PostProcessQuality' with 'SetByScalability' was ignored as it is lower priority than the previous 'SetBySystemSettingsIni'
+[2016.06.08-20.25.01:149][  0]LogConsoleManager:Display: Setting the console variable 'r.MaxAnisotropy' with 'SetByScalability' was ignored as it is lower priority than the previous 'SetBySystemSettingsIni'
+[2016.06.08-20.25.01:149][  0]LogConsoleManager:Display: Setting the console variable 'sg.EffectsQuality' with 'SetByScalability' was ignored as it is lower priority than the previous 'SetBySystemSettingsIni'
+[2016.06.08-20.25.01:149][  0]LogInit: Selected Device Profile: [Windows]
+[2016.06.08-20.25.01:149][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2016.06.08-20.25.01:161][  0]LogInit: Computer: 210-EUROPA
+[2016.06.08-20.25.01:161][  0]LogInit: User: Helios
+[2016.06.08-20.25.01:161][  0]LogInit: CPU Page size=65536, Cores=4
+[2016.06.08-20.25.01:161][  0]LogInit: High frequency timer resolution =2.531252 MHz
+[2016.06.08-20.25.01:161][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2016.06.08-20.25.01:161][  0]LogMemory: Platform Memory Stats for Windows
+[2016.06.08-20.25.01:161][  0]LogMemory: Process Physical Memory: 314.47 MB used, 314.47 MB peak
+[2016.06.08-20.25.01:161][  0]LogMemory: Process Virtual Memory: 314.91 MB used, 314.91 MB peak
+[2016.06.08-20.25.01:161][  0]LogMemory: Physical Memory: 3610.10 MB used, 16283.44 MB total
+[2016.06.08-20.25.01:161][  0]LogMemory: Virtual Memory: 653.71 MB used, 134217728.00 MB total
+[2016.06.08-20.25.01:192][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2016.06.08-20.25.01:552][  0]LogD3D11RHI: D3D11 adapters:
+[2016.06.08-20.25.01:583][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 980 Ti' (Feature Level 11_0)
+[2016.06.08-20.25.01:583][  0]LogD3D11RHI:       6047MB of dedicated video memory, 0MB of dedicated system memory, and 8141MB of shared system memory, 1 output[s]
+[2016.06.08-20.25.01:589][  0]LogD3D11RHI:    1. 'Intel(R) HD Graphics 530' (Feature Level 11_0)
+[2016.06.08-20.25.01:589][  0]LogD3D11RHI:       128MB of dedicated video memory, 0MB of dedicated system memory, and 8141MB of shared system memory, 0 output[s]
+[2016.06.08-20.25.01:590][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2016.06.08-20.25.01:590][  0]LogD3D11RHI:       0MB of dedicated video memory, 0MB of dedicated system memory, and 8141MB of shared system memory, 0 output[s]
+[2016.06.08-20.25.01:590][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2016.06.08-20.25.01:595][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2016.06.08-20.25.01:595][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 980 Ti
+[2016.06.08-20.25.01:595][  0]LogD3D11RHI:   Driver Version: Unknown (internal Unknown)
+[2016.06.08-20.25.01:595][  0]LogD3D11RHI:      Driver Date: Unknown
+[2016.06.08-20.25.01:595][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2016.06.08-20.25.01:613][  0]LogD3D11RHI: Async texture creation enabled
+[2016.06.08-20.25.01:623][  0]LogShaderCompilers: Guid format shader working directory is -4 characters bigger than the processId version (../../../../../../Users/Helios/Desktop/HeliosFinal/Intermediate/Shaders/WorkingDirectory/10120/).
+[2016.06.08-20.25.01:623][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Helios/AppData/Local/Temp/UnrealShaderWorkingDir/5707573B4C58D53AFE02C0B6FA0BD97F/'.
+[2016.06.08-20.25.01:623][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2016.06.08-20.25.02:461][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2016.06.08-20.25.02:465][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2016.06.08-20.25.02:470][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2016.06.08-20.25.02:475][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2016.06.08-20.25.02:479][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2016.06.08-20.25.02:482][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2016.06.08-20.25.02:486][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2016.06.08-20.25.02:489][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2016.06.08-20.25.02:492][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2016.06.08-20.25.02:495][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2016.06.08-20.25.02:498][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2016.06.08-20.25.02:505][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2016.06.08-20.25.02:505][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2016.06.08-20.25.02:505][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2016.06.08-20.25.02:523][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2016.06.08-20.25.02:525][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2016.06.08-20.25.02:529][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2016.06.08-20.25.02:532][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2016.06.08-20.25.02:535][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2016.06.08-20.25.02:535][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2016.06.08-20.25.02:615][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2016.06.08-20.25.02:662][  0]LogDerivedDataCache: Loaded boot cache 0.05s 73MB C:/Users/Helios/AppData/Local/UnrealEngine/4.11/DerivedDataCache/Boot.ddc.
+[2016.06.08-20.25.02:662][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Helios/AppData/Local/UnrealEngine/4.11/DerivedDataCache/Boot.ddc
+[2016.06.08-20.25.02:662][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Helios/Desktop/HeliosFinal/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2016.06.08-20.25.02:662][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2016.06.08-20.25.02:662][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Helios/Desktop/HeliosFinal/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2016.06.08-20.25.02:662][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2016.06.08-20.25.02:674][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2016.06.08-20.25.02:686][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Helios/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2016.06.08-20.25.02:817][  0]LogInit: Selected Device Profile: [Windows]
+[2016.06.08-20.25.02:818][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2016.06.08-20.25.02:847][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2016.06.08-20.25.02:959][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2016.06.08-20.25.02:959][  0]LogMeshUtilities: No automatic mesh merging module available
+[2016.06.08-20.25.02:959][  0]LogMeshUtilities: No distributed automatic mesh merging module available
+[2016.06.08-20.25.03:158][  0]LogUObjectArray: 27679 objects as part of root set at end of initial load.
+[2016.06.08-20.25.03:158][  0]LogUObjectAllocator: 5591600 out of 0 bytes used by permanent object pool.
+[2016.06.08-20.25.03:158][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2016.06.08-20.25.03:165][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2016.06.08-20.25.03:252][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.06.08-20.25.03:252][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.06.08-20.25.03:335][  0]LogStreaming:Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Common/Selection_16x.png' error.
+[2016.06.08-20.25.03:335][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Common/Selection_16x.png
+[2016.06.08-20.25.03:335][  0]LogStreaming:Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Common/Selection_16x.png' error.
+[2016.06.08-20.25.03:335][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Common/Selection_16x.png
+[2016.06.08-20.25.03:335][  0]LogStreaming:Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Common/Selection_16x.png' error.
+[2016.06.08-20.25.03:335][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Common/Selection_16x.png
+[2016.06.08-20.25.03:806][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2016.06.08-20.25.03:916][  0]LogAssetRegistry: FAssetRegistry took 0.0220 seconds to start up
+[2016.06.08-20.25.04:058][  0]SourceControl: Info Source control is disabled
+[2016.06.08-20.25.04:094][  0]SourceControl: Info Source control is disabled
+[2016.06.08-20.25.04:102][  0]SourceControl: Info Source control is disabled
+[2016.06.08-20.25.04:110][  0]SourceControl: Info Source control is disabled
+[2016.06.08-20.25.04:720][  0]LogConsoleManager:Warning: Console object named 'vr.EnableMotionControllerLateUpdate' already exists but is being registered again, but we weren't expected it to be! (FConsoleManager::AddConsoleObject)
+[2016.06.08-20.25.04:778][  0]LogEngine: Initializing Engine...
+[2016.06.08-20.25.07:505][  0]LogHMD: SteamVR initialized.  Driver: lighthouse  Display: LHR-2D0E5179
+[2016.06.08-20.25.07:673][  0]LogAIModule: Creating AISystem for world NewWorld
+[2016.06.08-20.25.07:680][  0]LogInit: XAudio2 using 'Speakers (5- USB Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.06.08-20.25.07:694][  0]LogInit: FAudioDevice initialized.
+[2016.06.08-20.25.07:718][  0]LogDerivedDataCache: Saved boot cache 0.02s 48MB C:/Users/Helios/AppData/Local/UnrealEngine/4.11/DerivedDataCache/Boot.ddc.
+[2016.06.08-20.25.07:723][  0]LogInit: Texture streaming: Enabled
+[2016.06.08-20.25.25:115][  0]LogInit: Transaction tracking system initialized
+[2016.06.08-20.25.25:147][  0]BlueprintLog: New page: Editor Load
+[2016.06.08-20.25.25:234][  0]LocalizationService: Info Localization service is disabled
+[2016.06.08-20.25.25:314][  0]LogConsoleResponse:Display: 
+[2016.06.08-20.25.25:412][  0]LogCook:Display: Max memory allowance for cook 8192mb
+[2016.06.08-20.25.25:412][  0]LogCook:Display: Mobile HDR setting 1
+[2016.06.08-20.25.25:412][  0]LogCook:Display: Done creating registry. It took  0.00s.
+[2016.06.08-20.25.25:468][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Helios/Desktop/HeliosFinal/Content/' took 0.01s
+[2016.06.08-20.25.25:468][  0]SourceControl: Info Source control is disabled
+[2016.06.08-20.25.25:468][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Helios/Desktop/HeliosFinal/Content/Plains.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.06.08-20.25.25:469][  0]LightingResults: New page: Lighting Build
+[2016.06.08-20.25.25:472][  0]MapCheck: New page: Map Check
+[2016.06.08-20.25.25:472][  0]LightingResults: New page: Lighting Build
+[2016.06.08-20.25.25:990][  0]LogAIModule: Creating AISystem for world Plains
+[2016.06.08-20.25.26:008][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.06.08-20.25.26:008][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.06.08-20.25.26:048][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 40.463ms to complete.
+[2016.06.08-20.25.26:048][  0]LogFileHelpers: Loading map 'Plains' took 0.580
+[2016.06.08-20.25.26:167][  0]LogCollectionManager: Loaded 0 collections in 0.002325 seconds
+[2016.06.08-20.25.26:210][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Helios/Desktop/HeliosFinal/Saved/Collections/' took 0.01s
+[2016.06.08-20.25.26:210][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Helios/Desktop/HeliosFinal/Content/Developers/Helios/Collections/' took 0.01s
+[2016.06.08-20.25.26:210][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Helios/Desktop/HeliosFinal/Content/Collections/' took 0.01s
+[2016.06.08-20.25.26:210][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
+[2016.06.08-20.25.26:218][  0]LogContentBrowser: Native class hierarchy populated in 0.0076 seconds. Added 1990 classes and 349 folders.
+[2016.06.08-20.25.26:223][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2016.06.08-20.25.26:223][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2016.06.08-20.25.26:224][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0010 seconds. Added 12 classes and 0 folders.
+[2016.06.08-20.25.26:231][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0008 seconds. Added 0 classes and 0 folders.
+[2016.06.08-20.25.26:239][  0]LogContentBrowser: Native class hierarchy updated for 'SuperSearch' in 0.0013 seconds. Added 1 classes and 2 folders.
+[2016.06.08-20.25.26:270][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0010 seconds. Added 0 classes and 0 folders.
+[2016.06.08-20.25.26:275][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0011 seconds. Added 1 classes and 2 folders.
+[2016.06.08-20.25.26:296][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2016.06.08-20.25.26:301][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2016.06.08-20.25.26:329][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0010 seconds. Added 1 classes and 2 folders.
+[2016.06.08-20.25.26:329][  0]LogLoad: Full Startup: 25.98 seconds (BP compile: 0.09 seconds)
+[2016.06.08-20.25.26:329][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2016.06.08-20.25.26:329][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2016.06.08-20.25.26:347][  0]LogOcInput: OculusInput pre-init called
+[2016.06.08-20.25.26:413][  0]LogContentStreaming: Texture pool size now 700 MB
+[2016.06.08-20.25.26:559][  0]LogRenderer: Reallocating scene render targets to support 2428x1240 (Frame:2).
+[2016.06.08-20.25.26:655][  1]Cmd: UpdateLandscapeEditorData -warnings
+[2016.06.08-20.25.26:674][  1]LogAssetRegistry: Asset discovery search completed in 22.7799 seconds
+[2016.06.08-20.25.26:674][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2016.06.08-20.25.26:674][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000066 seconds (updated 0 objects)
+[2016.06.08-20.25.56:739][792]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.06.08-20.25.56:740][792]PIE: New page: PIE session: Plains (Jun 8, 2016, 5:25:56 AM)
+[2016.06.08-20.25.56:740][792]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_Plains
+[2016.06.08-20.25.56:759][792]LogPlayLevel: PIE: StaticDuplicateObject took: (0.017970s)
+[2016.06.08-20.25.56:759][792]LogAIModule: Creating AISystem for world Plains
+[2016.06.08-20.25.56:759][792]LogPlayLevel: PIE: World Init took: (0.000748s)
+[2016.06.08-20.25.56:760][792]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Plains.Plains to /Game/UEDPIE_0_Plains.Plains (0.018941s)
+[2016.06.08-20.25.56:783][792]LogInit: XAudio2 using 'Speakers (5- USB Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.06.08-20.25.56:788][792]LogInit: FAudioDevice initialized.
+[2016.06.08-20.25.57:480][792]LogTemp:Warning: Helios > setter node title
+[2016.06.08-20.25.57:572][792]LogTemp:Warning: Helios > getter node title
+[2016.06.08-20.25.57:572][792]LogTemp:Warning: Helios > setter node title
+[2016.06.08-20.25.57:573][792]LogTemp:Warning: Helios > setter node title
+[2016.06.08-20.25.57:573][792]LogTemp:Warning: Helios > setter node title
+[2016.06.08-20.25.57:573][792]LogTemp:Warning: Helios > setter node title
+[2016.06.08-20.25.57:659][792]LogWorld: Game class is 'SteamVR_GM_C'
+[2016.06.08-20.25.57:670][792]LogWorld: Bringing World /Game/UEDPIE_0_Plains.Plains up for play (max tick rate 0) at 2016.06.08-13.25.57
+[2016.06.08-20.25.57:671][792]LogWorld: Bringing up level for play took: 0.007782
+[2016.06.08-20.25.57:675][792]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0009 seconds. Added 9 classes and 0 folders.
+[2016.06.08-20.25.57:684][792]PIE: Info Play in editor start time for /Game/UEDPIE_0_Plains 0.762
+[2016.06.08-20.25.57:699][794]LogRenderer: Reallocating scene render targets to support 3024x1680 (Frame:8).
+[2016.06.08-20.25.57:715][794]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 402/400 MB (ok in editor, bad on fixed memory platform)
+[2016.06.08-20.25.57:860][804]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.25.57:861][804]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.25.57:964][811]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.25.57:964][811]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.25.58:151][826]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.25.58:151][826]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.25.58:352][844]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.25.58:352][844]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.25.58:552][862]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.25.58:552][862]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.25.58:753][880]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.25.58:754][880]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.25.58:954][898]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.25.58:954][898]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.25.59:155][916]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.25.59:155][916]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.25.59:356][934]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.25.59:357][934]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.25.59:557][952]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.25.59:558][952]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.25.59:758][970]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.25.59:758][970]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.25.59:960][988]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.25.59:960][988]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.00:161][  6]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.00:161][  6]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.00:362][ 24]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.00:362][ 24]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.00:563][ 42]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.00:563][ 42]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.00:765][ 60]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.00:765][ 60]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.00:966][ 78]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.00:966][ 78]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.01:166][ 96]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.01:166][ 96]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.01:367][114]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.01:367][114]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.01:568][132]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.01:568][132]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.01:769][150]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.01:769][150]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.01:970][168]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.01:970][168]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.02:171][186]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.02:171][186]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.02:373][204]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.02:373][204]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.02:573][222]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.02:573][222]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.02:775][240]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.02:775][240]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.02:976][258]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.02:976][258]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.03:177][276]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.03:177][276]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.03:378][294]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.03:378][294]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.03:578][312]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.03:578][312]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.03:781][330]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.03:781][330]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.03:981][348]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.03:981][348]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.04:182][366]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.04:182][366]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.04:383][384]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.04:383][384]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.04:584][402]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.04:584][402]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.04:785][420]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.04:785][420]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.04:986][438]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.04:986][438]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.05:187][456]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.05:187][456]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.05:388][474]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.05:388][474]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.05:589][492]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.05:589][492]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.05:791][510]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.05:791][510]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.05:991][528]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.05:991][528]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.06:192][546]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.06:192][546]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.06:394][564]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.06:394][564]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.06:595][582]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.06:595][582]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.06:796][600]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.06:796][600]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.06:997][618]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.06:997][618]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.07:198][636]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.07:198][636]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.07:398][654]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.07:398][654]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.07:600][672]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.07:600][672]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.07:801][690]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.07:801][690]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.08:002][708]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.08:002][708]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.08:203][726]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.08:203][726]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.08:404][744]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.08:404][744]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.08:606][762]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.08:606][762]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.08:806][780]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.08:806][780]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.09:007][798]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.09:007][798]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.09:209][816]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.09:209][816]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.09:410][834]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.09:410][834]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.09:611][852]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.09:611][852]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.09:812][870]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.09:812][870]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.10:013][888]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.10:013][888]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.10:214][906]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.10:214][906]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.10:415][924]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.10:415][924]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.10:616][942]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.10:616][942]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.10:817][960]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.10:817][960]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.11:018][978]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.11:018][978]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.11:219][996]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.11:219][996]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.11:344][  7]LogSpawn:Warning: SpawnActor failed because of collision at the spawn location [X=516.216 Y=34.922 Z=300.000] for [Target_C]
+[2016.06.08-20.26.11:420][ 14]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.11:420][ 14]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.11:621][ 32]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.11:621][ 32]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.11:822][ 50]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.11:822][ 50]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.12:023][ 68]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.12:024][ 68]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.12:225][ 86]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.12:225][ 86]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.12:426][104]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.12:426][104]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.12:627][122]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.12:627][122]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.12:838][141]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.12:838][141]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.13:029][158]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.13:029][158]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.13:230][176]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.13:230][176]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.13:431][194]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.13:431][194]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.13:632][212]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.13:632][212]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.13:833][230]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.13:833][230]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.14:034][248]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.14:034][248]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.14:235][266]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.14:235][266]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.14:436][284]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.14:436][284]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.14:637][302]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.14:637][302]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.14:849][321]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.14:849][321]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.15:040][338]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.15:040][338]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.15:241][356]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.15:241][356]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.15:442][374]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.15:442][374]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.15:643][392]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.15:643][392]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.15:844][410]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.15:844][410]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.16:045][428]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.16:045][428]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.16:246][446]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.16:246][446]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.16:447][464]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.16:447][464]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.16:648][482]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.16:648][482]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.16:848][500]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.16:848][500]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.17:050][518]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.17:050][518]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.17:251][536]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.17:251][536]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.17:452][554]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.17:452][554]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.17:653][572]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.17:653][572]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.17:854][590]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.17:854][590]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.18:055][608]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.18:056][608]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.18:257][626]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.18:257][626]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.18:458][644]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.18:458][644]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.18:658][662]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.18:658][662]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.18:860][680]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.18:860][680]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.19:061][698]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.19:061][698]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.19:262][716]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.19:262][716]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.19:463][734]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.19:463][734]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.19:664][752]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.19:664][752]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.19:865][770]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.19:865][770]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.20:066][788]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.20:066][788]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.20:267][806]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.20:267][806]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.20:468][824]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.20:468][824]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.20:669][842]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.20:669][842]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.20:870][860]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.20:870][860]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.21:072][878]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.21:072][878]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.21:273][896]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.21:273][896]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.21:474][914]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.21:474][914]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.21:675][932]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.21:675][932]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.21:876][950]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.21:876][950]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.22:076][968]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.22:077][968]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.22:278][986]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.22:278][986]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.22:479][  4]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.22:479][  4]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.22:680][ 22]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.22:680][ 22]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.22:881][ 40]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.22:881][ 40]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.23:082][ 58]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.23:082][ 58]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.23:294][ 77]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.23:294][ 77]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.23:408][ 87]LogSpawn:Warning: SpawnActor failed because of collision at the spawn location [X=34.396 Y=516.742 Z=300.000] for [Target_C]
+[2016.06.08-20.26.23:484][ 94]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.23:484][ 94]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.23:685][112]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.23:685][112]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.23:886][130]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.23:886][130]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.24:088][148]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.24:088][148]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.24:288][166]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.24:288][166]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.24:490][184]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.24:490][184]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.24:690][202]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.24:691][202]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.24:891][220]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.24:891][220]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.25:092][238]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.25:093][238]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.25:293][256]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.25:294][256]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.25:494][274]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.25:495][274]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.25:696][292]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.25:696][292]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.25:897][310]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.25:897][310]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.26:098][328]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.26:098][328]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.26:299][346]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.26:299][346]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.26:499][364]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.26:500][364]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.26:701][382]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.26:701][382]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.26:903][400]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.26:903][400]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.27:104][418]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.27:104][418]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.27:305][436]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.27:305][436]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.27:505][454]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.27:505][454]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.27:706][472]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.27:706][472]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.27:908][490]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.27:908][490]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.28:109][508]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.28:109][508]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.28:310][526]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.28:310][526]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.28:511][544]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.28:511][544]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.28:735][564]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.28:735][564]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.28:913][580]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.28:913][580]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.29:114][598]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.29:114][598]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.29:315][616]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.29:315][616]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.29:516][634]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.29:516][634]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.29:717][652]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.29:717][652]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.29:919][670]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.29:920][670]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.30:120][688]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.30:120][688]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.30:321][706]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.30:321][706]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.30:521][724]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.30:521][724]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.30:722][742]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.30:722][742]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.30:923][760]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.30:924][760]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.31:124][778]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.31:124][778]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.31:325][796]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.31:325][796]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.31:526][814]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.31:526][814]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.31:727][832]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.31:727][832]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.31:929][850]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.31:929][850]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.32:130][868]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.32:130][868]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.32:331][886]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.32:331][886]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.32:532][904]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.32:532][904]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.32:733][922]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.32:733][922]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.32:935][940]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.32:935][940]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.33:136][958]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.33:136][958]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.33:336][976]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.33:336][976]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.33:460][987]LogSpawn:Warning: SpawnActor failed because of collision at the spawn location [X=-206.514 Y=-382.346 Z=0.000] for [Target_C]
+[2016.06.08-20.26.33:537][994]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.33:537][994]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.33:738][ 12]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.33:738][ 12]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.33:939][ 30]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.33:939][ 30]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.34:140][ 48]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.34:141][ 48]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.34:341][ 66]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.34:341][ 66]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.34:565][ 86]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.34:565][ 86]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.34:743][102]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.34:743][102]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.34:944][120]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.34:945][120]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.35:146][138]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.35:146][138]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.35:346][156]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.35:346][156]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.35:548][174]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.35:548][174]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.35:749][192]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.35:749][192]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.35:951][210]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.35:951][210]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.36:151][228]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.36:151][228]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.36:352][246]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.36:352][246]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.36:553][264]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.36:553][264]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.36:754][282]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.36:754][282]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.36:955][300]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.36:955][300]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.37:156][318]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.37:156][318]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.37:357][336]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.37:357][336]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.37:482][347]LogSpawn:Warning: SpawnActor failed because of collision at the spawn location [X=-382.872 Y=-205.987 Z=300.000] for [Target_C]
+[2016.06.08-20.26.37:558][354]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.37:558][354]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.37:758][372]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.37:758][372]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.37:960][390]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.37:960][390]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.38:162][408]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.38:162][408]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.38:362][426]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.38:362][426]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.38:564][444]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.38:564][444]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.38:765][462]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.38:765][462]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.38:966][480]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.38:966][480]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.39:167][498]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.39:167][498]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.39:368][516]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.39:368][516]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.39:569][534]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.39:569][534]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.39:770][552]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.39:770][552]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.39:971][570]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.39:971][570]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.40:172][588]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.40:172][588]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.40:373][606]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.40:373][606]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.40:574][624]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.40:574][624]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.40:775][642]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.40:775][642]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.40:977][660]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.40:977][660]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.41:177][678]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.41:177][678]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.41:378][696]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.41:378][696]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.41:580][714]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.41:580][714]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.41:781][732]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.41:782][732]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.41:982][750]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.41:982][750]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.42:183][768]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.42:183][768]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.42:384][786]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.42:384][786]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.42:585][804]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.42:585][804]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.42:786][822]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.42:786][822]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.42:987][840]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.42:987][840]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.43:188][858]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.43:188][858]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.43:389][876]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.43:389][876]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.43:590][894]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.43:590][894]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.43:791][912]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.43:791][912]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.43:992][930]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.43:992][930]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.44:193][948]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.44:193][948]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.44:394][966]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.44:394][966]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.44:596][984]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.44:596][984]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.44:797][  2]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.44:798][  2]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.44:998][ 20]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.44:998][ 20]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.45:198][ 38]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.45:198][ 38]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.45:399][ 56]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.45:400][ 56]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.45:601][ 74]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.45:601][ 74]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.45:802][ 92]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.45:802][ 92]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.46:003][110]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.46:003][110]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.46:204][128]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.46:204][128]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.46:405][146]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.46:405][146]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.46:606][164]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.46:606][164]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.46:807][182]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.46:807][182]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.47:008][200]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.47:009][200]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.47:208][218]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.47:208][218]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.47:411][236]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.47:411][236]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.47:612][254]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.47:612][254]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.47:813][272]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.47:813][272]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.48:014][290]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.48:014][290]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.48:214][308]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.48:214][308]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.48:416][326]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.48:416][326]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.48:616][344]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.48:617][344]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.48:818][362]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.48:818][362]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.49:018][380]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.49:018][380]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.49:220][398]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.49:220][398]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.49:421][416]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.49:421][416]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.49:622][434]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.49:622][434]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.49:823][452]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.49:823][452]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.50:024][470]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.50:024][470]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.50:225][488]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.50:225][488]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.50:427][506]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.50:427][506]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.50:628][524]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.50:628][524]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.50:829][542]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.50:829][542]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.51:030][560]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.51:030][560]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.51:231][578]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.51:231][578]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.51:432][596]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.51:432][596]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.51:633][614]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.51:633][614]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.51:833][632]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.51:834][632]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.52:035][650]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.52:035][650]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.52:236][668]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.52:236][668]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.52:437][686]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.52:437][686]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.52:638][704]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.52:638][704]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.52:838][722]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.52:838][722]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.53:040][740]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.53:040][740]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.53:242][758]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.53:242][758]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.53:443][776]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.53:443][776]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.53:644][794]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.53:644][794]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.53:845][812]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.53:845][812]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.54:046][830]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.54:046][830]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.54:246][848]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.54:246][848]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.54:447][866]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.54:447][866]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.54:649][884]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.54:649][884]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.54:850][902]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.54:850][902]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.55:051][920]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.55:051][920]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.55:252][938]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.55:252][938]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.55:453][956]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.55:453][956]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.55:577][967]LogSpawn:Warning: SpawnActor failed because of collision at the spawn location [X=34.396 Y=-446.897 Z=300.000] for [Target_C]
+[2016.06.08-20.26.55:654][974]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.55:654][974]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.55:855][992]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.55:855][992]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.56:056][ 10]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.56:056][ 10]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.56:257][ 28]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.56:257][ 28]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.56:458][ 46]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.56:458][ 46]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.56:659][ 64]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.56:659][ 64]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.56:861][ 82]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.56:861][ 82]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.57:061][100]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.57:061][100]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.57:262][118]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.57:262][118]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.57:286][120]LogActorComponent: UnregisterComponent: (/Engine/Transient.SteamVRChaperone_GEN_VARIABLE) Not registered. Aborting.
+[2016.06.08-20.26.57:286][120]LogActorComponent: UnregisterComponent: (/Engine/Transient.FloatingPawnMovement_GEN_VARIABLE) Not registered. Aborting.
+[2016.06.08-20.26.57:486][132]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.57:486][132]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.57:677][149]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.57:677][149]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.57:877][167]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.57:877][167]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.58:078][185]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.58:078][185]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.58:279][203]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.58:279][203]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.58:480][221]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.58:480][221]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.58:681][239]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.58:681][239]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.58:882][257]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.58:883][257]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.59:083][275]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.59:083][275]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.59:284][293]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.59:284][293]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.59:485][311]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.59:485][311]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.59:686][329]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.59:686][329]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.26.59:887][347]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.26.59:888][347]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.27.00:089][365]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.27.00:089][365]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.27.00:290][383]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.27.00:290][383]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.27.00:491][401]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.27.00:491][401]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.27.00:692][419]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.27.00:692][419]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.27.00:893][437]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.27.00:893][437]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.27.01:093][455]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.27.01:094][455]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.27.01:295][473]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.27.01:295][473]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.27.01:496][491]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.27.01:496][491]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.27.01:608][501]LogSpawn:Warning: SpawnActor failed because of collision at the spawn location [X=-447.423 Y=34.922 Z=300.000] for [Target_C]
+[2016.06.08-20.27.01:697][509]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.27.01:697][509]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.27.01:898][527]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.27.01:898][527]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.27.02:099][545]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.27.02:099][545]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.27.02:300][563]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.27.02:300][563]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.27.02:501][581]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.27.02:502][581]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.27.02:702][599]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.27.02:702][599]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.27.02:903][617]LogBlueprintUserMessages: [Vive_Pawn_C_0] white
+[2016.06.08-20.27.02:903][617]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-20.27.04:487][692]LogActorComponent: UnregisterComponent: (/Engine/Transient.SteamVRChaperone_GEN_VARIABLE) Not registered. Aborting.
+[2016.06.08-20.27.04:487][692]LogActorComponent: UnregisterComponent: (/Engine/Transient.FloatingPawnMovement_GEN_VARIABLE) Not registered. Aborting.
+[2016.06.08-20.27.10:311][ 41]LogEditorViewport: Clicking on Actor (LMB): Gun_BP2_C (Gun_BP2)
+[2016.06.08-20.27.10:436][ 42]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 566/400 MB (ok in editor, bad on fixed memory platform)
+[2016.06.08-20.27.12:728][179]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 547/400 MB (ok in editor, bad on fixed memory platform)
+[2016.06.08-20.27.13:188][207]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 547/400 MB (ok in editor, bad on fixed memory platform)
+[2016.06.08-20.27.13:594][231]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 547/400 MB (ok in editor, bad on fixed memory platform)
+[2016.06.08-20.27.15:158][323]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 547/400 MB (ok in editor, bad on fixed memory platform)
+[2016.06.08-20.27.15:541][345]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 547/400 MB (ok in editor, bad on fixed memory platform)
+[2016.06.08-20.27.15:641][351]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 547/400 MB (ok in editor, bad on fixed memory platform)
+[2016.06.08-20.27.19:198][564]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 547/400 MB (ok in editor, bad on fixed memory platform)
+[2016.06.08-20.27.19:381][575]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 547/400 MB (ok in editor, bad on fixed memory platform)
+[2016.06.08-20.27.20:523][641]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 566/400 MB (ok in editor, bad on fixed memory platform)
+[2016.06.08-20.27.25:140][916]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 547/400 MB (ok in editor, bad on fixed memory platform)
+[2016.06.08-20.27.25:224][921]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 547/400 MB (ok in editor, bad on fixed memory platform)
+[2016.06.08-20.27.25:946][964]LogEditorViewport: Clicking on Actor (LMB): Gun_BP2_C (Gun_BP2)
+[2016.06.08-20.27.25:992][965]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 566/400 MB (ok in editor, bad on fixed memory platform)
+[2016.06.08-20.27.28:009][ 84]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.06.08-20.27.28:009][ 84]PIE: New page: PIE session: Plains (Jun 8, 2016, 5:27:28 AM)
+[2016.06.08-20.27.28:009][ 84]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_Plains
+[2016.06.08-20.27.28:037][ 84]LogPlayLevel: PIE: StaticDuplicateObject took: (0.027759s)
+[2016.06.08-20.27.28:038][ 84]LogAIModule: Creating AISystem for world Plains
+[2016.06.08-20.27.28:038][ 84]LogPlayLevel: PIE: World Init took: (0.001151s)
+[2016.06.08-20.27.28:039][ 84]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Plains.Plains to /Game/UEDPIE_0_Plains.Plains (0.029460s)
+[2016.06.08-20.27.28:039][ 84]LogActorComponent: UnregisterComponent: (/Engine/Transient.SteamVRChaperone_GEN_VARIABLE) Not registered. Aborting.
+[2016.06.08-20.27.28:039][ 84]LogActorComponent: UnregisterComponent: (/Engine/Transient.FloatingPawnMovement_GEN_VARIABLE) Not registered. Aborting.
+[2016.06.08-20.27.28:057][ 84]LogInit: XAudio2 using 'Speakers (5- USB Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.06.08-20.27.28:063][ 84]LogInit: FAudioDevice initialized.
+[2016.06.08-20.27.28:172][ 84]LogWorld: Game class is 'SteamVR_GM_C'
+[2016.06.08-20.27.28:192][ 84]LogWorld: Bringing World /Game/UEDPIE_0_Plains.Plains up for play (max tick rate 0) at 2016.06.08-13.27.28
+[2016.06.08-20.27.28:193][ 84]LogWorld: Bringing up level for play took: 0.017457
+[2016.06.08-20.27.28:222][ 84]PIE: Info Play in editor start time for /Game/UEDPIE_0_Plains -0.699
+[2016.06.08-20.27.28:265][ 86]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 418/400 MB (ok in editor, bad on fixed memory platform)
+[2016.06.08-20.27.28:355][ 90]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.28:355][ 90]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.28:494][100]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.28:494][100]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.28:695][118]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.28:696][118]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.28:896][136]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.28:896][136]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.29:097][154]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.29:097][154]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.29:297][172]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.29:298][172]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.29:498][190]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.29:498][190]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.29:700][208]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.29:700][208]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.29:901][226]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.29:901][226]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.30:102][244]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.30:102][244]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.30:303][262]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.30:303][262]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.30:504][280]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.30:505][280]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.30:705][298]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.30:705][298]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.30:907][316]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.30:907][316]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.31:108][334]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.31:108][334]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.31:309][352]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.31:309][352]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.31:510][370]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.31:510][370]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.31:711][388]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.31:711][388]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.31:912][406]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.31:912][406]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.32:112][424]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.32:113][424]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.32:314][442]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.32:314][442]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.32:515][460]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.32:515][460]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.32:716][478]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.32:716][478]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.32:917][496]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.32:917][496]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.33:118][514]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.33:118][514]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.33:319][532]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.33:319][532]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.33:520][550]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.33:521][550]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.33:721][568]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.33:721][568]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.33:922][586]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.33:923][586]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.34:124][604]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.34:124][604]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.34:325][622]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.34:325][622]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.34:526][640]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.34:527][640]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.34:727][658]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.34:727][658]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.34:927][676]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.34:928][676]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.35:129][694]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.35:129][694]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.35:330][712]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.35:330][712]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.35:531][730]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.35:531][730]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.35:732][748]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.35:732][748]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.35:933][766]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.35:933][766]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.36:134][784]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.36:134][784]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.36:335][802]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.36:335][802]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.36:536][820]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.36:536][820]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.36:737][838]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.36:737][838]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.36:938][856]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.36:938][856]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.37:140][874]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.37:140][874]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.37:341][892]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.37:341][892]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.37:542][910]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.37:542][910]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.37:743][928]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.37:743][928]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.37:944][946]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.37:944][946]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.38:144][964]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.38:144][964]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.38:346][982]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.38:346][982]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.38:547][  0]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.38:547][  0]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.38:748][ 18]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.38:748][ 18]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.38:949][ 36]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.38:949][ 36]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.39:150][ 54]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.39:150][ 54]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.39:351][ 72]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.39:351][ 72]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.39:552][ 90]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.39:552][ 90]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.39:753][108]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.39:753][108]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.39:954][126]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.39:954][126]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.40:156][144]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.40:156][144]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.40:357][162]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.40:357][162]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.40:558][180]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.40:558][180]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.40:759][198]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.40:759][198]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.40:960][216]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.40:960][216]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.41:161][234]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.41:161][234]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.41:362][252]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.41:362][252]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.41:574][271]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.41:574][271]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.41:764][288]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.41:764][288]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.41:965][306]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.41:965][306]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.42:166][324]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.42:166][324]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.42:367][342]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.42:367][342]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.42:568][360]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.42:568][360]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.42:769][378]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.42:769][378]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.42:971][396]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.42:971][396]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.43:172][414]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.43:172][414]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.43:373][432]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.43:373][432]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.43:573][450]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.43:573][450]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.43:774][468]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.43:774][468]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.43:976][486]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.43:976][486]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.44:176][504]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.44:176][504]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.44:378][522]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.44:378][522]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.44:578][540]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.44:579][540]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.44:779][558]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.44:779][558]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.44:981][576]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.44:981][576]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.45:182][594]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.45:182][594]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.45:382][612]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.45:382][612]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.45:617][633]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.45:617][633]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.45:785][648]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.45:785][648]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.45:986][666]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.45:986][666]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.46:065][673]LogSpawn:Warning: SpawnActor failed because of collision at the spawn location [X=34.396 Y=-446.897 Z=200.000] for [Target_C]
+[2016.06.08-20.27.46:188][684]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.46:188][684]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.46:389][702]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.46:389][702]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.46:590][720]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.46:590][720]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.46:790][738]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.46:790][738]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.46:991][756]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.46:991][756]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.47:192][774]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.47:192][774]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.47:393][792]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.47:393][792]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.47:595][810]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.47:595][810]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.47:795][828]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.47:795][828]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.47:997][846]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.47:997][846]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.48:076][853]LogSpawn:Warning: SpawnActor failed because of collision at the spawn location [X=516.216 Y=34.923 Z=0.000] for [Target_C]
+[2016.06.08-20.27.48:198][864]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.48:198][864]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.48:398][882]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.48:399][882]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.48:599][900]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.48:599][900]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.48:801][918]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.48:801][918]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.49:002][936]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.49:002][936]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.49:204][954]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.49:204][954]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.49:404][972]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.49:404][972]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.49:605][990]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.49:605][990]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.49:806][  8]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.49:806][  8]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.50:007][ 26]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.50:007][ 26]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.50:208][ 44]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.50:208][ 44]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.50:409][ 62]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.50:409][ 62]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.50:611][ 80]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.50:611][ 80]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.50:812][ 98]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.50:812][ 98]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.51:012][116]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.51:012][116]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.51:213][134]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.51:214][134]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.51:438][154]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.51:438][154]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.51:616][170]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.51:616][170]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.51:817][188]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.51:817][188]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.52:019][206]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.52:019][206]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.52:097][213]LogSpawn:Warning: SpawnActor failed because of collision at the spawn location [X=275.306 Y=452.190 Z=200.000] for [Target_C]
+[2016.06.08-20.27.52:219][224]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.52:219][224]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.52:420][242]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.52:421][242]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.52:621][260]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.52:621][260]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.52:822][278]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.52:822][278]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.53:023][296]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.53:023][296]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.53:224][314]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.53:224][314]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.53:425][332]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.53:425][332]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.53:626][350]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.53:626][350]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.53:827][368]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.53:827][368]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.54:028][386]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.54:028][386]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.54:108][393]LogSpawn:Warning: SpawnActor failed because of collision at the spawn location [X=-382.872 Y=-205.987 Z=300.000] for [Target_C]
+[2016.06.08-20.27.54:230][404]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.54:230][404]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.54:431][422]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.54:431][422]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.54:632][440]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.54:632][440]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.54:833][458]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.54:833][458]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.55:035][476]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.55:035][476]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.55:235][494]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.55:235][494]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.55:436][512]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.55:436][512]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.55:637][530]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.55:637][530]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.55:838][548]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.55:838][548]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.56:039][566]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.56:039][566]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.56:240][584]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.56:240][584]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.56:441][602]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.56:441][602]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.56:642][620]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.56:642][620]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.56:843][638]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.56:843][638]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.57:044][656]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.57:044][656]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.57:245][674]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.57:245][674]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.27.57:447][692]LogBlueprintUserMessages: [Vive_Pawn_C_1] white
+[2016.06.08-20.27.57:447][692]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-20.28.00:848][881]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 547/400 MB (ok in editor, bad on fixed memory platform)
+[2016.06.08-20.28.05:587][148]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 547/400 MB (ok in editor, bad on fixed memory platform)
+[2016.06.08-20.28.07:162][240]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.06.08-20.28.07:163][240]PIE: New page: PIE session: Plains (Jun 8, 2016, 5:28:07 AM)
+[2016.06.08-20.28.07:163][240]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_Plains
+[2016.06.08-20.28.07:181][240]LogPlayLevel: PIE: StaticDuplicateObject took: (0.017968s)
+[2016.06.08-20.28.07:182][240]LogAIModule: Creating AISystem for world Plains
+[2016.06.08-20.28.07:182][240]LogPlayLevel: PIE: World Init took: (0.000689s)
+[2016.06.08-20.28.07:182][240]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Plains.Plains to /Game/UEDPIE_0_Plains.Plains (0.018916s)
+[2016.06.08-20.28.07:182][240]LogActorComponent: UnregisterComponent: (/Engine/Transient.SteamVRChaperone_GEN_VARIABLE) Not registered. Aborting.
+[2016.06.08-20.28.07:182][240]LogActorComponent: UnregisterComponent: (/Engine/Transient.FloatingPawnMovement_GEN_VARIABLE) Not registered. Aborting.
+[2016.06.08-20.28.07:197][240]LogInit: XAudio2 using 'Speakers (5- USB Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.06.08-20.28.07:202][240]LogInit: FAudioDevice initialized.
+[2016.06.08-20.28.07:312][240]LogWorld: Game class is 'SteamVR_GM_C'
+[2016.06.08-20.28.07:323][240]LogWorld: Bringing World /Game/UEDPIE_0_Plains.Plains up for play (max tick rate 0) at 2016.06.08-13.28.07
+[2016.06.08-20.28.07:323][240]LogWorld: Bringing up level for play took: 0.006728
+[2016.06.08-20.28.07:344][240]PIE: Info Play in editor start time for /Game/UEDPIE_0_Plains 0.422
+[2016.06.08-20.28.07:380][242]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 418/400 MB (ok in editor, bad on fixed memory platform)
+[2016.06.08-20.28.07:462][246]LogBlueprintUserMessages: [Vive_Pawn_C_2] white
+[2016.06.08-20.28.07:462][246]LogBlueprintUserMessages: [Vive_Pawn_C_2] Color Changed
+[2016.06.08-20.28.07:613][256]LogBlueprintUserMessages: [Vive_Pawn_C_2] white
+[2016.06.08-20.28.07:613][256]LogBlueprintUserMessages: [Vive_Pawn_C_2] Color Changed
+[2016.06.08-20.28.07:824][275]LogBlueprintUserMessages: [Vive_Pawn_C_2] white
+[2016.06.08-20.28.07:824][275]LogBlueprintUserMessages: [Vive_Pawn_C_2] Color Changed
+[2016.06.08-20.28.08:024][293]LogBlueprintUserMessages: [Vive_Pawn_C_2] white
+[2016.06.08-20.28.08:024][293]LogBlueprintUserMessages: [Vive_Pawn_C_2] Color Changed
+[2016.06.08-20.28.08:225][311]LogBlueprintUserMessages: [Vive_Pawn_C_2] white
+[2016.06.08-20.28.08:225][311]LogBlueprintUserMessages: [Vive_Pawn_C_2] Color Changed
+[2016.06.08-20.28.08:427][329]LogBlueprintUserMessages: [Vive_Pawn_C_2] white
+[2016.06.08-20.28.08:427][329]LogBlueprintUserMessages: [Vive_Pawn_C_2] Color Changed
+[2016.06.08-20.28.08:628][347]LogBlueprintUserMessages: [Vive_Pawn_C_2] white
+[2016.06.08-20.28.08:629][347]LogBlueprintUserMessages: [Vive_Pawn_C_2] Color Changed
+[2016.06.08-20.28.08:830][365]LogBlueprintUserMessages: [Vive_Pawn_C_2] white
+[2016.06.08-20.28.08:830][365]LogBlueprintUserMessages: [Vive_Pawn_C_2] Color Changed
+[2016.06.08-20.28.09:030][383]LogBlueprintUserMessages: [Vive_Pawn_C_2] white
+[2016.06.08-20.28.09:030][383]LogBlueprintUserMessages: [Vive_Pawn_C_2] Color Changed
+[2016.06.08-20.28.09:242][402]LogBlueprintUserMessages: [Vive_Pawn_C_2] white
+[2016.06.08-20.28.09:242][402]LogBlueprintUserMessages: [Vive_Pawn_C_2] Color Changed
+[2016.06.08-20.28.09:432][419]LogBlueprintUserMessages: [Vive_Pawn_C_2] white
+[2016.06.08-20.28.09:432][419]LogBlueprintUserMessages: [Vive_Pawn_C_2] Color Changed
+[2016.06.08-20.28.09:633][437]LogBlueprintUserMessages: [Vive_Pawn_C_2] white
+[2016.06.08-20.28.09:633][437]LogBlueprintUserMessages: [Vive_Pawn_C_2] Color Changed
+[2016.06.08-20.28.09:835][455]LogBlueprintUserMessages: [Vive_Pawn_C_2] white
+[2016.06.08-20.28.09:835][455]LogBlueprintUserMessages: [Vive_Pawn_C_2] Color Changed
+[2016.06.08-20.28.10:035][473]LogBlueprintUserMessages: [Vive_Pawn_C_2] white
+[2016.06.08-20.28.10:035][473]LogBlueprintUserMessages: [Vive_Pawn_C_2] Color Changed
+[2016.06.08-20.28.10:236][491]LogBlueprintUserMessages: [Vive_Pawn_C_2] white
+[2016.06.08-20.28.10:236][491]LogBlueprintUserMessages: [Vive_Pawn_C_2] Color Changed
+[2016.06.08-20.28.10:437][509]LogBlueprintUserMessages: [Vive_Pawn_C_2] white
+[2016.06.08-20.28.10:437][509]LogBlueprintUserMessages: [Vive_Pawn_C_2] Color Changed
+[2016.06.08-20.28.10:638][527]LogBlueprintUserMessages: [Vive_Pawn_C_2] white
+[2016.06.08-20.28.10:638][527]LogBlueprintUserMessages: [Vive_Pawn_C_2] Color Changed
+[2016.06.08-20.28.10:840][545]LogBlueprintUserMessages: [Vive_Pawn_C_2] white
+[2016.06.08-20.28.10:840][545]LogBlueprintUserMessages: [Vive_Pawn_C_2] Color Changed
+[2016.06.08-20.28.11:040][563]LogBlueprintUserMessages: [Vive_Pawn_C_2] white
+[2016.06.08-20.28.11:041][563]LogBlueprintUserMessages: [Vive_Pawn_C_2] Color Changed
+[2016.06.08-20.28.11:242][581]LogBlueprintUserMessages: [Vive_Pawn_C_2] white
+[2016.06.08-20.28.11:242][581]LogBlueprintUserMessages: [Vive_Pawn_C_2] Color Changed
+[2016.06.08-20.28.11:443][599]LogBlueprintUserMessages: [Vive_Pawn_C_2] white
+[2016.06.08-20.28.11:443][599]LogBlueprintUserMessages: [Vive_Pawn_C_2] Color Changed
+[2016.06.08-20.28.11:644][617]LogBlueprintUserMessages: [Vive_Pawn_C_2] white
+[2016.06.08-20.28.11:644][617]LogBlueprintUserMessages: [Vive_Pawn_C_2] Color Changed
+[2016.06.08-20.28.11:846][635]LogBlueprintUserMessages: [Vive_Pawn_C_2] white
+[2016.06.08-20.28.11:846][635]LogBlueprintUserMessages: [Vive_Pawn_C_2] Color Changed
+[2016.06.08-20.28.12:045][653]LogBlueprintUserMessages: [Vive_Pawn_C_2] white
+[2016.06.08-20.28.12:045][653]LogBlueprintUserMessages: [Vive_Pawn_C_2] Color Changed
+[2016.06.08-20.28.12:247][671]LogBlueprintUserMessages: [Vive_Pawn_C_2] white
+[2016.06.08-20.28.12:247][671]LogBlueprintUserMessages: [Vive_Pawn_C_2] Color Changed
+[2016.06.08-20.28.12:448][689]LogBlueprintUserMessages: [Vive_Pawn_C_2] white
+[2016.06.08-20.28.12:448][689]LogBlueprintUserMessages: [Vive_Pawn_C_2] Color Changed
+[2016.06.08-20.28.12:649][707]LogBlueprintUserMessages: [Vive_Pawn_C_2] white
+[2016.06.08-20.28.12:649][707]LogBlueprintUserMessages: [Vive_Pawn_C_2] Color Changed
+[2016.06.08-20.28.12:850][725]LogBlueprintUserMessages: [Vive_Pawn_C_2] white
+[2016.06.08-20.28.12:850][725]LogBlueprintUserMessages: [Vive_Pawn_C_2] Color Changed
+[2016.06.08-20.28.13:051][743]LogBlueprintUserMessages: [Vive_Pawn_C_2] white
+[2016.06.08-20.28.13:051][743]LogBlueprintUserMessages: [Vive_Pawn_C_2] Color Changed
+[2016.06.08-20.28.13:252][761]LogBlueprintUserMessages: [Vive_Pawn_C_2] white
+[2016.06.08-20.28.13:252][761]LogBlueprintUserMessages: [Vive_Pawn_C_2] Color Changed
+[2016.06.08-20.28.13:453][779]LogBlueprintUserMessages: [Vive_Pawn_C_2] white
+[2016.06.08-20.28.13:453][779]LogBlueprintUserMessages: [Vive_Pawn_C_2] Color Changed
+[2016.06.08-20.28.13:654][797]LogBlueprintUserMessages: [Vive_Pawn_C_2] white
+[2016.06.08-20.28.13:654][797]LogBlueprintUserMessages: [Vive_Pawn_C_2] Color Changed
+[2016.06.08-20.28.13:855][815]LogBlueprintUserMessages: [Vive_Pawn_C_2] white
+[2016.06.08-20.28.13:855][815]LogBlueprintUserMessages: [Vive_Pawn_C_2] Color Changed
+[2016.06.08-20.28.14:056][833]LogBlueprintUserMessages: [Vive_Pawn_C_2] white
+[2016.06.08-20.28.14:056][833]LogBlueprintUserMessages: [Vive_Pawn_C_2] Color Changed
+[2016.06.08-20.28.14:258][851]LogBlueprintUserMessages: [Vive_Pawn_C_2] white
+[2016.06.08-20.28.14:258][851]LogBlueprintUserMessages: [Vive_Pawn_C_2] Color Changed
+[2016.06.08-20.28.15:534][915]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 547/400 MB (ok in editor, bad on fixed memory platform)
+[2016.06.08-20.28.18:990][122]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 547/400 MB (ok in editor, bad on fixed memory platform)
+[2016.06.08-20.28.19:797][161]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Plains" FILE="../../../../../../Users/Helios/Desktop/HeliosFinal/Content/Plains.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2016.06.08-20.28.19:993][161]LogSavePackage: Save=174.41ms
+[2016.06.08-20.28.19:993][161]LogSavePackage: Moving '../../../../../../Users/Helios/Desktop/HeliosFinal/Saved/Plains5D25BC2946A127916CB3F98F78277DDF.tmp' to '../../../../../../Users/Helios/Desktop/HeliosFinal/Content/Plains.umap'
+[2016.06.08-20.28.19:998][161]LogSavePackage: Total save time: 189.01ms
+[2016.06.08-20.28.19:998][161]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Helios/Desktop/HeliosFinal/Content/Plains.umap
+[2016.06.08-20.28.20:034][161]LogFileHelpers: Saving map 'Plains' took 0.291
+[2016.06.08-20.28.20:058][163]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 547/400 MB (ok in editor, bad on fixed memory platform)
+[2016.06.08-20.28.21:154][226]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.06.08-20.28.21:155][226]PIE: New page: PIE session: Plains (Jun 8, 2016, 5:28:21 AM)
+[2016.06.08-20.28.21:155][226]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_Plains
+[2016.06.08-20.28.21:177][226]LogPlayLevel: PIE: StaticDuplicateObject took: (0.022749s)
+[2016.06.08-20.28.21:180][226]LogAIModule: Creating AISystem for world Plains
+[2016.06.08-20.28.21:180][226]LogPlayLevel: PIE: World Init took: (0.002633s)
+[2016.06.08-20.28.21:181][226]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Plains.Plains to /Game/UEDPIE_0_Plains.Plains (0.025929s)
+[2016.06.08-20.28.21:200][226]LogInit: XAudio2 using 'Speakers (5- USB Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.06.08-20.28.21:206][226]LogInit: FAudioDevice initialized.
+[2016.06.08-20.28.21:318][226]LogWorld: Game class is 'SteamVR_GM_C'
+[2016.06.08-20.28.21:336][226]LogWorld: Bringing World /Game/UEDPIE_0_Plains.Plains up for play (max tick rate 0) at 2016.06.08-13.28.21
+[2016.06.08-20.28.21:337][226]LogWorld: Bringing up level for play took: 0.015270
+[2016.06.08-20.28.21:366][226]PIE: Info Play in editor start time for /Game/UEDPIE_0_Plains 0.445
+[2016.06.08-20.28.21:413][228]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 418/400 MB (ok in editor, bad on fixed memory platform)
+[2016.06.08-20.28.21:489][232]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.21:489][232]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.21:641][242]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.21:641][242]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.21:842][260]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.21:842][260]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.22:043][278]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.22:043][278]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.22:244][296]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.22:244][296]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.22:445][314]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.22:445][314]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.22:646][332]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.22:646][332]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.22:847][350]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.22:847][350]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.23:048][368]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.23:048][368]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.23:249][386]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.23:249][386]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.23:451][404]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.23:451][404]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.23:651][422]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.23:651][422]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.23:853][440]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.23:853][440]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.24:054][458]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.24:054][458]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.24:255][476]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.24:255][476]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.24:457][494]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.24:457][494]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.24:657][512]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.24:657][512]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.24:858][530]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.24:858][530]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.25:058][548]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.25:058][548]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.25:260][566]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.25:260][566]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.25:461][584]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.25:461][584]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.25:662][602]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.25:662][602]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.25:863][620]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.25:863][620]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.26:065][638]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.26:065][638]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.26:265][656]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.26:265][656]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.26:466][674]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.26:466][674]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.26:667][692]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.26:667][692]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.26:880][711]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.26:880][711]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.27:070][728]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.27:070][728]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.27:271][746]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.27:271][746]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.27:472][764]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.27:472][764]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.27:673][782]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.27:673][782]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.27:873][800]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.27:873][800]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.28:075][818]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.28:075][818]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.28:276][836]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.28:276][836]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.28:477][854]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.28:477][854]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.28:678][872]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.28:678][872]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.28:879][890]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.28:879][890]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.29:080][908]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.29:080][908]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.29:148][914]LogSpawn:Warning: SpawnActor failed because of collision at the spawn location [X=34.396 Y=-446.897 Z=0.000] for [Target_C]
+[2016.06.08-20.28.29:281][926]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.29:281][926]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.29:482][944]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.29:482][944]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.29:683][962]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.29:683][962]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.29:896][981]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.29:896][981]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.30:086][998]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.30:086][998]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.30:287][ 16]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.30:287][ 16]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.30:488][ 34]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.30:488][ 34]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.30:689][ 52]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.30:689][ 52]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.30:890][ 70]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.30:890][ 70]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.31:091][ 88]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.31:091][ 88]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.31:292][106]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.31:292][106]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.31:493][124]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.31:493][124]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.31:693][142]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.31:693][142]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.31:895][160]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.31:895][160]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.32:096][178]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.32:096][178]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.32:298][196]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.32:298][196]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.32:498][214]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.32:498][214]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.32:698][232]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.32:698][232]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.32:901][250]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.32:901][250]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.33:102][268]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.33:102][268]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.33:303][286]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.33:303][286]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.33:503][304]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.33:503][304]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.33:705][322]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.33:705][322]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.33:906][340]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.33:906][340]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.34:107][358]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.34:107][358]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.34:308][376]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.34:308][376]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.34:508][394]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.34:508][394]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.34:710][412]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.34:710][412]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.34:911][430]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.34:911][430]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.35:112][448]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.35:112][448]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.35:179][454]LogSpawn:Warning: SpawnActor failed because of collision at the spawn location [X=34.396 Y=-446.897 Z=100.000] for [Target_C]
+[2016.06.08-20.28.35:313][466]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.35:313][466]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.35:515][484]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.35:515][484]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.35:716][502]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.35:716][502]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.35:917][520]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.35:917][520]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.36:118][538]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.36:118][538]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.36:318][556]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.36:318][556]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.36:520][574]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.36:520][574]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.36:720][592]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.36:720][592]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.36:922][610]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.36:922][610]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.37:123][628]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.37:123][628]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.37:323][646]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.37:323][646]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.37:525][664]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.37:525][664]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.37:726][682]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.37:726][682]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.37:927][700]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.37:927][700]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.38:127][718]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.38:127][718]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.38:329][736]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.38:329][736]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.38:530][754]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.38:530][754]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.38:731][772]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.38:731][772]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.38:933][790]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.38:933][790]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.39:133][808]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.39:134][808]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.39:335][826]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.39:335][826]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.39:535][844]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.39:536][844]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.39:736][862]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.39:736][862]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.39:938][880]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.39:938][880]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.40:139][898]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.40:139][898]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.40:340][916]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.40:340][916]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.40:540][934]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.40:540][934]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.40:742][952]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.40:742][952]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.40:943][970]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.40:943][970]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.41:144][988]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.41:144][988]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.41:344][  6]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.41:344][  6]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.41:546][ 24]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.41:546][ 24]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.41:747][ 42]LogBlueprintUserMessages: [Vive_Pawn_C_3] white
+[2016.06.08-20.28.41:747][ 42]LogBlueprintUserMessages: [Vive_Pawn_C_3] Color Changed
+[2016.06.08-20.28.50:602][537]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0013 seconds. Added 108 classes and 0 folders.
+[2016.06.08-20.28.51:052][537]LogTemp:Warning: Helios > getter node title
+[2016.06.08-20.28.51:052][537]LogTemp:Warning: Helios > getter node title
+[2016.06.08-20.28.51:052][537]LogTemp:Warning: Helios > setter node title
+[2016.06.08-20.28.51:052][537]LogTemp:Warning: Helios > setter node title
+[2016.06.08-20.28.51:052][537]LogTemp:Warning: Helios > getter node title
+[2016.06.08-20.28.51:052][537]LogTemp:Warning: Helios > getter node title
+[2016.06.08-20.28.51:052][537]LogTemp:Warning: Helios > setter node title
+[2016.06.08-20.28.51:052][537]LogTemp:Warning: Helios > setter node title
+[2016.06.08-20.28.51:053][537]LogTemp:Warning: Helios > getter node title
+[2016.06.08-20.28.51:053][537]LogTemp:Warning: Helios > getter node title
+[2016.06.08-20.28.51:053][537]LogTemp:Warning: Helios > setter node title
+[2016.06.08-20.28.51:053][537]LogTemp:Warning: Helios > setter node title
+[2016.06.08-20.28.51:053][537]LogTemp:Warning: Helios > getter node title
+[2016.06.08-20.28.51:053][537]LogTemp:Warning: Helios > getter node title
+[2016.06.08-20.28.51:053][537]LogTemp:Warning: Helios > setter node title
+[2016.06.08-20.28.51:053][537]LogTemp:Warning: Helios > setter node title
+[2016.06.08-20.28.51:966][537]LogTemp:Warning: Helios > getter node title
+[2016.06.08-20.28.51:968][537]LogTemp:Warning: Helios > getter node title
+[2016.06.08-20.28.51:978][537]LogTemp:Warning: Helios > setter node title
+[2016.06.08-20.28.51:981][537]LogTemp:Warning: Helios > setter node title
+[2016.06.08-20.28.51:981][537]LogTemp:Warning: Helios > setter node title
+[2016.06.08-20.28.51:983][537]LogTemp:Warning: Helios > setter node title
+[2016.06.08-20.28.51:984][537]LogTemp:Warning: Helios > setter node title
+[2016.06.08-20.28.51:986][537]LogTemp:Warning: Helios > setter node title
+[2016.06.08-20.28.51:987][537]LogTemp:Warning: Helios > setter node title
+[2016.06.08-20.28.51:989][537]LogTemp:Warning: Helios > setter node title
+[2016.06.08-20.28.53:128][589]LogTemp:Warning: Helios > setter node title
+[2016.06.08-20.28.53:129][589]LogTemp:Warning: Helios > setter node title
+[2016.06.08-20.28.53:129][589]LogTemp:Warning: Helios > setter node title
+[2016.06.08-20.28.53:136][589]LogTemp:Warning: Helios > setter node title
+[2016.06.08-20.28.53:136][589]LogTemp:Warning: Helios > setter node title
+[2016.06.08-20.28.53:136][589]LogTemp:Warning: Helios > setter node title
+[2016.06.08-20.28.53:150][589]LogTemp:Warning: Helios > setter node title
+[2016.06.08-20.28.53:150][589]LogTemp:Warning: Helios > setter node title
+[2016.06.08-20.28.53:164][590]LogTemp:Warning: Helios > setter node title
+[2016.06.08-20.28.53:164][590]LogTemp:Warning: Helios > setter node title
+[2016.06.08-20.28.53:164][590]LogTemp:Warning: Helios > setter node title
+[2016.06.08-20.28.53:176][590]LogTemp:Warning: Helios > setter node title
+[2016.06.08-20.28.53:176][590]LogTemp:Warning: Helios > setter node title
+[2016.06.08-20.28.53:647][615]LogTemp:Warning: Helios > setter node title
+[2016.06.08-20.28.53:647][615]LogTemp:Warning: Helios > setter node title
+[2016.06.08-20.28.53:647][615]LogTemp:Warning: Helios > setter node title
+[2016.06.08-20.28.53:658][615]LogTemp:Warning: Helios > setter node title
+[2016.06.08-20.28.53:658][615]LogTemp:Warning: Helios > setter node title
+[2016.06.08-20.28.53:667][616]LogTemp:Warning: Helios > setter node title
+[2016.06.08-20.28.53:667][616]LogTemp:Warning: Helios > setter node title
+[2016.06.08-20.28.53:667][616]LogTemp:Warning: Helios > setter node title
+[2016.06.08-20.28.53:678][616]LogTemp:Warning: Helios > setter node title
+[2016.06.08-20.28.53:678][616]LogTemp:Warning: Helios > setter node title
+[2016.06.08-20.28.54:472][656]LogTemp:Warning: Helios > setter node title
+[2016.06.08-20.28.54:473][656]LogTemp:Warning: Helios > setter node title
+[2016.06.08-20.28.54:473][656]LogTemp:Warning: Helios > setter node title
+[2016.06.08-20.28.54:486][656]LogTemp:Warning: Helios > setter node title
+[2016.06.08-20.28.54:486][656]LogTemp:Warning: Helios > setter node title
+[2016.06.08-20.28.54:486][656]LogTemp:Warning: Helios > setter node title
+[2016.06.08-20.28.54:504][656]LogTemp:Warning: Helios > setter node title
+[2016.06.08-20.28.54:504][656]LogTemp:Warning: Helios > setter node title
+[2016.06.08-20.28.55:575][705]LogTemp:Warning: Helios > setter node title
+[2016.06.08-20.28.55:576][705]LogTemp:Warning: Helios > setter node title
+[2016.06.08-20.28.55:576][705]LogTemp:Warning: Helios > setter node title
+[2016.06.08-20.28.57:932][782]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 547/400 MB (ok in editor, bad on fixed memory platform)
+[2016.06.08-20.29.01:470][957]LogActorComponent: UnregisterComponent: (/Engine/Transient.SteamVRChaperone_GEN_VARIABLE) Not registered. Aborting.
+[2016.06.08-20.29.01:471][957]LogActorComponent: UnregisterComponent: (/Engine/Transient.FloatingPawnMovement_GEN_VARIABLE) Not registered. Aborting.
+[2016.06.08-20.30.42:285][404]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape1)
+[2016.06.08-20.30.42:391][405]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 566/400 MB (ok in editor, bad on fixed memory platform)
+[2016.06.08-20.30.43:556][473]LogActorComponent: UnregisterComponent: (/Engine/Transient.SteamVRChaperone_GEN_VARIABLE) Not registered. Aborting.
+[2016.06.08-20.30.43:556][473]LogActorComponent: UnregisterComponent: (/Engine/Transient.FloatingPawnMovement_GEN_VARIABLE) Not registered. Aborting.
+[2016.06.08-20.30.43:682][473]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2016.06.08-20.30.43:961][474]Cmd: QUIT_EDITOR
+[2016.06.08-20.30.44:911][474]LogExit: Preparing to exit.
+[2016.06.08-20.30.46:069][474]LogExit: Editor shut down
+[2016.06.08-20.30.46:069][474]LogExit: Transaction tracking system shut down
+[2016.06.08-20.30.46:225][474]LogObj: Freed 0b from 0 cluster array pools.
+[2016.06.08-20.30.46:225][474]LogExit: Object subsystem successfully closed.
+[2016.06.08-20.30.46:239][474]LogD3D11RHI: Shutdown
+[2016.06.08-20.30.46:239][474]LogD3D11RHI: CleanupD3DDevice
+[2016.06.08-20.30.46:240][474]LogD3D11RHI: ~FD3D11DynamicRHI
+[2016.06.08-20.30.46:342][474]LogDerivedDataCache: Shutdown
+[2016.06.08-20.30.46:343][474]LogModuleManager: Shutting down and abandoning module BlueprintGraph (209)
+[2016.06.08-20.30.46:343][474]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (208)
+[2016.06.08-20.30.46:343][474]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (207)
+[2016.06.08-20.30.46:343][474]LogModuleManager: Shutting down and abandoning module CrashTracker (206)
+[2016.06.08-20.30.46:343][474]LogModuleManager: Shutting down and abandoning module SceneOutliner (205)
+[2016.06.08-20.30.46:343][474]LogModuleManager: Shutting down and abandoning module SuperSearch (204)
+[2016.06.08-20.30.46:343][474]LogModuleManager: Shutting down and abandoning module WidgetCarousel (203)
+[2016.06.08-20.30.46:343][474]LogModuleManager: Shutting down and abandoning module AddContentDialog (202)
+[2016.06.08-20.30.46:345][474]LogModuleManager: Shutting down and abandoning module GameplayTags (201)
+[2016.06.08-20.30.46:345][474]LogModuleManager: Shutting down and abandoning module EditorWidgets (200)
+[2016.06.08-20.30.46:345][474]LogModuleManager: Shutting down and abandoning module CollectionManager (199)
+[2016.06.08-20.30.46:345][474]LogModuleManager: Shutting down and abandoning module StatsViewer (198)
+[2016.06.08-20.30.46:345][474]LogModuleManager: Shutting down and abandoning module FoliageEdit (197)
+[2016.06.08-20.30.46:345][474]LogModuleManager: Shutting down and abandoning module LandscapeEditor (196)
+[2016.06.08-20.30.46:345][474]LogModuleManager: Shutting down and abandoning module ActorPickerMode (195)
+[2016.06.08-20.30.46:345][474]LogModuleManager: Shutting down and abandoning module GeometryMode (194)
+[2016.06.08-20.30.46:345][474]LogModuleManager: Shutting down and abandoning module TextureAlignMode (193)
+[2016.06.08-20.30.46:345][474]LogModuleManager: Shutting down and abandoning module BspMode (192)
+[2016.06.08-20.30.46:346][474]LogModuleManager: Shutting down and abandoning module PlacementMode (191)
+[2016.06.08-20.30.46:346][474]LogModuleManager: Shutting down and abandoning module AutomationWorker (190)
+[2016.06.08-20.30.46:346][474]LogModuleManager: Shutting down and abandoning module CharacterAI (189)
+[2016.06.08-20.30.46:346][474]LogModuleManager: Shutting down and abandoning module SmartSnapping (188)
+[2016.06.08-20.30.46:346][474]LogModuleManager: Shutting down and abandoning module ViewportSnapping (187)
+[2016.06.08-20.30.46:346][474]LogModuleManager: Shutting down and abandoning module LogVisualizer (186)
+[2016.06.08-20.30.46:346][474]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (185)
+[2016.06.08-20.30.46:346][474]LogModuleManager: Shutting down and abandoning module IntroTutorials (184)
+[2016.06.08-20.30.46:346][474]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (183)
+[2016.06.08-20.30.46:346][474]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (182)
+[2016.06.08-20.30.46:346][474]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (181)
+[2016.06.08-20.30.46:346][474]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (180)
+[2016.06.08-20.30.46:374][474]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (179)
+[2016.06.08-20.30.46:374][474]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (178)
+[2016.06.08-20.30.46:374][474]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (177)
+[2016.06.08-20.30.46:374][474]LogModuleManager: Shutting down and abandoning module MergeActors (176)
+[2016.06.08-20.30.46:374][474]LogModuleManager: Shutting down and abandoning module SizeMap (175)
+[2016.06.08-20.30.46:374][474]LogModuleManager: Shutting down and abandoning module TreeMap (174)
+[2016.06.08-20.30.46:374][474]LogModuleManager: Shutting down and abandoning module ReferenceViewer (173)
+[2016.06.08-20.30.46:374][474]LogModuleManager: Shutting down and abandoning module LocalizationService (172)
+[2016.06.08-20.30.46:374][474]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (171)
+[2016.06.08-20.30.46:374][474]LogModuleManager: Shutting down and abandoning module HardwareTargeting (170)
+[2016.06.08-20.30.46:374][474]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (169)
+[2016.06.08-20.30.46:374][474]LogModuleManager: Shutting down and abandoning module UndoHistory (168)
+[2016.06.08-20.30.46:374][474]LogModuleManager: Shutting down and abandoning module UserFeedback (167)
+[2016.06.08-20.30.46:374][474]LogModuleManager: Shutting down and abandoning module XmlParser (166)
+[2016.06.08-20.30.46:374][474]LogModuleManager: Shutting down and abandoning module Blutility (165)
+[2016.06.08-20.30.46:374][474]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (164)
+[2016.06.08-20.30.46:374][474]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (163)
+[2016.06.08-20.30.46:374][474]LogModuleManager: Shutting down and abandoning module InputBindingEditor (162)
+[2016.06.08-20.30.46:374][474]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (161)
+[2016.06.08-20.30.46:374][474]LogModuleManager: Shutting down and abandoning module SettingsEditor (160)
+[2016.06.08-20.30.46:374][474]LogModuleManager: Shutting down and abandoning module ProjectLauncher (159)
+[2016.06.08-20.30.46:375][474]LogModuleManager: Shutting down and abandoning module SessionFrontend (158)
+[2016.06.08-20.30.46:375][474]LogModuleManager: Shutting down and abandoning module ProfilerClient (157)
+[2016.06.08-20.30.46:375][474]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (156)
+[2016.06.08-20.30.46:375][474]LogModuleManager: Shutting down and abandoning module DeviceManager (155)
+[2016.06.08-20.30.46:408][474]LogModuleManager: Shutting down and abandoning module AutomationController (154)
+[2016.06.08-20.30.46:408][474]LogModuleManager: Shutting down and abandoning module AutomationWindow (153)
+[2016.06.08-20.30.46:408][474]LogModuleManager: Shutting down and abandoning module Layers (152)
+[2016.06.08-20.30.46:408][474]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (151)
+[2016.06.08-20.30.46:408][474]LogModuleManager: Shutting down and abandoning module DetailCustomizations (150)
+[2016.06.08-20.30.46:408][474]LogModuleManager: Shutting down and abandoning module PackagesDialog (149)
+[2016.06.08-20.30.46:408][474]LogModuleManager: Shutting down and abandoning module Persona (148)
+[2016.06.08-20.30.46:408][474]LogModuleManager: Shutting down and abandoning module Kismet (147)
+[2016.06.08-20.30.46:408][474]LogModuleManager: Shutting down and abandoning module GraphEditor (146)
+[2016.06.08-20.30.46:408][474]LogModuleManager: Shutting down and abandoning module ClassViewer (145)
+[2016.06.08-20.30.46:408][474]LogModuleManager: Shutting down and abandoning module Toolbox (144)
+[2016.06.08-20.30.46:408][474]LogModuleManager: Shutting down and abandoning module ModuleUI (143)
+[2016.06.08-20.30.46:408][474]LogModuleManager: Shutting down and abandoning module MovieSceneTools (142)
+[2016.06.08-20.30.46:408][474]LogModuleManager: Shutting down and abandoning module OutputLog (141)
+[2016.06.08-20.30.46:408][474]LogModuleManager: Shutting down and abandoning module GammaUI (140)
+[2016.06.08-20.30.46:408][474]LogModuleManager: Shutting down and abandoning module Documentation (139)
+[2016.06.08-20.30.46:408][474]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (138)
+[2016.06.08-20.30.46:408][474]LogModuleManager: Shutting down and abandoning module AnalyticsET (137)
+[2016.06.08-20.30.46:408][474]LogModuleManager: Shutting down and abandoning module Analytics (136)
+[2016.06.08-20.30.46:408][474]LogModuleManager: Shutting down and abandoning module PortalServices (135)
+[2016.06.08-20.30.46:408][474]LogModuleManager: Shutting down and abandoning module PortalRpc (134)
+[2016.06.08-20.30.46:408][474]LogModuleManager: Shutting down and abandoning module MessagingRpc (133)
+[2016.06.08-20.30.46:408][474]LogModuleManager: Shutting down and abandoning module AITestSuite (132)
+[2016.06.08-20.30.46:408][474]LogModuleManager: Shutting down and abandoning module GameplayDebugger (131)
+[2016.06.08-20.30.46:408][474]LogModuleManager: Shutting down and abandoning module AIModule (130)
+[2016.06.08-20.30.46:408][474]LogModuleManager: Shutting down and abandoning module ProfilerService (129)
+[2016.06.08-20.30.46:597][474]LogModuleManager: Shutting down and abandoning module TaskGraph (128)
+[2016.06.08-20.30.46:597][474]LogModuleManager: Shutting down and abandoning module VRGripMotionControllerPlugin (127)
+[2016.06.08-20.30.46:597][474]LogModuleManager: Shutting down and abandoning module SimpleDataIntegration (126)
+[2016.06.08-20.30.46:597][474]LogModuleManager: Shutting down and abandoning module SlateRemote (125)
+[2016.06.08-20.30.46:597][474]LogModuleManager: Shutting down and abandoning module SteamVRController (124)
+[2016.06.08-20.30.46:597][474]LogModuleManager: Shutting down and abandoning module SteamVR (123)
+[2016.06.08-20.30.46:597][474]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (122)
+[2016.06.08-20.30.46:597][474]LogModuleManager: Shutting down and abandoning module OculusLibrary (121)
+[2016.06.08-20.30.46:597][474]LogModuleManager: Shutting down and abandoning module OculusInput (120)
+[2016.06.08-20.30.46:597][474]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (119)
+[2016.06.08-20.30.46:597][474]LogModuleManager: Shutting down and abandoning module CableComponent (118)
+[2016.06.08-20.30.46:597][474]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (117)
+[2016.06.08-20.30.46:597][474]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (116)
+[2016.06.08-20.30.46:597][474]LogModuleManager: Shutting down and abandoning module HTML5Networking (115)
+[2016.06.08-20.30.46:597][474]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (114)
+[2016.06.08-20.30.46:597][474]LogModuleManager: Shutting down and abandoning module PluginBrowser (113)
+[2016.06.08-20.30.46:597][474]LogModuleManager: Shutting down and abandoning module EpicSurvey (112)
+[2016.06.08-20.30.46:597][474]LogModuleManager: Shutting down and abandoning module DesktopPlatform (111)
+[2016.06.08-20.30.46:597][474]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (110)
+[2016.06.08-20.30.46:597][474]LogModuleManager: Shutting down and abandoning module UObjectPlugin (109)
+[2016.06.08-20.30.46:598][474]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (108)
+[2016.06.08-20.30.46:598][474]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (107)
+[2016.06.08-20.30.46:598][474]LogModuleManager: Shutting down and abandoning module SourceControl (106)
+[2016.06.08-20.30.46:598][474]LogModuleManager: Shutting down and abandoning module GitSourceControl (105)
+[2016.06.08-20.30.46:598][474]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (104)
+[2016.06.08-20.30.46:598][474]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (103)
+[2016.06.08-20.30.46:598][474]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (102)
+[2016.06.08-20.30.46:598][474]LogModuleManager: Shutting down and abandoning module MeshPaint (101)
+[2016.06.08-20.30.46:598][474]LogModuleManager: Shutting down and abandoning module HotReload (100)
+[2016.06.08-20.30.46:598][474]LogModuleManager: Shutting down and abandoning module MainFrame (99)
+[2016.06.08-20.30.46:598][474]LogModuleManager: Shutting down and abandoning module LevelEditor (98)
+[2016.06.08-20.30.46:599][474]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (97)
+[2016.06.08-20.30.46:599][474]LogModuleManager: Shutting down and abandoning module AssetRegistry (96)
+[2016.06.08-20.30.46:784][474]LogModuleManager: Shutting down and abandoning module ContentBrowser (95)
+[2016.06.08-20.30.46:785][474]LogModuleManager: Shutting down and abandoning module Paper2DEditor (94)
+[2016.06.08-20.30.46:785][474]LogModuleManager: Shutting down and abandoning module HeliosFinal (93)
+[2016.06.08-20.30.46:785][474]LogModuleManager: Shutting down and abandoning module UdpMessaging (92)
+[2016.06.08-20.30.46:885][474]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (91)
+[2016.06.08-20.30.46:885][474]LogModuleManager: Shutting down and abandoning module Paper2D (90)
+[2016.06.08-20.30.46:885][474]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (89)
+[2016.06.08-20.30.46:885][474]LogModuleManager: Shutting down and abandoning module Media (88)
+[2016.06.08-20.30.46:885][474]LogModuleManager: Shutting down and abandoning module WmfMedia (87)
+[2016.06.08-20.30.46:886][474]LogModuleManager: Shutting down and abandoning module MediaAssets (86)
+[2016.06.08-20.30.46:886][474]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (85)
+[2016.06.08-20.30.46:886][474]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (84)
+[2016.06.08-20.30.46:886][474]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (83)
+[2016.06.08-20.30.46:886][474]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (82)
+[2016.06.08-20.30.46:886][474]LogModuleManager: Shutting down and abandoning module PropertyEditor (81)
+[2016.06.08-20.30.46:886][474]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (80)
+[2016.06.08-20.30.46:886][474]LogModuleManager: Shutting down and abandoning module FunctionalTesting (79)
+[2016.06.08-20.30.46:886][474]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (78)
+[2016.06.08-20.30.46:886][474]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (77)
+[2016.06.08-20.30.46:886][474]LogModuleManager: Shutting down and abandoning module MessageLog (76)
+[2016.06.08-20.30.46:886][474]LogModuleManager: Shutting down and abandoning module Sequencer (75)
+[2016.06.08-20.30.46:886][474]LogModuleManager: Shutting down and abandoning module AssetTools (74)
+[2016.06.08-20.30.46:886][474]LogModuleManager: Shutting down and abandoning module UMGEditor (73)
+[2016.06.08-20.30.46:886][474]LogModuleManager: Shutting down and abandoning module UMG (72)
+[2016.06.08-20.30.46:886][474]LogModuleManager: Shutting down and abandoning module SlateReflector (71)
+[2016.06.08-20.30.46:886][474]LogModuleManager: Shutting down and abandoning module Slate (70)
+[2016.06.08-20.30.46:886][474]LogModuleManager: Shutting down and abandoning module EditorStyle (69)
+[2016.06.08-20.30.46:888][474]LogModuleManager: Shutting down and abandoning module SessionServices (68)
+[2016.06.08-20.30.46:888][474]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (67)
+[2016.06.08-20.30.46:888][474]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (66)
+[2016.06.08-20.30.46:888][474]LogModuleManager: Shutting down and abandoning module XAudio2 (65)
+[2016.06.08-20.30.46:888][474]LogModuleManager: Shutting down and abandoning module Networking (63)
+[2016.06.08-20.30.46:888][474]LogModuleManager: Shutting down and abandoning module Core (62)
+[2016.06.08-20.30.46:888][474]LogModuleManager: Shutting down and abandoning module KismetCompiler (61)
+[2016.06.08-20.30.46:888][474]LogModuleManager: Shutting down and abandoning module PhysXFormats (60)
+[2016.06.08-20.30.46:888][474]LogModuleManager: Shutting down and abandoning module MeshUtilities (59)
+[2016.06.08-20.30.46:888][474]LogModuleManager: Shutting down and abandoning module CookingStats (58)
+[2016.06.08-20.30.46:888][474]LogModuleManager: Shutting down and abandoning module DerivedDataCache (57)
+[2016.06.08-20.30.46:888][474]LogDerivedDataCache: Shutdown
+[2016.06.08-20.30.46:888][474]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (56)
+[2016.06.08-20.30.46:888][474]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (55)
+[2016.06.08-20.30.46:888][474]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (54)
+[2016.06.08-20.30.46:888][474]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (53)
+[2016.06.08-20.30.46:888][474]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (52)
+[2016.06.08-20.30.46:888][474]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (51)
+[2016.06.08-20.30.46:888][474]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (50)
+[2016.06.08-20.30.46:888][474]LogModuleManager: Shutting down and abandoning module ImageWrapper (49)
+[2016.06.08-20.30.46:888][474]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (48)
+[2016.06.08-20.30.46:888][474]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (47)
+[2016.06.08-20.30.46:888][474]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (46)
+[2016.06.08-20.30.46:888][474]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (45)
+[2016.06.08-20.30.46:888][474]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (44)
+[2016.06.08-20.30.46:888][474]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (43)
+[2016.06.08-20.30.46:888][474]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (42)
+[2016.06.08-20.30.46:888][474]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (41)
+[2016.06.08-20.30.46:888][474]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (40)
+[2016.06.08-20.30.46:888][474]LogModuleManager: Shutting down and abandoning module Messaging (39)
+[2016.06.08-20.30.46:888][474]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (38)
+[2016.06.08-20.30.46:888][474]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (37)
+[2016.06.08-20.30.46:888][474]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (36)
+[2016.06.08-20.30.46:888][474]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (35)
+[2016.06.08-20.30.46:888][474]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (34)
+[2016.06.08-20.30.46:888][474]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (33)
+[2016.06.08-20.30.46:888][474]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (32)
+[2016.06.08-20.30.46:888][474]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (31)
+[2016.06.08-20.30.46:888][474]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (30)
+[2016.06.08-20.30.46:888][474]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (29)
+[2016.06.08-20.30.46:888][474]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (28)
+[2016.06.08-20.30.46:888][474]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (27)
+[2016.06.08-20.30.46:888][474]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (26)
+[2016.06.08-20.30.46:888][474]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (25)
+[2016.06.08-20.30.46:888][474]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (24)
+[2016.06.08-20.30.46:888][474]LogModuleManager: Shutting down and abandoning module TargetPlatform (23)
+[2016.06.08-20.30.46:888][474]LogModuleManager: Shutting down and abandoning module InputCore (22)
+[2016.06.08-20.30.46:888][474]LogModuleManager: Shutting down and abandoning module Settings (21)
+[2016.06.08-20.30.46:888][474]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (19)
+[2016.06.08-20.30.46:888][474]LogModuleManager: Shutting down and abandoning module HTTP (18)
+[2016.06.08-20.30.47:890][474]LogModuleManager: Shutting down and abandoning module XMPP (17)
+[2016.06.08-20.30.47:890][474]LogModuleManager: Shutting down and abandoning module OculusRift (16)
+[2016.06.08-20.30.47:890][474]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (15)
+[2016.06.08-20.30.47:890][474]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
+[2016.06.08-20.30.47:891][474]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
+[2016.06.08-20.30.47:891][474]LogModuleManager: Shutting down and abandoning module Landscape (12)
+[2016.06.08-20.30.47:891][474]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
+[2016.06.08-20.30.47:895][474]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
+[2016.06.08-20.30.47:895][474]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
+[2016.06.08-20.30.47:895][474]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
+[2016.06.08-20.30.47:895][474]LogModuleManager: Shutting down and abandoning module Renderer (7)
+[2016.06.08-20.30.47:895][474]LogModuleManager: Shutting down and abandoning module Engine (6)
+[2016.06.08-20.30.47:895][474]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
+[2016.06.08-20.30.47:895][474]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
+[2016.06.08-20.30.47:895][474]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
+[2016.06.08-20.30.47:895][474]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
+[2016.06.08-20.30.47:895][474]LogModuleManager: Shutting down and abandoning module PakFile (1)
+[2016.06.08-20.30.47:897][474]LogExit: Exiting.
+[2016.06.08-20.30.47:915][474]Log file closed, 06/08/16 13:30:47

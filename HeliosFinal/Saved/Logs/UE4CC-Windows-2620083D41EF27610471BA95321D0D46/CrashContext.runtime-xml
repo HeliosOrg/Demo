@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FGenericCrashContext>
+<RuntimeProperties>
+<CrashVersion>3</CrashVersion>
+<CrashGUID>UE4CC-Windows-2620083D41EF27610471BA95321D0D46</CrashGUID>
+<ProcessId>11444</ProcessId>
+<IsInternalBuild>0</IsInternalBuild>
+<IsPerforceBuild>0</IsPerforceBuild>
+<IsSourceDistribution>0</IsSourceDistribution>
+<SecondsSinceStart>602</SecondsSinceStart>
+<GameName>UE4-HeliosFinal</GameName>
+<ExecutableName>UE4Editor</ExecutableName>
+<BuildConfiguration>Development</BuildConfiguration>
+<PlatformName>Windows</PlatformName>
+<PlatformNameIni>Windows</PlatformNameIni>
+<EngineMode>Editor</EngineMode>
+<EngineVersion>4.11.2-2946394+++UE4+Release-4.11</EngineVersion>
+<CommandLine>&quot;C:\Users\Helios\Desktop\HeliosFinal\HeliosFinal.uproject&quot; </CommandLine>
+<LanguageLCID>1033</LanguageLCID>
+<AppDefaultLocale>en_US</AppDefaultLocale>
+<IsUE4Release>1</IsUE4Release>
+<UserName></UserName>
+<BaseDir>C:/Program Files/Epic Games/4.11/Engine/Binaries/Win64/</BaseDir>
+<RootDir>C:/Program Files/Epic Games/4.11/</RootDir>
+<MachineId>6B9ED5104B04DC02938C1789898BC393</MachineId>
+<EpicAccountId>6a911302501948ce8e8c790b01ead81b</EpicAccountId>
+<CallStack></CallStack>
+<SourceContext></SourceContext>
+<UserDescription></UserDescription>
+<ErrorMessage>Assertion failed: (Index &gt;= 0) &amp; (Index &lt; ArrayNum) [File:D:\BuildFarm\buildmachine_++UE4+Release-4.11\Engine\Source\Runtime\Core\Public\Containers\Array.h] [Line: 785] &nl;Array index out of bounds: 0 from an array of size 0&nl;</ErrorMessage>
+<CrashDumpMode>0</CrashDumpMode>
+<Misc.NumberOfCores>4</Misc.NumberOfCores>
+<Misc.NumberOfCoresIncludingHyperthreads>8</Misc.NumberOfCoresIncludingHyperthreads>
+<Misc.Is64bitOperatingSystem>1</Misc.Is64bitOperatingSystem>
+<Misc.CPUVendor>GenuineIntel</Misc.CPUVendor>
+<Misc.CPUBrand>Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz</Misc.CPUBrand>
+<Misc.PrimaryGPUBrand>Intel(R) HD Graphics 530</Misc.PrimaryGPUBrand>
+<Misc.OSVersionMajor>Windows 10</Misc.OSVersionMajor>
+<Misc.OSVersionMinor></Misc.OSVersionMinor>
+<MemoryStats.TotalPhysical>17074421760</MemoryStats.TotalPhysical>
+<MemoryStats.TotalVirtual>140737488224256</MemoryStats.TotalVirtual>
+<MemoryStats.PageSize>65536</MemoryStats.PageSize>
+<MemoryStats.TotalPhysicalGB>16</MemoryStats.TotalPhysicalGB>
+<MemoryStats.AvailablePhysical>12421091328</MemoryStats.AvailablePhysical>
+<MemoryStats.AvailableVirtual>140734083166208</MemoryStats.AvailableVirtual>
+<MemoryStats.UsedPhysical>1085489152</MemoryStats.UsedPhysical>
+<MemoryStats.PeakUsedPhysical>1114365952</MemoryStats.PeakUsedPhysical>
+<MemoryStats.UsedVirtual>2535174144</MemoryStats.UsedVirtual>
+<MemoryStats.PeakUsedVirtual>2980028416</MemoryStats.PeakUsedVirtual>
+<MemoryStats.bIsOOM>0</MemoryStats.bIsOOM>
+<MemoryStats.OOMAllocationSize>0</MemoryStats.OOMAllocationSize>
+<MemoryStats.OOMAllocationAlignment>0</MemoryStats.OOMAllocationAlignment>
+</RuntimeProperties>
+<PlatformProperties>
+<PlatformIsRunningWindows>1</PlatformIsRunningWindows>
+</PlatformProperties>
+</FGenericCrashContext>

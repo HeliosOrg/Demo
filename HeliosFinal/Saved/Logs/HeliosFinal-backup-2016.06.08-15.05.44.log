@@ -1,0 +1,734 @@
+﻿Log file open, 06/08/16 14:59:09
+LogInit:Display: Running engine for game: HeliosFinal
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(360907978) SRandInit(360907979).
+LogTaskGraph: Started task graph with 4 named threads and 7 total threads.
+LogStats: Stats thread started at 0.128694
+LogInit: Version: 4.11.2-2946394+++UE4+Release-4.11
+LogInit: API Version: 2927265
+LogInit: Compiled (64-bit): Apr 18 2016 02:18:46
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.11
+LogInit: Command line:  
+LogInit: Base directory: C:/Program Files/Epic Games/4.11/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Using libcurl 7.41.0
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with WinSSL
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Presizing for max 16777216 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2016.06.08-21.59.10:106][  0]LogConsoleManager:Display: Setting the console variable 'r.ScreenPercentage' with 'SetByScalability' was ignored as it is lower priority than the previous 'SetBySystemSettingsIni'
+[2016.06.08-21.59.10:106][  0]LogConsoleManager:Display: Setting the console variable 'r.PostProcessAAQuality' with 'SetByScalability' was ignored as it is lower priority than the previous 'SetBySystemSettingsIni'
+[2016.06.08-21.59.10:106][  0]LogConsoleManager:Display: Setting the console variable 'sg.PostProcessQuality' with 'SetByScalability' was ignored as it is lower priority than the previous 'SetBySystemSettingsIni'
+[2016.06.08-21.59.10:106][  0]LogConsoleManager:Display: Setting the console variable 'r.MaxAnisotropy' with 'SetByScalability' was ignored as it is lower priority than the previous 'SetBySystemSettingsIni'
+[2016.06.08-21.59.10:106][  0]LogConsoleManager:Display: Setting the console variable 'sg.EffectsQuality' with 'SetByScalability' was ignored as it is lower priority than the previous 'SetBySystemSettingsIni'
+[2016.06.08-21.59.10:106][  0]LogInit: Selected Device Profile: [Windows]
+[2016.06.08-21.59.10:106][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2016.06.08-21.59.10:124][  0]LogInit: Computer: 210-EUROPA
+[2016.06.08-21.59.10:124][  0]LogInit: User: Helios
+[2016.06.08-21.59.10:124][  0]LogInit: CPU Page size=65536, Cores=4
+[2016.06.08-21.59.10:124][  0]LogInit: High frequency timer resolution =2.531261 MHz
+[2016.06.08-21.59.10:124][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2016.06.08-21.59.10:124][  0]LogMemory: Platform Memory Stats for Windows
+[2016.06.08-21.59.10:124][  0]LogMemory: Process Physical Memory: 315.16 MB used, 315.16 MB peak
+[2016.06.08-21.59.10:124][  0]LogMemory: Process Virtual Memory: 314.90 MB used, 314.90 MB peak
+[2016.06.08-21.59.10:124][  0]LogMemory: Physical Memory: 3366.50 MB used, 16283.44 MB total
+[2016.06.08-21.59.10:124][  0]LogMemory: Virtual Memory: 653.71 MB used, 134217728.00 MB total
+[2016.06.08-21.59.10:322][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2016.06.08-21.59.10:758][  0]LogD3D11RHI: D3D11 adapters:
+[2016.06.08-21.59.10:823][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 980 Ti' (Feature Level 11_0)
+[2016.06.08-21.59.10:823][  0]LogD3D11RHI:       6047MB of dedicated video memory, 0MB of dedicated system memory, and 8141MB of shared system memory, 1 output[s]
+[2016.06.08-21.59.10:829][  0]LogD3D11RHI:    1. 'Intel(R) HD Graphics 530' (Feature Level 11_0)
+[2016.06.08-21.59.10:829][  0]LogD3D11RHI:       128MB of dedicated video memory, 0MB of dedicated system memory, and 8141MB of shared system memory, 0 output[s]
+[2016.06.08-21.59.10:831][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2016.06.08-21.59.10:831][  0]LogD3D11RHI:       0MB of dedicated video memory, 0MB of dedicated system memory, and 8141MB of shared system memory, 0 output[s]
+[2016.06.08-21.59.10:831][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2016.06.08-21.59.10:835][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2016.06.08-21.59.10:835][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 980 Ti
+[2016.06.08-21.59.10:835][  0]LogD3D11RHI:   Driver Version: Unknown (internal Unknown)
+[2016.06.08-21.59.10:835][  0]LogD3D11RHI:      Driver Date: Unknown
+[2016.06.08-21.59.10:835][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2016.06.08-21.59.10:852][  0]LogD3D11RHI: Async texture creation enabled
+[2016.06.08-21.59.10:868][  0]LogShaderCompilers: Guid format shader working directory is -3 characters bigger than the processId version (../../../../../../Users/Helios/Desktop/HeliosFinal/Intermediate/Shaders/WorkingDirectory/9540/).
+[2016.06.08-21.59.10:868][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Helios/AppData/Local/Temp/UnrealShaderWorkingDir/669614644C7A552B2F4C01A4C9470D17/'.
+[2016.06.08-21.59.10:868][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2016.06.08-21.59.12:626][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2016.06.08-21.59.12:631][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2016.06.08-21.59.12:636][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2016.06.08-21.59.12:641][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2016.06.08-21.59.12:647][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2016.06.08-21.59.12:652][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2016.06.08-21.59.12:655][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2016.06.08-21.59.12:659][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2016.06.08-21.59.12:662][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2016.06.08-21.59.12:665][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2016.06.08-21.59.12:668][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2016.06.08-21.59.12:675][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2016.06.08-21.59.12:675][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2016.06.08-21.59.12:675][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2016.06.08-21.59.12:716][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2016.06.08-21.59.12:719][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2016.06.08-21.59.12:722][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2016.06.08-21.59.12:725][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2016.06.08-21.59.12:730][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2016.06.08-21.59.12:730][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2016.06.08-21.59.13:044][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2016.06.08-21.59.13:207][  0]LogDerivedDataCache: Loaded boot cache 0.16s 48MB C:/Users/Helios/AppData/Local/UnrealEngine/4.11/DerivedDataCache/Boot.ddc.
+[2016.06.08-21.59.13:207][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Helios/AppData/Local/UnrealEngine/4.11/DerivedDataCache/Boot.ddc
+[2016.06.08-21.59.13:207][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Helios/Desktop/HeliosFinal/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2016.06.08-21.59.13:207][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2016.06.08-21.59.13:207][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Helios/Desktop/HeliosFinal/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2016.06.08-21.59.13:207][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2016.06.08-21.59.13:234][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2016.06.08-21.59.13:247][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Helios/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2016.06.08-21.59.15:784][  0]LogInit: Selected Device Profile: [Windows]
+[2016.06.08-21.59.15:790][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2016.06.08-21.59.15:954][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2016.06.08-21.59.16:187][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2016.06.08-21.59.16:187][  0]LogMeshUtilities: No automatic mesh merging module available
+[2016.06.08-21.59.16:187][  0]LogMeshUtilities: No distributed automatic mesh merging module available
+[2016.06.08-21.59.16:840][  0]LogUObjectArray: 27679 objects as part of root set at end of initial load.
+[2016.06.08-21.59.16:840][  0]LogUObjectAllocator: 5591600 out of 0 bytes used by permanent object pool.
+[2016.06.08-21.59.16:840][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2016.06.08-21.59.16:849][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2016.06.08-21.59.17:102][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.06.08-21.59.17:103][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.06.08-21.59.17:430][  0]LogStreaming:Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Common/Selection_16x.png' error.
+[2016.06.08-21.59.17:430][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Common/Selection_16x.png
+[2016.06.08-21.59.17:431][  0]LogStreaming:Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Common/Selection_16x.png' error.
+[2016.06.08-21.59.17:431][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Common/Selection_16x.png
+[2016.06.08-21.59.17:431][  0]LogStreaming:Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Common/Selection_16x.png' error.
+[2016.06.08-21.59.17:431][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Common/Selection_16x.png
+[2016.06.08-21.59.18:897][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2016.06.08-21.59.19:057][  0]LogAssetRegistry: FAssetRegistry took 0.0247 seconds to start up
+[2016.06.08-21.59.19:375][  0]SourceControl: Info Source control is disabled
+[2016.06.08-21.59.19:489][  0]SourceControl: Info Source control is disabled
+[2016.06.08-21.59.19:504][  0]SourceControl: Info Source control is disabled
+[2016.06.08-21.59.19:516][  0]SourceControl: Info Source control is disabled
+[2016.06.08-21.59.19:831][  0]LogConsoleManager:Warning: Console object named 'vr.EnableMotionControllerLateUpdate' already exists but is being registered again, but we weren't expected it to be! (FConsoleManager::AddConsoleObject)
+[2016.06.08-21.59.19:935][  0]LogEngine: Initializing Engine...
+[2016.06.08-21.59.19:949][  0]LogHMD: SteamVR initialized.  Driver: lighthouse  Display: LHR-2D0E5179
+[2016.06.08-21.59.20:227][  0]LogAIModule: Creating AISystem for world NewWorld
+[2016.06.08-21.59.20:246][  0]LogInit: XAudio2 using 'Speakers (5- USB Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.06.08-21.59.20:265][  0]LogInit: FAudioDevice initialized.
+[2016.06.08-21.59.20:284][  0]LogDerivedDataCache: Saved boot cache 0.02s 48MB C:/Users/Helios/AppData/Local/UnrealEngine/4.11/DerivedDataCache/Boot.ddc.
+[2016.06.08-21.59.20:289][  0]LogInit: Texture streaming: Enabled
+[2016.06.08-21.59.22:124][  0]LogInit: Transaction tracking system initialized
+[2016.06.08-21.59.22:186][  0]BlueprintLog: New page: Editor Load
+[2016.06.08-21.59.22:369][  0]LocalizationService: Info Localization service is disabled
+[2016.06.08-21.59.22:529][  0]LogConsoleResponse:Display: 
+[2016.06.08-21.59.22:980][  0]LogCook:Display: Max memory allowance for cook 8192mb
+[2016.06.08-21.59.22:980][  0]LogCook:Display: Mobile HDR setting 1
+[2016.06.08-21.59.22:980][  0]LogCook:Display: Done creating registry. It took  0.00s.
+[2016.06.08-21.59.23:123][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Helios/Desktop/HeliosFinal/Content/' took 0.02s
+[2016.06.08-21.59.23:123][  0]SourceControl: Info Source control is disabled
+[2016.06.08-21.59.23:125][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Helios/Desktop/HeliosFinal/Content/Plains.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.06.08-21.59.23:129][  0]LightingResults: New page: Lighting Build
+[2016.06.08-21.59.23:141][  0]MapCheck: New page: Map Check
+[2016.06.08-21.59.23:141][  0]LightingResults: New page: Lighting Build
+[2016.06.08-21.59.24:378][  0]LogAIModule: Creating AISystem for world Plains
+[2016.06.08-21.59.24:594][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.06.08-21.59.24:595][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.06.08-21.59.24:633][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 38.098ms to complete.
+[2016.06.08-21.59.24:633][  0]LogFileHelpers: Loading map 'Plains' took 1.509
+[2016.06.08-21.59.24:811][  0]LogCollectionManager: Loaded 0 collections in 0.002742 seconds
+[2016.06.08-21.59.24:872][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Helios/Desktop/HeliosFinal/Saved/Collections/' took 0.01s
+[2016.06.08-21.59.24:872][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Helios/Desktop/HeliosFinal/Content/Developers/Helios/Collections/' took 0.01s
+[2016.06.08-21.59.24:872][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Helios/Desktop/HeliosFinal/Content/Collections/' took 0.01s
+[2016.06.08-21.59.24:872][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000009 seconds
+[2016.06.08-21.59.24:883][  0]LogContentBrowser: Native class hierarchy populated in 0.0093 seconds. Added 1990 classes and 349 folders.
+[2016.06.08-21.59.24:893][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2016.06.08-21.59.24:893][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2016.06.08-21.59.24:894][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0009 seconds. Added 12 classes and 0 folders.
+[2016.06.08-21.59.24:902][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0008 seconds. Added 0 classes and 0 folders.
+[2016.06.08-21.59.24:927][  0]LogContentBrowser: Native class hierarchy updated for 'SuperSearch' in 0.0010 seconds. Added 1 classes and 2 folders.
+[2016.06.08-21.59.25:196][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0009 seconds. Added 0 classes and 0 folders.
+[2016.06.08-21.59.25:208][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0011 seconds. Added 1 classes and 2 folders.
+[2016.06.08-21.59.25:283][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2016.06.08-21.59.25:297][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2016.06.08-21.59.25:331][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0009 seconds. Added 1 classes and 2 folders.
+[2016.06.08-21.59.25:331][  0]LogLoad: Full Startup: 16.91 seconds (BP compile: 0.15 seconds)
+[2016.06.08-21.59.25:331][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2016.06.08-21.59.25:331][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2016.06.08-21.59.25:672][  0]LogOcInput: OculusInput pre-init called
+[2016.06.08-21.59.25:794][  0]LogContentStreaming: Texture pool size now 700 MB
+[2016.06.08-21.59.26:019][  0]LogRenderer: Reallocating scene render targets to support 984x580 (Frame:2).
+[2016.06.08-21.59.26:151][  1]Cmd: UpdateLandscapeEditorData -warnings
+[2016.06.08-21.59.26:186][  1]LogAssetRegistry: Asset discovery search completed in 7.1517 seconds
+[2016.06.08-21.59.26:186][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2016.06.08-21.59.26:186][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000283 seconds (updated 0 objects)
+[2016.06.08-21.59.30:295][ 13]LogRenderer: Reallocating scene render targets to support 2428x1240 (Frame:10).
+[2016.06.08-22.04.40:624][975]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.06.08-22.04.40:625][975]PIE: New page: PIE session: Plains (Jun 8, 2016, 7:04:40 AM)
+[2016.06.08-22.04.40:625][975]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_Plains
+[2016.06.08-22.04.40:649][975]LogPlayLevel: PIE: StaticDuplicateObject took: (0.024203s)
+[2016.06.08-22.04.40:651][975]LogAIModule: Creating AISystem for world Plains
+[2016.06.08-22.04.40:651][975]LogPlayLevel: PIE: World Init took: (0.001842s)
+[2016.06.08-22.04.40:652][975]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Plains.Plains to /Game/UEDPIE_0_Plains.Plains (0.026591s)
+[2016.06.08-22.04.40:686][975]LogInit: XAudio2 using 'Speakers (5- USB Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.06.08-22.04.40:692][975]LogInit: FAudioDevice initialized.
+[2016.06.08-22.04.41:834][975]LogTemp:Warning: Helios > getter node title
+[2016.06.08-22.04.41:834][975]LogTemp:Warning: Helios > setter node title
+[2016.06.08-22.04.41:834][975]LogTemp:Warning: Helios > setter node title
+[2016.06.08-22.04.41:835][975]LogTemp:Warning: Helios > setter node title
+[2016.06.08-22.04.41:835][975]LogTemp:Warning: Helios > setter node title
+[2016.06.08-22.04.41:898][975]LogTemp:Warning: Helios > setter node title
+[2016.06.08-22.04.41:899][975]LogTemp:Warning: Helios > getter node title
+[2016.06.08-22.04.41:900][975]LogTemp:Warning: Helios > setter node title
+[2016.06.08-22.04.41:900][975]LogTemp:Warning: Helios > setter node title
+[2016.06.08-22.04.41:900][975]LogTemp:Warning: Helios > getter node title
+[2016.06.08-22.04.41:900][975]LogTemp:Warning: Helios > getter node title
+[2016.06.08-22.04.41:900][975]LogTemp:Warning: Helios > setter node title
+[2016.06.08-22.04.41:901][975]LogTemp:Warning: Helios > getter node title
+[2016.06.08-22.04.41:901][975]LogTemp:Warning: Helios > setter node title
+[2016.06.08-22.04.41:921][975]LogWorld: Game class is 'SteamVR_GM_C'
+[2016.06.08-22.04.41:934][975]LogWorld: Bringing World /Game/UEDPIE_0_Plains.Plains up for play (max tick rate 0) at 2016.06.08-15.04.41
+[2016.06.08-22.04.41:934][975]LogWorld: Bringing up level for play took: 0.007440
+[2016.06.08-22.04.41:943][975]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0011 seconds. Added 9 classes and 0 folders.
+[2016.06.08-22.04.41:961][975]PIE: Info Play in editor start time for /Game/UEDPIE_0_Plains 2.04
+[2016.06.08-22.04.41:980][977]LogRenderer: Reallocating scene render targets to support 3024x1680 (Frame:132).
+[2016.06.08-22.04.41:995][977]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 402/400 MB (ok in editor, bad on fixed memory platform)
+[2016.06.08-22.04.42:147][984]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.42:147][984]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.42:296][997]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.42:296][997]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.42:554][ 20]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.42:554][ 20]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.42:643][ 28]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.42:643][ 28]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.42:844][ 46]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.42:844][ 46]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.43:089][ 68]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.43:089][ 68]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.43:357][ 92]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.43:357][ 92]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.43:447][100]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.43:447][100]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.43:647][118]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.43:647][118]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.43:882][139]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.43:882][139]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.44:151][163]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.44:151][163]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.44:251][172]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.44:251][172]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.44:452][190]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.44:452][190]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.44:676][210]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.44:677][210]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.44:944][234]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.44:944][234]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.45:166][254]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.45:166][254]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.45:256][262]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.45:256][262]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.45:480][282]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.45:480][282]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.45:737][305]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.45:737][305]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.45:861][316]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.45:861][316]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.46:061][334]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.46:061][334]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.46:262][352]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.46:262][352]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.46:462][370]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.46:462][370]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.46:675][389]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.46:676][389]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.46:864][406]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.46:865][406]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.47:066][424]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.47:066][424]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.47:267][442]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.47:267][442]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.47:468][460]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.47:468][460]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.47:669][478]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.47:669][478]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.47:870][496]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.47:870][496]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.48:071][514]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.48:071][514]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.48:272][532]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.48:272][532]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.48:473][550]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.48:473][550]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.48:675][568]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.48:675][568]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.48:876][586]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.48:876][586]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.49:076][604]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.49:076][604]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.49:277][622]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.49:277][622]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.49:479][640]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.49:479][640]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.49:679][658]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.49:680][658]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.49:880][676]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.49:880][676]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.50:126][698]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.50:127][698]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.50:405][723]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.50:405][723]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.50:483][730]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.50:483][730]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.50:685][748]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.50:685][748]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.50:975][774]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.50:975][774]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.51:232][797]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.51:232][797]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.51:288][802]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.51:288][802]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.51:533][824]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.51:533][824]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.51:769][845]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.51:769][845]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.51:992][865]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.51:992][865]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.52:092][874]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.52:092][874]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.52:304][893]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.52:304][893]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.52:562][916]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.52:562][916]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.52:784][936]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.52:784][936]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.52:896][946]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.52:896][946]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.53:098][964]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.53:098][964]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.53:365][988]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.53:365][988]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.53:590][  8]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.53:590][  8]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.53:700][ 18]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.53:700][ 18]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.53:902][ 36]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.53:902][ 36]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.54:159][ 59]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.54:159][ 59]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.54:426][ 83]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.54:426][ 83]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.54:506][ 90]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.54:506][ 90]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.54:706][108]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.54:706][108]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.54:951][130]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.54:951][130]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.55:221][154]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.55:221][154]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.55:310][162]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.55:310][162]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.55:510][180]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.55:510][180]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.55:745][201]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.55:745][201]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.55:912][216]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.55:912][216]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.56:125][235]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.56:125][235]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.56:314][252]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.56:314][252]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.56:515][270]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.56:515][270]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.56:716][288]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.56:716][288]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.56:918][306]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.56:918][306]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.57:130][325]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.57:130][325]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.57:320][342]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.57:321][342]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.57:521][360]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.57:521][360]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.57:633][370]LogSpawn:Warning: SpawnActor failed because of collision at the spawn location [X=-382.872 Y=-205.987 Z=0.000] for [Target_C]
+[2016.06.08-22.04.57:722][378]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.57:722][378]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.57:923][396]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.57:923][396]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.58:124][414]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.58:124][414]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.58:325][432]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.58:325][432]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.58:526][450]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.58:526][450]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.58:727][468]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.58:727][468]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.58:928][486]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.58:928][486]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.59:129][504]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.59:129][504]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.59:330][522]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.59:330][522]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.59:531][540]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.59:532][540]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.59:644][550]LogSpawn:Warning: SpawnActor failed because of collision at the spawn location [X=-206.514 Y=-382.346 Z=0.000] for [Target_C]
+[2016.06.08-22.04.59:732][558]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.59:732][558]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.04.59:934][576]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.04.59:934][576]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.00:135][594]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.00:135][594]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.00:403][618]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.00:404][618]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.00:638][639]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.00:638][639]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.00:738][648]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.00:738][648]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.00:961][668]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.00:961][668]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.01:241][693]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.01:241][693]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.01:341][702]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.01:341][702]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.01:542][720]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.01:542][720]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.01:765][740]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.01:765][740]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.02:033][764]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.02:033][764]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.02:246][783]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.02:246][783]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.02:346][792]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.02:346][792]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.02:559][811]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.02:559][811]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.02:826][835]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.02:826][835]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.03:050][855]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.03:050][855]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.03:151][864]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.03:151][864]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.03:352][882]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.03:352][882]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.03:620][906]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.03:620][906]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.03:843][926]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.03:843][926]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.03:954][936]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.03:954][936]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.04:155][954]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.04:156][954]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.04:412][977]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.04:412][977]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.04:637][997]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.04:637][997]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.04:759][  8]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.04:759][  8]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.04:960][ 26]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.04:960][ 26]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.05:206][ 48]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.05:206][ 48]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.05:473][ 72]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.05:473][ 72]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.05:563][ 80]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.05:563][ 80]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.05:764][ 98]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.05:764][ 98]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.05:965][116]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.05:965][116]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.06:167][134]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.06:167][134]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.06:368][152]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.06:369][152]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.06:569][170]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.06:569][170]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.06:769][188]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.06:769][188]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.06:970][206]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.06:970][206]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.07:171][224]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.07:171][224]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.07:372][242]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.07:373][242]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.07:573][260]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.07:574][260]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.07:774][278]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.07:774][278]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.07:976][296]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.07:976][296]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.08:177][314]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.08:177][314]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.08:378][332]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.08:378][332]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.08:579][350]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.08:579][350]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.08:780][368]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.08:780][368]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.08:981][386]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.08:981][386]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.09:183][404]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.09:183][404]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.09:384][422]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.09:384][422]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.09:585][440]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.09:585][440]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.09:785][458]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.09:786][458]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.10:086][485]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.10:086][485]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.10:187][494]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.10:187][494]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.10:411][514]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.10:411][514]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.10:690][539]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.10:690][539]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.10:790][548]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.10:790][548]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.10:992][566]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.10:992][566]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.11:250][589]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.11:250][589]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.11:484][610]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.11:484][610]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.11:595][620]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.11:595][620]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.11:697][629]LogSpawn:Warning: SpawnActor failed because of collision at the spawn location [X=516.216 Y=34.922 Z=200.000] for [Target_C]
+[2016.06.08-22.05.11:796][638]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.11:796][638]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.12:032][659]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.12:032][659]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.12:299][683]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.12:299][683]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.12:522][703]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.12:522][703]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.12:601][710]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.12:601][710]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.12:823][730]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.12:823][730]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.13:092][754]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.13:092][754]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.13:316][774]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.13:316][774]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.13:404][782]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.13:404][782]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.13:617][801]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.13:617][801]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.13:707][809]LogSpawn:Warning: SpawnActor failed because of collision at the spawn location [X=451.664 Y=-205.987 Z=100.000] for [Target_C]
+[2016.06.08-22.05.13:885][825]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.13:885][825]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.14:108][845]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.14:108][845]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.14:208][854]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.14:208][854]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.14:410][872]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.14:410][872]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.14:678][896]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.14:678][896]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.14:901][916]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.14:901][916]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.15:014][926]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.15:014][926]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.15:214][944]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.15:214][944]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.15:471][967]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.15:471][967]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.15:694][987]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.15:694][987]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.15:817][998]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.15:817][998]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.16:018][ 16]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.16:019][ 16]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.16:219][ 34]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.16:219][ 34]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.16:420][ 52]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.16:420][ 52]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.16:621][ 70]LogBlueprintUserMessages: [Vive_Pawn_C_0] green
+[2016.06.08-22.05.16:622][ 70]LogBlueprintUserMessages: [Vive_Pawn_C_0] Color Changed
+[2016.06.08-22.05.19:387][211]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.06.08-22.05.19:387][211]PIE: New page: PIE session: Plains (Jun 8, 2016, 7:05:19 AM)
+[2016.06.08-22.05.19:387][211]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_Plains
+[2016.06.08-22.05.19:404][211]LogPlayLevel: PIE: StaticDuplicateObject took: (0.016776s)
+[2016.06.08-22.05.19:405][211]LogAIModule: Creating AISystem for world Plains
+[2016.06.08-22.05.19:405][211]LogPlayLevel: PIE: World Init took: (0.000676s)
+[2016.06.08-22.05.19:405][211]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Plains.Plains to /Game/UEDPIE_0_Plains.Plains (0.017654s)
+[2016.06.08-22.05.19:419][211]LogInit: XAudio2 using 'Speakers (5- USB Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.06.08-22.05.19:425][211]LogInit: FAudioDevice initialized.
+[2016.06.08-22.05.19:537][211]LogWorld: Game class is 'SteamVR_GM_C'
+[2016.06.08-22.05.19:551][211]LogWorld: Bringing World /Game/UEDPIE_0_Plains.Plains up for play (max tick rate 0) at 2016.06.08-15.05.19
+[2016.06.08-22.05.19:552][211]LogWorld: Bringing up level for play took: 0.010583
+[2016.06.08-22.05.19:581][211]PIE: Info Play in editor start time for /Game/UEDPIE_0_Plains -0.34
+[2016.06.08-22.05.19:623][213]LogRenderTargetPool:Warning: r.RenderTargetPoolMin exceeded 418/400 MB (ok in editor, bad on fixed memory platform)
+[2016.06.08-22.05.19:690][216]LogBlueprintUserMessages: [Vive_Pawn_C_1] green
+[2016.06.08-22.05.19:690][216]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-22.05.19:850][226]LogBlueprintUserMessages: [Vive_Pawn_C_1] green
+[2016.06.08-22.05.19:850][226]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-22.05.20:129][251]LogBlueprintUserMessages: [Vive_Pawn_C_1] green
+[2016.06.08-22.05.20:130][251]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-22.05.20:364][272]LogBlueprintUserMessages: [Vive_Pawn_C_1] green
+[2016.06.08-22.05.20:364][272]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-22.05.20:452][280]LogBlueprintUserMessages: [Vive_Pawn_C_1] green
+[2016.06.08-22.05.20:453][280]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-22.05.20:687][301]LogBlueprintUserMessages: [Vive_Pawn_C_1] green
+[2016.06.08-22.05.20:687][301]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-22.05.20:966][326]LogBlueprintUserMessages: [Vive_Pawn_C_1] green
+[2016.06.08-22.05.20:966][326]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-22.05.21:056][334]LogBlueprintUserMessages: [Vive_Pawn_C_1] green
+[2016.06.08-22.05.21:056][334]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-22.05.21:257][352]LogBlueprintUserMessages: [Vive_Pawn_C_1] green
+[2016.06.08-22.05.21:257][352]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-22.05.21:481][372]LogBlueprintUserMessages: [Vive_Pawn_C_1] green
+[2016.06.08-22.05.21:481][372]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-22.05.21:726][394]LogBlueprintUserMessages: [Vive_Pawn_C_1] green
+[2016.06.08-22.05.21:726][394]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-22.05.21:861][406]LogBlueprintUserMessages: [Vive_Pawn_C_1] green
+[2016.06.08-22.05.21:861][406]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-22.05.22:062][424]LogBlueprintUserMessages: [Vive_Pawn_C_1] green
+[2016.06.08-22.05.22:062][424]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-22.05.22:296][445]LogBlueprintUserMessages: [Vive_Pawn_C_1] green
+[2016.06.08-22.05.22:296][445]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-22.05.22:552][468]LogBlueprintUserMessages: [Vive_Pawn_C_1] green
+[2016.06.08-22.05.22:552][468]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-22.05.22:788][489]LogBlueprintUserMessages: [Vive_Pawn_C_1] green
+[2016.06.08-22.05.22:788][489]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-22.05.22:888][498]LogBlueprintUserMessages: [Vive_Pawn_C_1] green
+[2016.06.08-22.05.22:888][498]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-22.05.23:089][516]LogBlueprintUserMessages: [Vive_Pawn_C_1] green
+[2016.06.08-22.05.23:089][516]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-22.05.23:357][540]LogBlueprintUserMessages: [Vive_Pawn_C_1] green
+[2016.06.08-22.05.23:357][540]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-22.05.23:580][560]LogBlueprintUserMessages: [Vive_Pawn_C_1] green
+[2016.06.08-22.05.23:580][560]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-22.05.23:692][570]LogBlueprintUserMessages: [Vive_Pawn_C_1] green
+[2016.06.08-22.05.23:692][570]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-22.05.23:894][588]LogBlueprintUserMessages: [Vive_Pawn_C_1] green
+[2016.06.08-22.05.23:894][588]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-22.05.24:150][611]LogBlueprintUserMessages: [Vive_Pawn_C_1] green
+[2016.06.08-22.05.24:150][611]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-22.05.24:418][635]LogBlueprintUserMessages: [Vive_Pawn_C_1] green
+[2016.06.08-22.05.24:418][635]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-22.05.24:496][642]LogBlueprintUserMessages: [Vive_Pawn_C_1] green
+[2016.06.08-22.05.24:496][642]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-22.05.24:697][660]LogBlueprintUserMessages: [Vive_Pawn_C_1] green
+[2016.06.08-22.05.24:697][660]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-22.05.24:944][682]LogBlueprintUserMessages: [Vive_Pawn_C_1] green
+[2016.06.08-22.05.24:944][682]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-22.05.25:211][706]LogBlueprintUserMessages: [Vive_Pawn_C_1] green
+[2016.06.08-22.05.25:211][706]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-22.05.25:300][714]LogBlueprintUserMessages: [Vive_Pawn_C_1] green
+[2016.06.08-22.05.25:300][714]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-22.05.25:502][732]LogBlueprintUserMessages: [Vive_Pawn_C_1] green
+[2016.06.08-22.05.25:502][732]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-22.05.25:736][753]LogBlueprintUserMessages: [Vive_Pawn_C_1] green
+[2016.06.08-22.05.25:736][753]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-22.05.25:904][768]LogBlueprintUserMessages: [Vive_Pawn_C_1] green
+[2016.06.08-22.05.25:904][768]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-22.05.26:104][786]LogBlueprintUserMessages: [Vive_Pawn_C_1] green
+[2016.06.08-22.05.26:105][786]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-22.05.26:306][804]LogBlueprintUserMessages: [Vive_Pawn_C_1] green
+[2016.06.08-22.05.26:306][804]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-22.05.26:507][822]LogBlueprintUserMessages: [Vive_Pawn_C_1] green
+[2016.06.08-22.05.26:507][822]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-22.05.26:719][841]LogBlueprintUserMessages: [Vive_Pawn_C_1] green
+[2016.06.08-22.05.26:719][841]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-22.05.26:909][858]LogBlueprintUserMessages: [Vive_Pawn_C_1] green
+[2016.06.08-22.05.26:910][858]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-22.05.27:111][876]LogBlueprintUserMessages: [Vive_Pawn_C_1] green
+[2016.06.08-22.05.27:111][876]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-22.05.27:311][894]LogBlueprintUserMessages: [Vive_Pawn_C_1] green
+[2016.06.08-22.05.27:311][894]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-22.05.27:512][912]LogBlueprintUserMessages: [Vive_Pawn_C_1] green
+[2016.06.08-22.05.27:512][912]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-22.05.27:713][930]LogBlueprintUserMessages: [Vive_Pawn_C_1] green
+[2016.06.08-22.05.27:713][930]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-22.05.27:914][948]LogBlueprintUserMessages: [Vive_Pawn_C_1] green
+[2016.06.08-22.05.27:914][948]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-22.05.28:115][966]LogBlueprintUserMessages: [Vive_Pawn_C_1] green
+[2016.06.08-22.05.28:115][966]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-22.05.28:316][984]LogBlueprintUserMessages: [Vive_Pawn_C_1] green
+[2016.06.08-22.05.28:316][984]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-22.05.28:518][  2]LogBlueprintUserMessages: [Vive_Pawn_C_1] green
+[2016.06.08-22.05.28:518][  2]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-22.05.28:719][ 20]LogBlueprintUserMessages: [Vive_Pawn_C_1] green
+[2016.06.08-22.05.28:719][ 20]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-22.05.28:931][ 39]LogBlueprintUserMessages: [Vive_Pawn_C_1] green
+[2016.06.08-22.05.28:931][ 39]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-22.05.29:132][ 57]LogBlueprintUserMessages: [Vive_Pawn_C_1] green
+[2016.06.08-22.05.29:132][ 57]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-22.05.29:333][ 75]LogBlueprintUserMessages: [Vive_Pawn_C_1] green
+[2016.06.08-22.05.29:333][ 75]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-22.05.29:534][ 93]LogBlueprintUserMessages: [Vive_Pawn_C_1] green
+[2016.06.08-22.05.29:534][ 93]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-22.05.29:735][111]LogBlueprintUserMessages: [Vive_Pawn_C_1] green
+[2016.06.08-22.05.29:735][111]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-22.05.29:936][129]LogBlueprintUserMessages: [Vive_Pawn_C_1] green
+[2016.06.08-22.05.29:936][129]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-22.05.30:137][147]LogBlueprintUserMessages: [Vive_Pawn_C_1] green
+[2016.06.08-22.05.30:138][147]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-22.05.30:405][171]LogBlueprintUserMessages: [Vive_Pawn_C_1] green
+[2016.06.08-22.05.30:405][171]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-22.05.30:641][192]LogBlueprintUserMessages: [Vive_Pawn_C_1] green
+[2016.06.08-22.05.30:641][192]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-22.05.30:741][201]LogBlueprintUserMessages: [Vive_Pawn_C_1] green
+[2016.06.08-22.05.30:741][201]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-22.05.30:964][221]LogBlueprintUserMessages: [Vive_Pawn_C_1] green
+[2016.06.08-22.05.30:964][221]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-22.05.31:243][246]LogBlueprintUserMessages: [Vive_Pawn_C_1] green
+[2016.06.08-22.05.31:243][246]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-22.05.31:343][255]LogBlueprintUserMessages: [Vive_Pawn_C_1] green
+[2016.06.08-22.05.31:343][255]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-22.05.31:411][261]LogSpawn:Warning: SpawnActor failed because of collision at the spawn location [X=451.664 Y=275.832 Z=0.000] for [Target_C]
+[2016.06.08-22.05.31:545][273]LogBlueprintUserMessages: [Vive_Pawn_C_1] green
+[2016.06.08-22.05.31:545][273]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-22.05.31:758][292]LogBlueprintUserMessages: [Vive_Pawn_C_1] green
+[2016.06.08-22.05.31:758][292]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-22.05.32:025][316]LogBlueprintUserMessages: [Vive_Pawn_C_1] green
+[2016.06.08-22.05.32:025][316]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-22.05.32:248][336]LogBlueprintUserMessages: [Vive_Pawn_C_1] green
+[2016.06.08-22.05.32:248][336]LogBlueprintUserMessages: [Vive_Pawn_C_1] Color Changed
+[2016.06.08-22.05.37:073][478]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.06.08-22.05.37:073][478]PIE: New page: PIE session: Plains (Jun 8, 2016, 7:05:37 AM)
+[2016.06.08-22.05.37:073][478]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_Plains
+[2016.06.08-22.05.37:090][478]LogPlayLevel: PIE: StaticDuplicateObject took: (0.017345s)
+[2016.06.08-22.05.37:091][478]LogAIModule: Creating AISystem for world Plains
+[2016.06.08-22.05.37:092][478]LogPlayLevel: PIE: World Init took: (0.001348s)
+[2016.06.08-22.05.37:092][478]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Plains.Plains to /Game/UEDPIE_0_Plains.Plains (0.018944s)
+[2016.06.08-22.05.37:107][478]LogInit: XAudio2 using 'Speakers (5- USB Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.06.08-22.05.37:113][478]LogInit: FAudioDevice initialized.
+[2016.06.08-22.05.37:161][478]LogWorld: Game class is 'SteamVR_GM_C'
+[2016.06.08-22.05.37:173][478]LogWorld: Bringing World /Game/UEDPIE_0_Plains.Plains up for play (max tick rate 0) at 2016.06.08-15.05.37
+[2016.06.08-22.05.37:174][478]LogWorld: Bringing up level for play took: 0.007965
+[2016.06.08-22.05.37:198][478]PIE: Info Play in editor start time for /Game/UEDPIE_0_Plains -0.724
+[2016.06.08-22.05.37:216][478]LogRenderer: Reallocating scene render targets to support 3396x1736 (Frame:4480).
+[2016.06.08-22.05.37:284][480]LogWindows:Error: Windows GetLastError: The operation completed successfully. (0)
+[2016.06.08-22.05.37:647][480]LogCrashTracker: 
+
+
+[2016.06.08-22.05.37:655][480]LogWindows:Error: Windows GetLastError: The operation completed successfully. (0)
+[2016.06.08-22.05.37:655][480]LogCrashTracker: 
+
+
+[2016.06.08-22.05.37:655][480]LogWindows:Error: === Critical error: ===
+Fatal error: [File:D:\BuildFarm\buildmachine_++UE4+Release-4.11\Engine\Source\Runtime\RenderCore\Private\RenderingThread.cpp] [Line: 682] 
+Rendering thread exception:
+Assertion failed: (Index >= 0) & (Index < ArrayNum) [File:D:\BuildFarm\buildmachine_++UE4+Release-4.11\Engine\Source\Runtime\Core\Public\Containers\Array.h] [Line: 785] 
+Array index out of bounds: 0 from an array of size 0
+
+
+
+
+
+
+
+[2016.06.08-22.05.37:696][480]LogExit: Executing StaticShutdownAfterError
+[2016.06.08-22.05.37:713][480]LogPhysics:Warning: PHYSX: ..\..\PhysX\src\NpScene.cpp (2946) 8 : PxScene::unlockWrite() called without matching call to PxScene::lockWrite(), behaviour will be undefined.
+[2016.06.08-22.05.37:714][480]LogPhysics:Warning: PHYSX: ..\..\PhysX\src\NpScene.cpp (2946) 8 : PxScene::unlockWrite() called without matching call to PxScene::lockWrite(), behaviour will be undefined.
+[2016.06.08-22.05.37:714][480]LogPhysics:Warning: PHYSX: ..\..\PhysX\src\NpScene.cpp (2946) 8 : PxScene::unlockWrite() called without matching call to PxScene::lockWrite(), behaviour will be undefined.
+[2016.06.08-22.05.37:714][480]LogPhysics:Warning: PHYSX: ..\..\PhysX\src\NpScene.cpp (2946) 8 : PxScene::unlockWrite() called without matching call to PxScene::lockWrite(), behaviour will be undefined.
+[2016.06.08-22.05.37:714][480]LogWindows: FPlatformMisc::RequestExit(1)
+[2016.06.08-22.05.37:714][480]Log file closed, 06/08/16 15:05:37
