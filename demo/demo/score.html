@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Final Demo</title>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="/styles/custom.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+    <style>
+      body {
+        font-family: 'Lora', serif;
+        max-width: 400px;
+        min-width: 300px;
+        margin: 0;
+        padding: 0 10px 0 12px;
+      }
+
+      .button {
+        padding-left: 30px;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+        max-width: 600px;
+        width: 100%;
+        height: 100px;
+        line-height: 100px;
+        margin: 12px 0 12px 0;
+        box-shadow: 0 5px 5px 0 rgba(200,200,200,0.4);
+        font-size: 2em;
+        box-sizing: border-box;
+      }
+
+      .white {
+        color: white;
+      }
+
+    @media only screen and (max-device-width: 480px)  {
+      body {
+        max-width: none;
+      }
+    }
+
+    </style>
+  </head>
+  <body>
+
+   <div class="button white" id="blue" style="background-color: blue">Hillary: 0</div>
+   <div class="button white" id="red" style="background-color: red">Trump: 0</div>
+   <div class="button" id="white" style="background-color: white">Independent: 0</div>
+   <div class="button white" id="green" style="background-color: green">Green: 0</div>
+
+  <script>
+
+  var iFrequency = 1000; // expressed in miliseconds
+	var myInterval = 0;
+
+	// STARTS and Resets the loop if any
+	function startLoop() {
+	    if(myInterval > 0) clearInterval(myInterval);  // stop
+	    myInterval = setInterval( "doSomething()", iFrequency );  // run
+	}
+
+	function doSomething()
+	{
+	    $.get('http://ec2-54-183-240-19.us-west-1.compute.amazonaws.com/helios/clintonhit', function(data) {
+		        var text = "Clinton: " + data.value;
+		        console.log(text);
+		        document.getElementById('blue').innerHTML = text;
+	      });
+
+	    $.get('http://ec2-54-183-240-19.us-west-1.compute.amazonaws.com/helios/trumphit', function(data) {
+		        var text = "Trump: " + data.value;
+		        console.log(text);
+		        document.getElementById('red').innerHTML = text;
+	      });
+
+	    $.get('http://ec2-54-183-240-19.us-west-1.compute.amazonaws.com/helios/independenthit', function(data) {
+		        var text = "Independent: " + data.value;
+		        console.log(text);
+		        document.getElementById('white').innerHTML = text;
+	      });
+
+	    $.get('http://ec2-54-183-240-19.us-west-1.compute.amazonaws.com/helios/greenhit', function(data) {
+		        var text = "Green: " + data.value;
+		        console.log(text);
+		        document.getElementById('green').innerHTML = text;
+	      });
+	}
+
+	startLoop();
+
+  </script>
+
+  </body>
+</html>

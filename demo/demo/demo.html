@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Final Demo</title>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+    <link rel="stylesheea', serif;
+        text-align: centt" type="text/css" href="/styles/custom.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+    <style>
+      body {
+        font-family: 'Lora';
+        max-width: 400px;
+        min-width: 300px;
+        margin: 0;
+        padding: 0 10px 0 12px;
+      }
+
+      .button {
+        border-radius: 3px;
+        border: 1px solid #ccc;
+        text-align: center;
+        max-width: 600px;
+        width: 100%;
+        height: 100px;
+        line-height: 100px;
+        margin: 12px 0 12px 0;
+        box-shadow: 0 5px 5px 0 rgba(200,200,200,0.4);
+        font-size: 3em;
+        box-sizing: border-box;
+      }
+
+      .white {
+        color: white;
+      }
+
+      .selected {
+        border: 3px solid black;
+      }
+
+    @media only screen and (max-device-width: 480px)  {
+      body {
+        max-width: none;
+      }
+    }
+
+    </style>
+  </head>
+  <body>
+
+   <div class="button white selected" id="blue" style="background-color: blue"  onclick="$.ajax({ type: 'POST', url: 'http://ec2-54-183-240-19.us-west-1.compute.amazonaws.com/helios/decalcolor', data: { value: 'blue' }}); updateClasses('blue'); ">Hillary</div>
+   <div class="button white" id="red" style="background-color: red" onclick="$.ajax({ type: 'POST', url: 'http://ec2-54-183-240-19.us-west-1.compute.amazonaws.com/helios/decalcolor', data: { value: 'red' }}); updateClasses('red'); ">Trump</div>
+   <div class="button" id="white" style="background-color: white"  onclick="$.ajax({ type: 'POST', url: 'http://ec2-54-183-240-19.us-west-1.compute.amazonaws.com/helios/decalcolor', data: { value: 'white' }}); updateClasses('white');">Independent</div>
+   <div class="button white" id="green" style="background-color: green"  onclick="$.ajax({ type: 'POST', url: 'http://ec2-54-183-240-19.us-west-1.compute.amazonaws.com/helios/decalcolor', data: { value: 'green' }}); updateClasses('green');">Green</div>
+
+  <script>
+    $.get('http://ec2-54-183-240-19.us-west-1.compute.amazonaws.com/helios/decalcolor', function(data) {
+        console.log(data.value);
+        updateClasses(data.value);
+      });
+
+    function updateClasses(color) {
+      clearClasses();
+      newSelection(color);
+    }
+
+    function newSelection(color) { 
+      if (color == "blue") {
+        var button = document.getElementById("blue");
+        button.classList.add('selected');
+      } else if (color == "red") {
+        var button = document.getElementById("red");
+        button.classList.add('selected');
+      } else if (color == "white") {
+        var button = document.getElementById("white");
+        button.classList.add('selected');
+      } else if (color == "green") {
+        var button = document.getElementById("green");
+        button.classList.add('selected');
+      } else {
+        console.log("ERROR: color is invalid, cannot add 'selected'")
+      }
+    }
+    function clearClasses() {
+      var buttons = document.getElementsByClassName("button");
+      console.log(buttons);
+      for (var i = 0; i < buttons.length; i++) {
+        console.log(buttons[i].classList);
+        if (buttons[i].classList.contains('selected')) {
+          console.log(buttons[i]);
+          buttons[i].classList.remove('selected');
+        }
+      }
+    }
+  </script>
+<!-- 
+   <div onclick="$.get('http://ec2-54-183-240-19.us-west-1.compute.amazonaws.com/helios/decalcolor', function(data) { console.log(data); })">Click here to find out current color</div>
+ -->
+
+  <!-- <form method="post" action="/helios/decalcolor">
+    <input name="value" value="red">
+    <div class="candidate" id="bernie" onClick="javascript:this.parentNode.submit()">
+      <img class="portrait" src="/assets/bernie.jpg">
+      <div class="name"> Bernie </div>
+      <div class="vote"> 0 </div>
+    </div>
+  </form>
+
+  <form method="post" action="/helios/decalcolor">
+    <input name="value" value="green">
+    <div class="candidate" id="cruz" onClick="javascript:this.parentNode.submit()">
+      <img class="portrait" src="/assets/cruz.jpg">
+      <div class="name"> Cruz</div>
+      <div class="vote"> 0 </div>
+    </div>
+  </form>
+
+  <form method="post" action="/helios/decalcolor">
+    <input name="value" value="blue">
+    <div class="candidate" id="hillary" onClick="javascript:this.parentNode.submit()">
+      <img class="portrait" src="/assets/hillary.jpg">
+      <div class="name"> Hillary </div>
+      <div class="vote"> 0 </div>
+    </div>
+  </form>
+
+  <form method="post" action="/helios/decalcolor">
+    <input name="value" value="white">
+    <div class="candidate" id="trump" onClick="javascript:this.parentNode.submit()">
+      <img class="portrait" src="/assets/trump.jpg">
+      <div class="name"> Trump </div>
+      <div class="vote"> 0 </div>
+    </div>
+  </form> -->
+
+  </body>
+</html>

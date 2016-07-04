@@ -1,0 +1,29 @@
+{
+  "server_url": "http://ec2-54-183-240-19.us-west-1.compute.amazonaws.com/helios/",
+  "single_instance_variables": [
+    {
+      "name": "DecalColor",
+      "type":"FString" 
+    },
+    {
+      "name": "Score",
+      "type":"int"
+    },
+    {
+      "name": "ClintonHit",
+      "type": "int"
+    },
+    {
+      "name": "TrumpHit",
+      "type": "int"
+    },
+    {
+      "name": "GreenHit",
+      "type": "int"
+    },
+    {
+      "name": "IndependentHit",
+      "type": "int"
+    }
+  ]
+}
