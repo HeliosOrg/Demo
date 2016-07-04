@@ -4,7 +4,7 @@ In our demo, there is a collaborator and a player. The player is in VR and stand
 
 Additionally, a separate web interface updates a scoreboard which keeps track of how many targets of each color are destroyed.
 
-![Diagram](http://i.imgur.com/oQPHfSC.png)
+![Diagram](http://i.imgur.com/GQAZvYN.png)
 
 The variable that keeps track of the paintball color is DecalColor.
 
