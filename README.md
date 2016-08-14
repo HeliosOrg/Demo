@@ -12,4 +12,4 @@ The controls in the demo are set up to work with the HTC Vive.
 
 This demo has been tested with UnrealEngine 4.11
 
-Side note: our demo includes a 2016 U.S. presidential election theme related to the colors with blue representing Democrats, red representing Republicans, green representing the Green Party, and white representing Independents. This theme was used while presentingat a project fair.
+Side note: our demo includes a 2016 U.S. presidential election theme related to the colors with blue representing Democrats, red representing Republicans, green representing the Green Party, and white representing Independents. This theme was used while presenting at a project fair.
